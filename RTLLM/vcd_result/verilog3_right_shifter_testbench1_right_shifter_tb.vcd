@@ -1,0 +1,143 @@
+$date
+	Sun Jun 21 21:22:37 2026
+$end
+
+$version
+	Synopsys VCS version V-2023.12_Full64
+$end
+
+$timescale
+	1ps
+$end
+
+$comment Csum: 1 84f5c9d42979f06e $end
+
+
+$scope module right_shifter_tb $end
+$var reg 1 ! clk $end
+$var reg 1 " d $end
+$var wire 8 # q [7:0] $end
+$var integer 32 $ p $end
+
+$scope module dut $end
+$var wire 1 ! clk $end
+$var wire 1 " d $end
+$var reg 8 # q [7:0] $end
+$var wire 8 % next_q [7:0] $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+
+#0
+$dumpvars
+0!
+1"
+bxxxxxxxx #
+b1xxxxxxx %
+bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx $
+$end
+#5000
+1!
+0"
+b0xxxxxxx %
+b0xxxxxxx #
+b00xxxxxx %
+#10000
+0!
+#15000
+1!
+b00xxxxxx #
+b000xxxxx %
+#20000
+0!
+#25000
+1!
+b000xxxxx #
+b0000xxxx %
+#30000
+0!
+#35000
+1!
+b0000xxxx #
+b00000xxx %
+#40000
+0!
+#45000
+1!
+b00000xxx #
+b000000xx %
+#50000
+0!
+#55000
+1!
+b000000xx #
+b0000000x %
+#60000
+0!
+#65000
+1!
+1"
+b1000000x %
+b1000000x #
+b11000000 %
+#70000
+0!
+#75000
+1!
+b11000000 #
+b11100000 %
+#80000
+0!
+#85000
+1!
+0"
+b01100000 %
+b01100000 #
+b00110000 %
+#90000
+0!
+#95000
+1!
+b00110000 #
+b00011000 %
+#100000
+0!
+#105000
+1!
+b00011000 #
+b00001100 %
+#110000
+0!
+#115000
+1!
+b00001100 #
+b00000110 %
+#120000
+0!
+#125000
+1!
+b00000110 #
+b00000011 %
+#130000
+0!
+#135000
+1!
+b00000011 #
+b00000001 %
+#140000
+0!
+#145000
+1!
+b00000001 #
+b00000000 %
+#150000
+0!
+#155000
+1!
+b00000000 #
+#160000
+0!
+#165000
+1!

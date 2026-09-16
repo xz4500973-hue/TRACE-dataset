@@ -1,0 +1,54 @@
+****************************************
+Report : Averaged Power
+	-verbose
+Design : multi_16bit
+Version: V-2023.12
+Date   : Tue Sep  1 21:44:29 2026
+****************************************
+
+Library(s) Used:
+
+    tcbn28hpcplusbwp12t30p140ssg0p81v125c (File: /process/course_lib/t28hpc+/tcbn28hpcplusbwp12t30p140ssg0p81v125c.db)
+
+
+Operating Conditions: ssg0p81v125c   Library: tcbn28hpcplusbwp12t30p140ssg0p81v125c
+Wire Load Model Mode: segmented
+
+Cell               Design       Wire_model  Library       Selection_type
+--------------------------------------------------------------------------------
+                   multi_16bit  ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+
+Power-specific unit information :
+    Voltage Units = 1 V
+    Capacitance Units = 1 pf
+    Time Units = 1 ns
+    Dynamic Power Units = 1 W
+    Leakage Power Units = 1 W
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network              0.0000    0.0000    0.0000    0.0000 ( 0.00%)  i
+register                   0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+combinational           8.749e-07 2.172e-06 1.463e-05 1.767e-05 (32.39%)  
+sequential              2.409e-05 1.576e-08 1.280e-05 3.690e-05 (67.61%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power  = 2.188e-06   ( 4.01%)
+  Cell Internal Power  = 2.496e-05   (45.74%)
+  Cell Leakage Power   = 2.742e-05   (50.25%)
+                         ---------
+Total Power            = 5.457e-05  (100.00%)
+
+1

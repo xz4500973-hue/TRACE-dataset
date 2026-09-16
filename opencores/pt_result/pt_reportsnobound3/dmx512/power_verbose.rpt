@@ -1,0 +1,68 @@
+****************************************
+Report : Averaged Power
+	-verbose
+Design : dmx_top
+Version: V-2023.12
+Date   : Mon Jun 22 17:48:23 2026
+****************************************
+
+Library(s) Used:
+
+    tcbn28hpcplusbwp12t30p140ssg0p81v125c (File: /process/course_lib/t28hpc+/tcbn28hpcplusbwp12t30p140ssg0p81v125c.db)
+
+
+Operating Conditions: ssg0p81v125c   Library: tcbn28hpcplusbwp12t30p140ssg0p81v125c
+Wire Load Model Mode: segmented
+
+Cell               Design       Wire_model  Library       Selection_type
+--------------------------------------------------------------------------------
+                   dmx_top      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+rx_dut             dmx_rx_1_83333333
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+rx_dut/channels    dmx_dpram_0  ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+tx_dut             dmx_tx_0_83333333
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+tx_dut/channels    dmx_dpram_1  ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+
+Power-specific unit information :
+    Voltage Units = 1 V
+    Capacitance Units = 1 pf
+    Time Units = 1 ns
+    Dynamic Power Units = 1 W
+    Leakage Power Units = 1 W
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network              0.0000    0.0000    0.0000    0.0000 ( 0.00%)  i
+register                   0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+combinational           6.996e-05 2.411e-04 1.137e-03 1.448e-03 (31.08%)  
+sequential              1.410e-03 8.593e-08 1.800e-03 3.211e-03 (68.92%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power  = 2.412e-04   ( 5.18%)
+  Cell Internal Power  = 1.480e-03   (31.77%)
+  Cell Leakage Power   = 2.937e-03   (63.05%)
+                         ---------
+Total Power            = 4.658e-03  (100.00%)
+
+1

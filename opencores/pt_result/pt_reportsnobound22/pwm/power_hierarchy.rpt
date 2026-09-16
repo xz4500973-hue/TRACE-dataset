@@ -1,0 +1,21 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : PWM
+Version: V-2023.12
+Date   : Mon Jun 22 17:17:31 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+PWM                                   3.05e-05 1.03e-05 4.90e-05 8.98e-05 100.0
+  down_clocking_odd_0 (down_clocking_odd)
+                                      6.26e-06 1.92e-06 1.24e-05 2.06e-05  22.9
+    minus_one_0 (minus_one_0)            0.000    0.000 1.58e-06 1.58e-06   1.8
+  down_clocking_even_0 (down_clocking_even)
+                                      3.13e-06 8.09e-07 7.02e-06 1.10e-05  12.2
+    minus_one_0 (minus_one_1)            0.000    0.000 1.58e-06 1.58e-06   1.8
+1

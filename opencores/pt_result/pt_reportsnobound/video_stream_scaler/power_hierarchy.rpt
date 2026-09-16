@@ -1,0 +1,25 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : streamScaler
+Version: V-2023.12
+Date   : Mon Jun 22 16:58:14 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+streamScaler                          1.18e-02 2.27e-03 2.33e-02 3.74e-02 100.0
+  ramRB (ramFifo_DATA_WIDTH8_ADDRESS_WIDTH11_BUFFER_SIZE4)
+                                      1.17e-02 2.21e-03 2.31e-02 3.70e-02  98.8
+    ram_generate_0__ram_inst_i (ramDualPort_DATA_WIDTH8_ADDRESS_WIDTH11_3)
+                                      2.92e-03 5.52e-04 5.77e-03 9.24e-03  24.7
+    ram_generate_2__ram_inst_i (ramDualPort_DATA_WIDTH8_ADDRESS_WIDTH11_1)
+                                      2.91e-03 5.51e-04 5.77e-03 9.24e-03  24.7
+    ram_generate_1__ram_inst_i (ramDualPort_DATA_WIDTH8_ADDRESS_WIDTH11_2)
+                                      2.91e-03 5.51e-04 5.77e-03 9.24e-03  24.7
+    ram_generate_3__ram_inst_i (ramDualPort_DATA_WIDTH8_ADDRESS_WIDTH11_0)
+                                      2.91e-03 5.51e-04 5.77e-03 9.24e-03  24.7
+1

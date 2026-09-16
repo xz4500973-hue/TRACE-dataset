@@ -1,0 +1,55 @@
+****************************************
+Report : Averaged Power
+	-verbose
+Design : traffic_light
+Version: V-2023.12
+Date   : Tue Sep  1 21:44:39 2026
+****************************************
+
+Library(s) Used:
+
+    tcbn28hpcplusbwp12t30p140ssg0p81v125c (File: /process/course_lib/t28hpc+/tcbn28hpcplusbwp12t30p140ssg0p81v125c.db)
+
+
+Operating Conditions: ssg0p81v125c   Library: tcbn28hpcplusbwp12t30p140ssg0p81v125c
+Wire Load Model Mode: segmented
+
+Cell               Design       Wire_model  Library       Selection_type
+--------------------------------------------------------------------------------
+                   traffic_light
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+
+Power-specific unit information :
+    Voltage Units = 1 V
+    Capacitance Units = 1 pf
+    Time Units = 1 ns
+    Dynamic Power Units = 1 W
+    Leakage Power Units = 1 W
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network              0.0000    0.0000    0.0000    0.0000 ( 0.00%)  i
+register                   0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+combinational           2.275e-07 1.621e-07 1.279e-06 1.669e-06 (16.61%)  
+sequential              5.535e-06 1.228e-07 2.721e-06 8.379e-06 (83.39%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power  = 2.849e-07   ( 2.84%)
+  Cell Internal Power  = 5.763e-06   (57.35%)
+  Cell Leakage Power   = 4.001e-06   (39.81%)
+                         ---------
+Total Power            = 1.005e-05  (100.00%)
+
+1

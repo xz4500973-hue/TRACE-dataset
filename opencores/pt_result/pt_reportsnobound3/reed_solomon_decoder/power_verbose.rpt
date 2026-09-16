@@ -1,0 +1,156 @@
+****************************************
+Report : Averaged Power
+	-verbose
+Design : RS_dec
+Version: V-2023.12
+Date   : Mon Jun 22 17:51:09 2026
+****************************************
+
+Library(s) Used:
+
+    tcbn28hpcplusbwp12t30p140ssg0p81v125c (File: /process/course_lib/t28hpc+/tcbn28hpcplusbwp12t30p140ssg0p81v125c.db)
+
+
+Operating Conditions: ssg0p81v125c   Library: tcbn28hpcplusbwp12t30p140ssg0p81v125c
+Wire Load Model Mode: segmented
+
+Cell               Design       Wire_model  Library       Selection_type
+--------------------------------------------------------------------------------
+                   RS_dec       ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+transport_in2out_unit
+                   transport_in2out
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+out_stage_unit     out_stage    ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+rom_instant_1      GF_matrix_dec_5
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+rom_instant_2      GF_matrix_dec_4
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+rom_instant_3      GF_matrix_dec_3
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+rom_instant_4      GF_matrix_dec_2
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+mem_out_1          DP_RAM_address_width8_data_width8_num_words188_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+mem_out_2          DP_RAM_address_width8_data_width8_num_words188_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+BM_lamda_unit      BM_lamda     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+power_rom_instant1 GF_matrix_ascending_binary_4
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+power_rom_instant2 GF_matrix_ascending_binary_3
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+power_rom_instant3 GF_matrix_ascending_binary_2
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+power_rom_instant4 GF_matrix_ascending_binary_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+error_correction_unit
+                   error_correction
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+lamda_roots_unit   lamda_roots  ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+Omega_Phy_unit     Omega_Phy    ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+input_syndromes_unit
+                   input_syndromes
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+input_syndromes_unit/mem_in_0
+                   DP_RAM_address_width8_data_width8_num_words205_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+input_syndromes_unit/mem_in_1
+                   DP_RAM_address_width8_data_width8_num_words205_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+input_syndromes_unit/unit0
+                   GF_mult_add_syndromes_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+input_syndromes_unit/unit0/rom_instant
+                   GF_matrix_dec_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+input_syndromes_unit/unit1
+                   GF_mult_add_syndromes_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+input_syndromes_unit/unit1/rom_instant
+                   GF_matrix_dec_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+input_syndromes_unit/rom_instant
+                   GF_matrix_ascending_binary_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+
+Power-specific unit information :
+    Voltage Units = 1 V
+    Capacitance Units = 1 pf
+    Time Units = 1 ns
+    Dynamic Power Units = 1 W
+    Leakage Power Units = 1 W
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network              0.0000    0.0000    0.0000    0.0000 ( 0.00%)  i
+register                   0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+combinational           2.141e-04 8.009e-04 1.116e-03 2.131e-03 (17.92%)  
+sequential              7.859e-03 3.892e-06 1.898e-03 9.761e-03 (82.08%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power  = 8.048e-04   ( 6.77%)
+  Cell Internal Power  = 8.073e-03   (67.89%)
+  Cell Leakage Power   = 3.014e-03   (25.35%)
+                         ---------
+Total Power            =    0.0119  (100.00%)
+
+1

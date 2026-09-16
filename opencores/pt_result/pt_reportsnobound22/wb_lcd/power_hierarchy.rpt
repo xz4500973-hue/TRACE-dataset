@@ -1,0 +1,18 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : wb_lcd
+Version: V-2023.12
+Date   : Mon Jun 22 17:19:18 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+wb_lcd                                1.11e-04 1.07e-05 2.17e-04 3.39e-04 100.0
+  lcd (lcd)                           1.10e-04 1.07e-05 2.13e-04 3.34e-04  98.7
+    delay_counter (delay_counter_counter_width20)
+                                      3.88e-06 1.02e-07 7.91e-06 1.19e-05   3.5
+1

@@ -1,0 +1,17 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : serirq_top
+Version: V-2023.12
+Date   : Mon Jun 22 17:19:23 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+serirq_top                            3.62e-05 1.21e-05 3.44e-05 8.27e-05 100.0
+  u_slave (serirq_slave)              2.40e-05 9.45e-06 1.96e-05 5.31e-05  64.2
+  u_host (serirq_host)                1.22e-05 2.67e-06 1.47e-05 2.95e-05  35.7
+1

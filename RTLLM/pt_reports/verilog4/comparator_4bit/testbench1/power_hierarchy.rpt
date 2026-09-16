@@ -1,0 +1,15 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : comparator_4bit
+Version: V-2023.12
+Date   : Tue Sep  1 21:43:26 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+comparator_4bit                          0.000    0.000 7.40e-07 7.40e-07 100.0
+1

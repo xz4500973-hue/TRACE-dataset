@@ -1,0 +1,32 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : vga_enh_top
+Version: V-2023.12
+Date   : Mon Jun 22 17:52:03 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+vga_enh_top                           3.03e-03 5.33e-04 5.69e-03 9.26e-03 100.0
+  wbm (vga_wb_master)                 1.17e-04 1.93e-05 2.31e-04 3.67e-04   4.0
+    data_fifo (vga_fifo_aw4_dw32)     9.21e-05 1.69e-05 1.77e-04 2.86e-04   3.1
+    clut_sw_fifo (vga_fifo_aw4_dw1)   5.34e-06 4.50e-07 1.07e-05 1.65e-05   0.2
+  pixel_generator (vga_pgen)          1.06e-04 1.03e-05 2.11e-04 3.27e-04   3.5
+    vtgen (vga_tgen)                  1.31e-05 1.18e-06 3.05e-05 4.48e-05   0.5
+      hor_gen (vga_vtim_1)            6.59e-06 5.93e-07 1.51e-05 2.23e-05   0.2
+      ver_gen (vga_vtim_0)            6.56e-06 5.83e-07 1.52e-05 2.23e-05   0.2
+    color_proc (vga_colproc)          1.59e-05 1.37e-06 3.22e-05 4.95e-05   0.5
+    clk_gen (vga_clkgen)              8.53e-07 4.42e-09 1.18e-06 2.04e-06   0.0
+    rgb_fifo (vga_fifo_aw4_dw24)      6.90e-05 6.39e-06 1.34e-04 2.10e-04   2.3
+  wbs (vga_wb_slave)                  7.45e-05 3.10e-05 9.36e-05 1.99e-04   2.2
+  clut_mem (vga_csm_pb_DWIDTH24_AWIDTH9)
+                                      2.19e-03 4.19e-04 4.11e-03 6.72e-03  72.6
+    clut_mem (generic_spram_aw9_dw24) 2.19e-03 4.18e-04 4.10e-03 6.71e-03  72.5
+  line_fifo (vga_fifo_dc_AWIDTH7_DWIDTH24)
+                                      5.44e-04 5.31e-05 1.05e-03 1.64e-03  17.8
+    mem (generic_dpram_aw7_dw24)      5.33e-04 5.18e-05 1.03e-03 1.61e-03  17.4
+1

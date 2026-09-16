@@ -1,0 +1,131 @@
+$date
+	Sun Jun 21 21:28:34 2026
+$end
+
+$version
+	Synopsys VCS version V-2023.12_Full64
+$end
+
+$timescale
+	1ps
+$end
+
+$comment Csum: 1 0d145f1eb95d7f96 $end
+
+
+$scope module LIFObuffer_tb $end
+$var reg 4 ! di [3:0] $end
+$var reg 1 " RW $end
+$var reg 1 # EN $end
+$var reg 1 $ Rst $end
+$var reg 1 % Clk $end
+$var wire 1 & EF $end
+$var wire 1 ' FL $end
+$var wire 4 ( doo [3:0] $end
+$var integer 32 ) t $end
+
+$scope module dut $end
+$var wire 4 ! dataIn [3:0] $end
+$var wire 1 " RW $end
+$var wire 1 # EN $end
+$var wire 1 $ Rst $end
+$var wire 1 % Clk $end
+$var reg 1 & EMPTY $end
+$var reg 1 ' FULL $end
+$var reg 4 ( dataOut [3:0] $end
+$var reg 3 * sp [2:0] $end
+$var wire 1 + push $end
+$var wire 1 , pop $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+
+#0
+$dumpvars
+0%
+x&
+0#
+x'
+0"
+1$
+0,
+x+
+bxxxx (
+b0000 !
+bxxx *
+bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx )
+$end
+#5000
+1%
+b100 *
+1+
+1&
+0'
+b0000 (
+#10000
+0%
+#13000
+0$
+1#
+b00000000000000000000000000000000 )
+#15000
+1%
+b0100 !
+b00000000000000000000000000000001 )
+b011 *
+#20000
+0%
+#25000
+1%
+b0001 !
+b00000000000000000000000000000010 )
+b010 *
+0&
+#30000
+0%
+#35000
+1%
+b1001 !
+b00000000000000000000000000000011 )
+b001 *
+#40000
+0%
+#45000
+1%
+b0011 !
+b00000000000000000000000000000100 )
+b00000000000000000000000000000000 )
+b000 *
+0+
+#50000
+0%
+#55000
+1%
+1"
+1,
+b00000000000000000000000000000001 )
+b0011 (
+b001 *
+1'
+#60000
+0%
+#65000
+1%
+b00000000000000000000000000000010 )
+b1001 (
+b010 *
+0'
+#70000
+0%
+#75000
+1%
+b00000000000000000000000000000011 )
+b0001 (
+b011 *
+#80000
+0%
+#85000
+1%
+b00000000000000000000000000000100 )

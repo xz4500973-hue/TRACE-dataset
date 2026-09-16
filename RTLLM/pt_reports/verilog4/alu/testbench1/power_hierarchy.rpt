@@ -1,0 +1,15 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : alu
+Version: V-2023.12
+Date   : Tue Sep  1 21:43:21 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+alu                                   1.53e-05 8.75e-06 4.15e-05 6.55e-05 100.0
+1

@@ -1,0 +1,61 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : sip_rxaui_top
+Version: V-2023.12
+Date   : Mon Jun 22 17:50:04 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+sip_rxaui_top                         1.09e-08 9.09e-09 3.00e-04 3.00e-04 100.0
+  sip_rxaui_clk_reset (sip_rxaui_clk_reset)
+                                      9.72e-10 3.44e-10 8.08e-06 8.08e-06   2.7
+    txclk_in1_reset (sip_reset_sync_0)
+                                      1.03e-10 2.90e-11 1.27e-06 1.27e-06   0.4
+    xpcs_tx_clk_mux0 (sip_clk_mux_0)     0.000    0.000 7.62e-08 7.62e-08   0.0
+    rx_clk_div2 (sip_clock_divider_by_2_1)
+                                      2.75e-10 1.14e-10 7.75e-07 7.75e-07   0.3
+      sip_clock_divider_by_2_glue (sip_clock_divider_by_2_glue_1)
+                                      1.54e-10 1.14e-10 2.37e-07 2.37e-07   0.1
+      clock_divider (sip_clock_divider_1)
+                                      1.21e-10    0.000 5.38e-07 5.38e-07   0.2
+    rx_clk_reset (sip_reset_sync_4)   1.03e-10 2.90e-11 1.27e-06 1.27e-06   0.4
+    rx_clk_mux0 (sip_clk_mux_2)          0.000    0.000 7.62e-08 7.62e-08   0.0
+    tx_clk_reset (sip_reset_sync_2)   1.11e-10 2.90e-11 1.27e-06 1.27e-06   0.4
+    txclk_in0_reset (sip_reset_sync_1)
+                                      1.03e-10 2.90e-11 1.23e-06 1.23e-06   0.4
+    rx_clk_mux1 (sip_clk_mux_1)          0.000    0.000 7.62e-08 7.62e-08   0.0
+    rx_clk_div2_reset (sip_reset_sync_3)
+                                      1.72e-12 1.56e-13 1.26e-06 1.26e-06   0.4
+    tx_clk_div2 (sip_clock_divider_by_2_0)
+                                      2.75e-10 1.14e-10 7.75e-07 7.75e-07   0.3
+      sip_clock_divider_by_2_glue (sip_clock_divider_by_2_glue_0)
+                                      1.54e-10 1.14e-10 2.37e-07 2.37e-07   0.1
+      clock_divider (sip_clock_divider_0)
+                                      1.21e-10    0.000 5.38e-07 5.38e-07   0.2
+  sip_rxaui_rx_top (sip_rxaui_rx_top) 7.97e-09 6.06e-09 1.68e-04 1.68e-04  55.9
+    sip_rxaui_rx_glue (sip_rxaui_rx_glue)
+                                      3.36e-10 2.14e-10 1.17e-05 1.17e-05   3.9
+    xpcs_comma_detect (sip_xpcs_comma_detect)
+                                      5.16e-09 3.32e-09 3.93e-05 3.94e-05  13.1
+      cd_sync (sip_xpcs_cd_sync)      1.62e-09 1.66e-09 1.20e-06 1.21e-06   0.4
+      cd_ssm (sip_xpcs_cd_ssm)        8.90e-10 7.41e-11 1.54e-06 1.54e-06   0.5
+      cd_mux (sip_xpcs_cd_mux)        2.30e-10 2.74e-10 1.50e-05 1.50e-05   5.0
+      cd_7bit (sip_xpcs_cd_7bit)      8.59e-10 8.68e-10 1.80e-05 1.81e-05   6.0
+      cd_10bit (sip_xpcs_cd_10bit)    1.56e-09 4.41e-10 3.48e-06 3.49e-06   1.2
+    sip_phase_sync_fifo_fast_2_slow (sip_phase_sync_fifo_fast_2_slow)
+                                      2.47e-09 2.53e-09 1.04e-04 1.04e-04  34.7
+    sip_rxaui_aa_detection (sip_rxaui_aa_detection)
+                                         0.000    0.000 1.23e-05 1.23e-05   4.1
+  sip_rxaui_tx_top (sip_rxaui_tx_top) 1.94e-09 2.69e-09 1.24e-04 1.24e-04  41.4
+    sip_phase_sync_fifo_slow_2_fast_1 (sip_phase_sync_fifo_slow_2_fast_0)
+                                      9.70e-10 1.34e-09 6.12e-05 6.12e-05  20.4
+    sip_rxaui_tx_glue (sip_rxaui_tx_glue)
+                                         0.000    0.000 1.64e-06 1.64e-06   0.5
+    sip_phase_sync_fifo_slow_2_fast_0 (sip_phase_sync_fifo_slow_2_fast_1)
+                                      9.70e-10 1.34e-09 6.16e-05 6.16e-05  20.5
+1

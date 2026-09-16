@@ -1,0 +1,53 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : demo_top
+Version: V-2023.12
+Date   : Mon Jun 22 17:16:30 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+demo_top                              2.24e-05 4.18e-06 3.31e-05 5.97e-05 100.0
+  next_test_debouncer (debouncer_low_count250_1)
+                                      3.20e-06 2.80e-07 4.59e-06 8.07e-06  13.5
+  valid_stretcher (stretcher_count250)
+                                      1.84e-06    0.000 3.25e-06 5.08e-06   8.5
+  usec_pulser (pulser_count99)        2.01e-06 9.47e-08 2.82e-06 4.92e-06   8.3
+  next_step_debouncer (debouncer_low_count250_0)
+                                      3.18e-06 2.76e-07 4.59e-06 8.05e-06  13.5
+  select_stretcher (stretcher_count250_width3)
+                                      2.18e-06    0.000 4.04e-06 6.22e-06  10.4
+  demo (demo_width8_select_width3)    7.09e-06 1.66e-06 9.47e-06 1.82e-05  30.5
+    arbiter (arbiter_width8_select_width3)
+                                      3.54e-06 1.15e-06 4.85e-06 9.54e-06  16.0
+      gen_arb_4__nodes_0_ (arbiter_node_1)
+                                      1.95e-07 4.46e-08 3.55e-07 5.95e-07   1.0
+      gen_arb_8__nodes_0_ (arbiter_node_3)
+                                      1.95e-07 4.46e-08 3.55e-07 5.95e-07   1.0
+      gen_arb_8__nodes_3_ (arbiter_node_6)
+                                      1.95e-07 4.46e-08 3.55e-07 5.95e-07   1.0
+      gen_arb_4__nodes_1_ (arbiter_node_2)
+                                      1.95e-07 4.46e-08 3.55e-07 5.95e-07   1.0
+      gen_arb_2__nodes_0_ (arbiter_node_0)
+                                      1.95e-07 4.46e-08 3.86e-07 6.26e-07   1.0
+      gen_arb_8__nodes_1_ (arbiter_node_4)
+                                      1.95e-07 4.46e-08 3.55e-07 5.95e-07   1.0
+      gen_mux_2__mux_array_0_ (mux_array_width1_0)
+                                         0.000    0.000 9.81e-08 9.81e-08   0.2
+        nodes_0_ (mux_node_3)            0.000    0.000 9.81e-08 9.81e-08   0.2
+      gen_mux_4__mux_array_0_ (mux_array_width2)
+                                         0.000    0.000 1.96e-07 1.96e-07   0.3
+        nodes_1_ (mux_node_2)            0.000    0.000 9.81e-08 9.81e-08   0.2
+        nodes_0_ (mux_node_1)            0.000    0.000 9.81e-08 9.81e-08   0.2
+      gen_arb_8__nodes_2_ (arbiter_node_5)
+                                      1.95e-07 4.46e-08 3.55e-07 5.95e-07   1.0
+      gen_mux_2__mux_array_1_ (mux_array_width1_1)
+                                         0.000    0.000 9.81e-08 9.81e-08   0.2
+        nodes_0_ (mux_node_0)            0.000    0.000 9.81e-08 9.81e-08   0.2
+    lfsr (lfsr_width8)                1.73e-06 2.46e-07 1.95e-06 3.92e-06   6.6
+  msec_pulser (pulser_count1000)      2.01e-06    0.000 3.69e-06 5.70e-06   9.6
+1

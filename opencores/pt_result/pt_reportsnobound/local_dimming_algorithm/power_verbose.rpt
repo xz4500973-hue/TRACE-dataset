@@ -1,0 +1,116 @@
+****************************************
+Report : Averaged Power
+	-verbose
+Design : local_dimming_top
+Version: V-2023.12
+Date   : Mon Jun 22 16:54:58 2026
+****************************************
+
+Library(s) Used:
+
+    tcbn28hpcplusbwp12t30p140ssg0p81v125c (File: /process/course_lib/t28hpc+/tcbn28hpcplusbwp12t30p140ssg0p81v125c.db)
+
+
+Operating Conditions: ssg0p81v125c   Library: tcbn28hpcplusbwp12t30p140ssg0p81v125c
+Wire Load Model Mode: segmented
+
+Cell               Design       Wire_model  Library       Selection_type
+--------------------------------------------------------------------------------
+                   local_dimming_top
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_video_gen        video_data_gen
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_trans            video_data_trans
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_extract          video_data_extract
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_extract/ram_generate_6__ram_inst_i
+                   ramDualPort_DATA_WIDTH16_ADDRESS_WIDTH9_2
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_extract/ram_generate_4__ram_inst_i
+                   ramDualPort_DATA_WIDTH16_ADDRESS_WIDTH9_4
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_extract/ram_generate_2__ram_inst_i
+                   ramDualPort_DATA_WIDTH16_ADDRESS_WIDTH9_6
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_extract/ram_generate_7__ram_inst_i
+                   ramDualPort_DATA_WIDTH16_ADDRESS_WIDTH9_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_extract/ram_generate_0__ram_inst_i
+                   ramDualPort_DATA_WIDTH16_ADDRESS_WIDTH9_8
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_extract/ram_generate_5__ram_inst_i
+                   ramDualPort_DATA_WIDTH16_ADDRESS_WIDTH9_3
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_extract/ram_generate_3__ram_inst_i
+                   ramDualPort_DATA_WIDTH16_ADDRESS_WIDTH9_5
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_extract/ram_generate_8__ram_inst_i
+                   ramDualPort_DATA_WIDTH16_ADDRESS_WIDTH9_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_extract/ram_generate_1__ram_inst_i
+                   ramDualPort_DATA_WIDTH16_ADDRESS_WIDTH9_7
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_average          video_data_average
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+
+Power-specific unit information :
+    Voltage Units = 1 V
+    Capacitance Units = 1 pf
+    Time Units = 1 ns
+    Dynamic Power Units = 1 W
+    Leakage Power Units = 1 W
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network              0.0000    0.0000    0.0000    0.0000 ( 0.00%)  i
+register                   0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+combinational           2.155e-04 8.648e-04 9.779e-03    0.0109 (29.75%)  
+sequential              8.642e-03 3.083e-07    0.0170    0.0256 (70.25%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power  = 8.651e-04   ( 2.37%)
+  Cell Internal Power  = 8.858e-03   (24.26%)
+  Cell Leakage Power   =    0.0268   (73.37%)
+                         ---------
+Total Power            =    0.0365  (100.00%)
+
+1

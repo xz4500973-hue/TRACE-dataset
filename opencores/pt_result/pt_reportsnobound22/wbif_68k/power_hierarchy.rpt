@@ -1,0 +1,15 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : dragonball_wbmaster
+Version: V-2023.12
+Date   : Mon Jun 22 17:19:30 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+dragonball_wbmaster                   9.34e-06 5.32e-07 1.01e-05 2.00e-05 100.0
+1

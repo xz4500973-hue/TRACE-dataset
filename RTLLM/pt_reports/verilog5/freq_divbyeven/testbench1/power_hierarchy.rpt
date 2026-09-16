@@ -1,0 +1,15 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : freq_divbyeven
+Version: V-2023.12
+Date   : Tue Sep  1 21:44:24 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+freq_divbyeven                        1.64e-06 2.75e-08 6.41e-07 2.31e-06 100.0
+1

@@ -1,0 +1,277 @@
+****************************************
+Report : Averaged Power
+	-verbose
+Design : xge_mac
+Version: V-2023.12
+Date   : Mon Jun 22 17:51:36 2026
+****************************************
+
+Library(s) Used:
+
+    tcbn28hpcplusbwp12t30p140ssg0p81v125c (File: /process/course_lib/t28hpc+/tcbn28hpcplusbwp12t30p140ssg0p81v125c.db)
+
+
+Operating Conditions: ssg0p81v125c   Library: tcbn28hpcplusbwp12t30p140ssg0p81v125c
+Wire Load Model Mode: segmented
+
+Cell               Design       Wire_model  Library       Selection_type
+--------------------------------------------------------------------------------
+                   xge_mac      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+rx_data_fifo0      rx_data_fifo ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+rx_data_fifo0/fifo0
+                   generic_fifo_DWIDTH72_AWIDTH6_REGISTER_READ0_EARLY_READ1_CLOCK_CROSSING1_ALMOST_EMPTY_THRESH4_MEM_TYPE2
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+rx_data_fifo0/fifo0/genblk2_mem0
+                   generic_mem_medium_DWIDTH72_AWIDTH6_RAM_DEPTH64_REGISTER_READ0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+rx_data_fifo0/fifo0/ctrl0
+                   generic_fifo_ctrl_AWIDTH6_RAM_DEPTH64_EARLY_READ1_CLOCK_CROSSING1_ALMOST_EMPTY_THRESH4_ALMOST_FULL_THRESH62
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+tx_data_fifo0      tx_data_fifo ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+tx_data_fifo0/fifo0
+                   generic_fifo_DWIDTH72_AWIDTH6_REGISTER_READ1_EARLY_READ1_CLOCK_CROSSING1_ALMOST_EMPTY_THRESH7_ALMOST_FULL_THRESH12_MEM_TYPE2
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+tx_data_fifo0/fifo0/genblk2_mem0
+                   generic_mem_medium_DWIDTH72_AWIDTH6_RAM_DEPTH64_REGISTER_READ1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+tx_data_fifo0/fifo0/ctrl0
+                   generic_fifo_ctrl_AWIDTH6_RAM_DEPTH64_EARLY_READ1_CLOCK_CROSSING1_ALMOST_EMPTY_THRESH7_ALMOST_FULL_THRESH12
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+rx_dq0             rx_dequeue   ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+stats0             stats        ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+stats0/stats_sm0   stats_sm     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+stats0/rx_stats_fifo0
+                   rx_stats_fifo
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+stats0/rx_stats_fifo0/fifo0
+                   generic_fifo_DWIDTH14_AWIDTH4_REGISTER_READ1_EARLY_READ1_CLOCK_CROSSING1_ALMOST_EMPTY_THRESH7_ALMOST_FULL_THRESH12_MEM_TYPE1_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+stats0/rx_stats_fifo0/fifo0/ctrl0
+                   generic_fifo_ctrl_AWIDTH4_RAM_DEPTH16_EARLY_READ1_CLOCK_CROSSING1_ALMOST_EMPTY_THRESH7_ALMOST_FULL_THRESH12_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+stats0/rx_stats_fifo0/fifo0/genblk1_mem0
+                   generic_mem_small_DWIDTH14_AWIDTH4_RAM_DEPTH16_REGISTER_READ1_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+stats0/tx_stats_fifo0
+                   tx_stats_fifo
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+stats0/tx_stats_fifo0/fifo0
+                   generic_fifo_DWIDTH14_AWIDTH4_REGISTER_READ1_EARLY_READ1_CLOCK_CROSSING1_ALMOST_EMPTY_THRESH7_ALMOST_FULL_THRESH12_MEM_TYPE1_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+stats0/tx_stats_fifo0/fifo0/ctrl0
+                   generic_fifo_ctrl_AWIDTH4_RAM_DEPTH16_EARLY_READ1_CLOCK_CROSSING1_ALMOST_EMPTY_THRESH7_ALMOST_FULL_THRESH12_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+stats0/tx_stats_fifo0/fifo0/genblk1_mem0
+                   generic_mem_small_DWIDTH14_AWIDTH4_RAM_DEPTH16_REGISTER_READ1_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+tx_eq0             tx_enqueue   ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+rx_hold_fifo0      rx_hold_fifo ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+rx_hold_fifo0/fifo0
+                   generic_fifo_DWIDTH72_AWIDTH4_REGISTER_READ1_EARLY_READ1_CLOCK_CROSSING0_ALMOST_EMPTY_THRESH7_MEM_TYPE1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+rx_hold_fifo0/fifo0/genblk1_mem0
+                   generic_mem_small_DWIDTH72_AWIDTH4_RAM_DEPTH16_REGISTER_READ1_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+rx_hold_fifo0/fifo0/ctrl0
+                   generic_fifo_ctrl_AWIDTH4_RAM_DEPTH16_EARLY_READ1_CLOCK_CROSSING0_ALMOST_EMPTY_THRESH7_ALMOST_FULL_THRESH14
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sync_clk_xgmii_tx0 sync_clk_xgmii_tx
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sync_clk_xgmii_tx0/meta_sync0
+                   meta_sync_DWIDTH3
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sync_clk_xgmii_tx0/meta_sync0/meta_0__meta_sync_single0
+                   meta_sync_single_EDGE_DETECT0_2
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sync_clk_xgmii_tx0/meta_sync0/meta_1__meta_sync_single0
+                   meta_sync_single_EDGE_DETECT0_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sync_clk_xgmii_tx0/meta_sync0/meta_2__meta_sync_single0
+                   meta_sync_single_EDGE_DETECT0_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+tx_hold_fifo0      tx_hold_fifo ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+tx_hold_fifo0/fifo0
+                   generic_fifo_DWIDTH72_AWIDTH4_REGISTER_READ1_EARLY_READ1_CLOCK_CROSSING0_ALMOST_EMPTY_THRESH7_ALMOST_FULL_THRESH4_MEM_TYPE1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+tx_hold_fifo0/fifo0/genblk1_mem0
+                   generic_mem_small_DWIDTH72_AWIDTH4_RAM_DEPTH16_REGISTER_READ1_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+tx_hold_fifo0/fifo0/ctrl0
+                   generic_fifo_ctrl_AWIDTH4_RAM_DEPTH16_EARLY_READ1_CLOCK_CROSSING0_ALMOST_EMPTY_THRESH7_ALMOST_FULL_THRESH4
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+tx_dq0             tx_dequeue   ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+fault_sm0          fault_sm     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+wishbone_if0       wishbone_if  ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sync_clk_wb0       sync_clk_wb  ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sync_clk_wb0/meta_sync1
+                   meta_sync_DWIDTH2_EDGE_DETECT0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sync_clk_wb0/meta_sync1/meta_0__meta_sync_single0
+                   meta_sync_single_EDGE_DETECT0_4
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sync_clk_wb0/meta_sync1/meta_1__meta_sync_single0
+                   meta_sync_single_EDGE_DETECT0_3
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sync_clk_wb0/meta_sync0
+                   meta_sync_DWIDTH8_EDGE_DETECT1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sync_clk_wb0/meta_sync0/meta_0__meta_sync_single0
+                   meta_sync_single_EDGE_DETECT1_7
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sync_clk_wb0/meta_sync0/meta_3__meta_sync_single0
+                   meta_sync_single_EDGE_DETECT1_4
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sync_clk_wb0/meta_sync0/meta_6__meta_sync_single0
+                   meta_sync_single_EDGE_DETECT1_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sync_clk_wb0/meta_sync0/meta_1__meta_sync_single0
+                   meta_sync_single_EDGE_DETECT1_6
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sync_clk_wb0/meta_sync0/meta_4__meta_sync_single0
+                   meta_sync_single_EDGE_DETECT1_3
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sync_clk_wb0/meta_sync0/meta_7__meta_sync_single0
+                   meta_sync_single_EDGE_DETECT1_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sync_clk_wb0/meta_sync0/meta_2__meta_sync_single0
+                   meta_sync_single_EDGE_DETECT1_5
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sync_clk_wb0/meta_sync0/meta_5__meta_sync_single0
+                   meta_sync_single_EDGE_DETECT1_2
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+rx_eq0             rx_enqueue   ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+
+Power-specific unit information :
+    Voltage Units = 1 V
+    Capacitance Units = 1 pf
+    Time Units = 1 ns
+    Dynamic Power Units = 1 W
+    Leakage Power Units = 1 W
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network              0.0000    0.0000    0.0000    0.0000 ( 0.00%)  i
+register                   0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+combinational           3.632e-07 7.888e-07 1.648e-03 1.649e-03 (36.24%)  
+sequential              7.160e-06 1.008e-08 2.894e-03 2.901e-03 (63.76%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power  = 7.989e-07   ( 0.02%)
+  Cell Internal Power  = 7.523e-06   ( 0.17%)
+  Cell Leakage Power   = 4.542e-03   (99.82%)
+                         ---------
+Total Power            = 4.550e-03  (100.00%)
+
+1

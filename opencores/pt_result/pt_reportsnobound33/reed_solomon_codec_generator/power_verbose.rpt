@@ -1,0 +1,591 @@
+****************************************
+Report : Averaged Power
+	-verbose
+Design : ReedSolomon_Top
+Version: V-2023.12
+Date   : Mon Jun 22 17:49:52 2026
+****************************************
+
+Library(s) Used:
+
+    tcbn28hpcplusbwp12t30p140ssg0p81v125c (File: /process/course_lib/t28hpc+/tcbn28hpcplusbwp12t30p140ssg0p81v125c.db)
+
+
+Operating Conditions: ssg0p81v125c   Library: tcbn28hpcplusbwp12t30p140ssg0p81v125c
+Wire Load Model Mode: segmented
+
+Cell               Design       Wire_model  Library       Selection_type
+--------------------------------------------------------------------------------
+                   ReedSolomon_Top
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder          RsDecodeTop  ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeDelay
+                   RsDecodeDelay
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeDelay/RsDecodeDpRam
+                   RsDecodeDpRam
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodePolymul
+                   RsDecodePolymul
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodePolymul/RsDecodeMult_10
+                   RsDecodeMult_59
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodePolymul/RsDecodeMult_11
+                   RsDecodeMult_58
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodePolymul/RsDecodeMult_12
+                   RsDecodeMult_57
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodePolymul/RsDecodeMult_13
+                   RsDecodeMult_56
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodePolymul/RsDecodeMult_14
+                   RsDecodeMult_55
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodePolymul/RsDecodeMult_15
+                   RsDecodeMult_54
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodePolymul/RsDecodeMult_16
+                   RsDecodeMult_53
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodePolymul/RsDecodeMult_17
+                   RsDecodeMult_52
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodePolymul/RsDecodeMult_18
+                   RsDecodeMult_51
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodePolymul/RsDecodeMult_19
+                   RsDecodeMult_50
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodePolymul/RsDecodeMult_20
+                   RsDecodeMult_49
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodePolymul/RsDecodeMult_21
+                   RsDecodeMult_48
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodePolymul/RsDecodeMult_0
+                   RsDecodeMult_69
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodePolymul/RsDecodeMult_1
+                   RsDecodeMult_68
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodePolymul/RsDecodeMult_2
+                   RsDecodeMult_67
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodePolymul/RsDecodeMult_3
+                   RsDecodeMult_66
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodePolymul/RsDecodeMult_4
+                   RsDecodeMult_65
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodePolymul/RsDecodeMult_5
+                   RsDecodeMult_64
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodePolymul/RsDecodeMult_6
+                   RsDecodeMult_63
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodePolymul/RsDecodeMult_7
+                   RsDecodeMult_62
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodePolymul/RsDecodeMult_8
+                   RsDecodeMult_61
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodePolymul/RsDecodeMult_9
+                   RsDecodeMult_60
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeShiftOmega
+                   RsDecodeShiftOmega
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide
+                   RsDecodeEuclide
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PDIV0
+                   RsDecodeMult_46
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PDIV1
+                   RsDecodeMult_45
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PDIV2
+                   RsDecodeMult_44
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PDIV3
+                   RsDecodeMult_43
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PDIV4
+                   RsDecodeMult_42
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PDIV5
+                   RsDecodeMult_41
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PDIV6
+                   RsDecodeMult_40
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PDIV7
+                   RsDecodeMult_39
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PDIV8
+                   RsDecodeMult_38
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PDIV9
+                   RsDecodeMult_37
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeInv_Q
+                   RsDecodeInv_2
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PDIV10
+                   RsDecodeMult_36
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PDIV11
+                   RsDecodeMult_35
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PDIV12
+                   RsDecodeMult_34
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PDIV13
+                   RsDecodeMult_33
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PDIV14
+                   RsDecodeMult_32
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PDIV15
+                   RsDecodeMult_31
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PDIV16
+                   RsDecodeMult_30
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PDIV17
+                   RsDecodeMult_29
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PDIV18
+                   RsDecodeMult_28
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PDIV19
+                   RsDecodeMult_27
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PDIV20
+                   RsDecodeMult_26
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_Q
+                   RsDecodeMult_47
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PMUL0
+                   RsDecodeMult_25
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PMUL1
+                   RsDecodeMult_24
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PMUL2
+                   RsDecodeMult_23
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PMUL3
+                   RsDecodeMult_22
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PMUL4
+                   RsDecodeMult_21
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PMUL5
+                   RsDecodeMult_20
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PMUL6
+                   RsDecodeMult_19
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PMUL7
+                   RsDecodeMult_18
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PMUL8
+                   RsDecodeMult_17
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PMUL9
+                   RsDecodeMult_16
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PMUL10
+                   RsDecodeMult_15
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PMUL11
+                   RsDecodeMult_14
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PMUL12
+                   RsDecodeMult_13
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PMUL13
+                   RsDecodeMult_12
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PMUL14
+                   RsDecodeMult_11
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PMUL15
+                   RsDecodeMult_10
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PMUL16
+                   RsDecodeMult_9
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PMUL17
+                   RsDecodeMult_8
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PMUL18
+                   RsDecodeMult_7
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PMUL19
+                   RsDecodeMult_6
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PMUL20
+                   RsDecodeMult_5
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeEuclide/RsDecodeMult_PMUL21
+                   RsDecodeMult_4
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeChien
+                   RsDecodeChien
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeChien/RsDecodeMult_MulE0
+                   RsDecodeMult_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeChien/RsDecodeMult_MulE1
+                   RsDecodeMult_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeChien/RsDecodeInv_InvE0
+                   RsDecodeInv_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeChien/RsDecodeInv_InvE1
+                   RsDecodeInv_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeChien/RsDecodeMult_MuldE0
+                   RsDecodeMult_3
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeChien/RsDecodeMult_MuldE1
+                   RsDecodeMult_2
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeErasure
+                   RsDecodeErasure
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeErasure/RsDecodeMult_10
+                   RsDecodeMult_82
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeErasure/RsDecodeMult_11
+                   RsDecodeMult_81
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeErasure/RsDecodeMult_12
+                   RsDecodeMult_80
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeErasure/RsDecodeMult_13
+                   RsDecodeMult_79
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeErasure/RsDecodeMult_14
+                   RsDecodeMult_78
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeErasure/RsDecodeMult_15
+                   RsDecodeMult_77
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeErasure/RsDecodeMult_16
+                   RsDecodeMult_76
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeErasure/RsDecodeMult_17
+                   RsDecodeMult_75
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeErasure/RsDecodeMult_18
+                   RsDecodeMult_74
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeErasure/RsDecodeMult_19
+                   RsDecodeMult_73
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeErasure/RsDecodeMult_20
+                   RsDecodeMult_72
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeErasure/RsDecodeMult_21
+                   RsDecodeMult_71
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeErasure/RsDecodeMult_22
+                   RsDecodeMult_70
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeErasure/RsDecodeMult_0
+                   RsDecodeMult_92
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeErasure/RsDecodeMult_1
+                   RsDecodeMult_91
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeErasure/RsDecodeMult_2
+                   RsDecodeMult_90
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeErasure/RsDecodeMult_3
+                   RsDecodeMult_89
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeErasure/RsDecodeMult_4
+                   RsDecodeMult_88
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeErasure/RsDecodeMult_5
+                   RsDecodeMult_87
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeErasure/RsDecodeMult_6
+                   RsDecodeMult_86
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeErasure/RsDecodeMult_7
+                   RsDecodeMult_85
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeErasure/RsDecodeMult_8
+                   RsDecodeMult_84
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeErasure/RsDecodeMult_9
+                   RsDecodeMult_83
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeSyndrome
+                   RsDecodeSyndrome
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeDegree_1
+                   RsDecodeDegree_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_decoder/RsDecodeDegree_2
+                   RsDecodeDegree_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_encoder          RsEncodeTop  ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+
+Power-specific unit information :
+    Voltage Units = 1 V
+    Capacitance Units = 1 pf
+    Time Units = 1 ns
+    Dynamic Power Units = 1 W
+    Leakage Power Units = 1 W
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network              0.0000    0.0000    0.0000    0.0000 ( 0.00%)  i
+register                   0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+combinational           9.266e-05 1.663e-04 1.580e-03 1.839e-03 (40.58%)  
+sequential              1.256e-03 5.707e-07 1.436e-03 2.693e-03 (59.42%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power  = 1.669e-04   ( 3.68%)
+  Cell Internal Power  = 1.349e-03   (29.76%)
+  Cell Leakage Power   = 3.016e-03   (66.56%)
+                         ---------
+Total Power            = 4.532e-03  (100.00%)
+
+1

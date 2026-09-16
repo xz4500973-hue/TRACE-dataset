@@ -1,0 +1,15 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : adder_8bit
+Version: V-2023.12
+Date   : Tue Sep  1 21:43:18 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+adder_8bit                            3.44e-07 7.14e-08 1.01e-06 1.42e-06 100.0
+1

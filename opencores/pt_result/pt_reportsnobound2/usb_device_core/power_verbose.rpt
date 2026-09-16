@@ -1,0 +1,120 @@
+****************************************
+Report : Averaged Power
+	-verbose
+Design : usbf_device
+Version: V-2023.12
+Date   : Mon Jun 22 17:17:09 2026
+****************************************
+
+Library(s) Used:
+
+    tcbn28hpcplusbwp12t30p140ssg0p81v125c (File: /process/course_lib/t28hpc+/tcbn28hpcplusbwp12t30p140ssg0p81v125c.db)
+
+
+Operating Conditions: ssg0p81v125c   Library: tcbn28hpcplusbwp12t30p140ssg0p81v125c
+Wire Load Model Mode: segmented
+
+Cell               Design       Wire_model  Library       Selection_type
+--------------------------------------------------------------------------------
+                   usbf_device  ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_fifo_rx_ep0      usbf_fifo_WIDTH8_DEPTH8_ADDR_W3_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_fifo_rx_ep1      usbf_fifo_WIDTH8_DEPTH64_ADDR_W6_5
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_fifo_rx_ep2      usbf_fifo_WIDTH8_DEPTH64_ADDR_W6_3
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_fifo_rx_ep3      usbf_fifo_WIDTH8_DEPTH64_ADDR_W6_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_core             usbf_device_core
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_core/u_sie_rx    usbf_sie_rx  ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_core/u_sie_rx/u_crc16
+                   usbf_crc16_0 ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_core/u_sie_tx    usbf_sie_tx  ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_core/u_sie_tx/u_crc16
+                   usbf_crc16_1 ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_fifo_tx_ep0      usbf_fifo_WIDTH8_DEPTH8_ADDR_W3_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_fifo_tx_ep1      usbf_fifo_WIDTH8_DEPTH64_ADDR_W6_4
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_fifo_tx_ep2      usbf_fifo_WIDTH8_DEPTH64_ADDR_W6_2
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_fifo_tx_ep3      usbf_fifo_WIDTH8_DEPTH64_ADDR_W6_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_ep0              usbf_sie_ep_3
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_ep1              usbf_sie_ep_2
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_ep2              usbf_sie_ep_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_ep3              usbf_sie_ep_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+
+Power-specific unit information :
+    Voltage Units = 1 V
+    Capacitance Units = 1 pf
+    Time Units = 1 ns
+    Dynamic Power Units = 1 W
+    Leakage Power Units = 1 W
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network              0.0000    0.0000    0.0000    0.0000 ( 0.00%)  i
+register                   0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+combinational           2.612e-05 1.005e-04 4.487e-04 5.753e-04 (28.83%)  
+sequential              6.423e-04 2.313e-07 7.779e-04 1.420e-03 (71.17%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power  = 1.008e-04   ( 5.05%)
+  Cell Internal Power  = 6.684e-04   (33.49%)
+  Cell Leakage Power   = 1.227e-03   (61.46%)
+                         ---------
+Total Power            = 1.996e-03  (100.00%)
+
+1

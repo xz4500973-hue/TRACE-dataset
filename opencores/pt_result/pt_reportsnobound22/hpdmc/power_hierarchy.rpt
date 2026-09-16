@@ -1,0 +1,33 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : hpdmc
+Version: V-2023.12
+Date   : Mon Jun 22 17:15:44 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+hpdmc                                 4.69e-05 9.31e-06 7.29e-05 1.29e-04 100.0
+  busif (hpdmc_busif_sdram_depth26)   2.03e-06 5.41e-07 1.61e-06 4.18e-06   3.2
+  ddrio (hpdmc_ddrio)                 4.26e-08    0.000 4.13e-08 8.39e-08   0.1
+    oddr_dqs_t (hpdmc_oddr4_1)           0.000    0.000    0.000    0.000   N/A
+    oddr_dqs (hpdmc_oddr4_0)             0.000    0.000    0.000    0.000   N/A
+    iddr_dq (hpdmc_iddr32)               0.000    0.000    0.000    0.000   N/A
+    oddr_dm (hpdmc_oddr4_2)              0.000    0.000    0.000    0.000   N/A
+    obuft_dqs (hpdmc_obuft4)             0.000    0.000    0.000    0.000   N/A
+    iobuf_dq (hpdmc_iobuf32)             0.000    0.000    0.000    0.000   N/A
+    oddr_dq_t (hpdmc_oddr32_1)           0.000    0.000    0.000    0.000   N/A
+    oddr_dq (hpdmc_oddr32_0)             0.000    0.000    0.000    0.000   N/A
+  ctlif (hpdmc_ctlif_0)               1.84e-05 3.33e-06 2.29e-05 4.46e-05  34.5
+  datactl (hpdmc_datactl)             6.46e-06 3.18e-07 1.19e-05 1.86e-05  14.4
+    banktimer0 (hpdmc_banktimer_3)    6.82e-07 2.59e-10 1.37e-06 2.05e-06   1.6
+    banktimer1 (hpdmc_banktimer_2)    6.82e-07 2.58e-10 1.33e-06 2.01e-06   1.6
+    banktimer2 (hpdmc_banktimer_1)    6.82e-07 2.61e-10 1.37e-06 2.05e-06   1.6
+    banktimer3 (hpdmc_banktimer_0)    6.82e-07 2.49e-10 1.33e-06 2.01e-06   1.6
+  mgmt (hpdmc_mgmt_sdram_depth26_sdram_columndepth9)
+                                      1.61e-05 4.18e-06 3.03e-05 5.06e-05  39.2
+1

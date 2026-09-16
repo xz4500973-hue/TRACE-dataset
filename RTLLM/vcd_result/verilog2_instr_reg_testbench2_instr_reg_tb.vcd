@@ -1,0 +1,137 @@
+$date
+	Sun Jun 21 21:18:23 2026
+$end
+
+$version
+	Synopsys VCS version V-2023.12_Full64
+$end
+
+$timescale
+	1ps
+$end
+
+$comment Csum: 1 4a9259fd50af7545 $end
+
+
+$scope module instr_reg_tb $end
+$var reg 1 ! clk $end
+$var reg 1 " rst $end
+$var reg 2 # fetch [1:0] $end
+$var reg 8 $ data [7:0] $end
+$var wire 3 % ins [2:0] $end
+$var wire 5 & ad1 [4:0] $end
+$var wire 8 ' ad2 [7:0] $end
+$var integer 32 ( n $end
+
+$scope module dut $end
+$var wire 1 ! clk $end
+$var wire 1 " rst $end
+$var wire 2 # fetch [1:0] $end
+$var wire 8 $ data [7:0] $end
+$var wire 3 % ins [2:0] $end
+$var wire 5 & ad1 [4:0] $end
+$var wire 8 ' ad2 [7:0] $end
+$var reg 8 ) ins_p1 [7:0] $end
+$var reg 8 ' ins_p2 [7:0] $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+
+#0
+$dumpvars
+0!
+0"
+b00000000 $
+b00 #
+b00000000 )
+b00000000 '
+bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx (
+bxxx %
+bxxxxx &
+$end
+b000 %
+b00000 &
+#5000
+1!
+#7000
+1"
+b00000000000000000000000000000000 (
+#10000
+0!
+#15000
+1!
+b10 #
+b00000111 $
+b00000000000000000000000000000001 (
+b00000111 '
+#20000
+0!
+#25000
+1!
+b00100111 $
+b00000000000000000000000000000010 (
+b00100111 '
+#30000
+0!
+#35000
+1!
+b01000111 $
+b00000000000000000000000000000011 (
+b01000111 '
+#40000
+0!
+#45000
+1!
+b01100111 $
+b00000000000000000000000000000100 (
+b01100111 '
+#50000
+0!
+#55000
+1!
+b10000111 $
+b00000000000000000000000000000101 (
+b10000111 '
+#60000
+0!
+#65000
+1!
+b10100111 $
+b00000000000000000000000000000110 (
+b10100111 '
+#70000
+0!
+#75000
+1!
+b11000111 $
+b00000000000000000000000000000111 (
+b11000111 '
+#80000
+0!
+#85000
+1!
+b11100111 $
+b00000000000000000000000000001000 (
+b11100111 '
+#90000
+0!
+#95000
+1!
+#100000
+0!
+#105000
+1!
+#110000
+0!
+#115000
+1!
+#120000
+0!
+#125000
+1!
+#130000
+0!
+#135000
+1!

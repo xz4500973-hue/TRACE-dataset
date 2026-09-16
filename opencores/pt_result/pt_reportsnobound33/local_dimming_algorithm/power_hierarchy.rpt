@@ -1,0 +1,37 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : local_dimming_top
+Version: V-2023.12
+Date   : Mon Jun 22 17:48:26 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+local_dimming_top                     8.86e-03 8.66e-04 2.68e-02 3.65e-02 100.0
+  u_video_gen (video_data_gen)        1.12e-05 1.34e-06 1.98e-05 3.24e-05   0.1
+  u_trans (video_data_trans)          1.60e-03 1.57e-04 1.23e-02 1.41e-02  38.6
+  u_extract (video_data_extract)      7.22e-03 7.05e-04 1.44e-02 2.23e-02  61.1
+    ram_generate_6__ram_inst_i (ramDualPort_DATA_WIDTH16_ADDRESS_WIDTH9_2)
+                                      8.02e-04 7.79e-05 1.60e-03 2.48e-03   6.8
+    ram_generate_4__ram_inst_i (ramDualPort_DATA_WIDTH16_ADDRESS_WIDTH9_4)
+                                      8.02e-04 7.79e-05 1.60e-03 2.48e-03   6.8
+    ram_generate_2__ram_inst_i (ramDualPort_DATA_WIDTH16_ADDRESS_WIDTH9_6)
+                                      8.02e-04 7.79e-05 1.60e-03 2.48e-03   6.8
+    ram_generate_7__ram_inst_i (ramDualPort_DATA_WIDTH16_ADDRESS_WIDTH9_1)
+                                      8.02e-04 7.79e-05 1.60e-03 2.48e-03   6.8
+    ram_generate_0__ram_inst_i (ramDualPort_DATA_WIDTH16_ADDRESS_WIDTH9_8)
+                                      8.02e-04 7.79e-05 1.60e-03 2.48e-03   6.8
+    ram_generate_5__ram_inst_i (ramDualPort_DATA_WIDTH16_ADDRESS_WIDTH9_3)
+                                      8.02e-04 7.79e-05 1.60e-03 2.48e-03   6.8
+    ram_generate_3__ram_inst_i (ramDualPort_DATA_WIDTH16_ADDRESS_WIDTH9_5)
+                                      8.02e-04 7.79e-05 1.60e-03 2.48e-03   6.8
+    ram_generate_8__ram_inst_i (ramDualPort_DATA_WIDTH16_ADDRESS_WIDTH9_0)
+                                      8.02e-04 7.79e-05 1.60e-03 2.48e-03   6.8
+    ram_generate_1__ram_inst_i (ramDualPort_DATA_WIDTH16_ADDRESS_WIDTH9_7)
+                                      8.02e-04 7.79e-05 1.60e-03 2.48e-03   6.8
+  u_average (video_data_average)      2.57e-05 2.14e-06 6.76e-05 9.55e-05   0.3
+1

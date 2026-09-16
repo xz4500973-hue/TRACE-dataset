@@ -1,0 +1,34 @@
+`timescale 1ns/1ps
+
+module serial2parallel(
+    input clk, rst_n,
+    input din_serial, din_valid,
+    output reg [7:0] dout_parallel,
+    output reg dout_valid
+);
+
+    reg [7:0] bits [0:7];
+    reg [2:0] idx;
+    integer i;
+
+    always @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
+            idx <= 0;
+            for (i = 0; i < 8; i = i + 1) bits[i] <= 0;
+            dout_parallel <= 0; dout_valid <= 0;
+        end else begin
+            dout_valid <= 0;
+            if (din_valid) begin
+                bits[idx] <= din_serial;
+                idx <= idx + 1'b1;
+                if (idx == 3'd7) begin
+                    dout_parallel <= {bits[3'd7], bits[3'd6], bits[3'd5], bits[3'd4],
+                                      bits[3'd3], bits[3'd2], bits[3'd1], bits[3'd0]};
+                    dout_valid <= 1;
+                    idx <= 0;
+                end
+            end
+        end
+    end
+
+endmodule

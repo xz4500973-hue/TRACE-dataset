@@ -1,0 +1,15 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : DPSFnmCE
+Version: V-2023.12
+Date   : Mon Jun 22 17:15:15 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+DPSFnmCE                              9.56e-05 1.07e-05 9.72e-05 2.04e-04 100.0
+1

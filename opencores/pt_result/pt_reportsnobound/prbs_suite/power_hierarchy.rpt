@@ -1,0 +1,17 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : prbs_loopback_top
+Version: V-2023.12
+Date   : Mon Jun 22 16:53:25 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+prbs_loopback_top                     1.38e-05 2.27e-06 1.40e-05 3.01e-05 100.0
+  prbs23x1_chk0 (prbs23x1_chk)        2.11e-06 5.84e-07 3.31e-06 6.01e-06  20.0
+  prbs23x1_gen0 (prbs23x1_gen)        2.46e-06 6.22e-07 3.31e-06 6.39e-06  21.2
+1

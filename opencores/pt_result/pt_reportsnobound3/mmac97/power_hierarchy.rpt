@@ -1,0 +1,24 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : ac97
+Version: V-2023.12
+Date   : Mon Jun 22 17:50:06 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+ac97                                  1.28e-04 2.17e-05 2.20e-04 3.70e-04 100.0
+  transceiver (ac97_transceiver)      5.22e-05 7.55e-06 9.47e-05 1.54e-04  41.8
+    down_fifo (asfifo_data_width2_address_width6_0)
+                                      2.55e-05 3.42e-06 4.69e-05 7.58e-05  20.5
+    up_fifo (asfifo_data_width2_address_width6_1)
+                                      2.58e-05 3.45e-06 4.69e-05 7.62e-05  20.6
+  ctlif (ac97_ctlif_0)                4.37e-05 9.14e-06 6.67e-05 1.19e-04  32.3
+  framer (ac97_framer)                2.89e-06 6.88e-07 6.26e-06 9.85e-06   2.7
+  dma (ac97_dma)                      1.18e-05 1.10e-06 2.52e-05 3.81e-05  10.3
+  deframer (ac97_deframer)            1.76e-05 2.40e-06 2.66e-05 4.66e-05  12.6
+1

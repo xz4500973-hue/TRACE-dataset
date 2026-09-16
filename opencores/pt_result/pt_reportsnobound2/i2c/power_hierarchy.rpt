@@ -1,0 +1,19 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : i2c_master_top
+Version: V-2023.12
+Date   : Mon Jun 22 17:14:14 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+i2c_master_top                        3.68e-05 1.32e-05 3.73e-05 8.73e-05 100.0
+  byte_controller (i2c_master_byte_ctrl)
+                                      2.20e-05 7.51e-06 2.37e-05 5.32e-05  61.0
+    bit_controller (i2c_master_bit_ctrl)
+                                      1.72e-05 5.17e-06 1.75e-05 3.99e-05  45.7
+1

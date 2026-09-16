@@ -1,0 +1,17 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : simple_spi_top
+Version: V-2023.12
+Date   : Mon Jun 22 17:50:18 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+simple_spi_top                        2.44e-05 3.95e-06 4.22e-05 7.06e-05 100.0
+  wfifo (fifo4_dw8_0)                 6.47e-06 5.86e-07 1.22e-05 1.93e-05  27.3
+  rfifo (fifo4_dw8_1)                 6.47e-06 5.75e-07 1.22e-05 1.93e-05  27.3
+1

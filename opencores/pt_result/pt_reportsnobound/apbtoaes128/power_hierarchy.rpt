@@ -1,0 +1,30 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : aes_ip
+Version: V-2023.12
+Date   : Mon Jun 22 16:56:15 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+aes_ip                                1.61e-04 1.60e-05 4.26e-04 6.02e-04 100.0
+  AES_CORE (aes_core)                 1.57e-04 1.55e-05 4.16e-04 5.88e-04  97.6
+    AES_CORE_DATAPATH (datapath)      1.55e-04 1.55e-05 4.09e-04 5.80e-04  96.3
+      SBOX (sBox)                     8.62e-06 1.00e-06 5.03e-05 5.99e-05   9.9
+        SBOX_3_ (sBox_8_3)            2.14e-06 2.44e-07 1.26e-05 1.50e-05   2.5
+        SBOX_0_ (sBox_8_0)            2.16e-06 2.51e-07 1.27e-05 1.51e-05   2.5
+        SBOX_1_ (sBox_8_1)            2.16e-06 2.52e-07 1.24e-05 1.49e-05   2.5
+        SBOX_2_ (sBox_8_2)            2.16e-06 2.52e-07 1.25e-05 1.49e-05   2.5
+      SWAP_OUT (data_swap_0)          1.49e-08 6.02e-09 3.80e-06 3.82e-06   0.6
+      KEY_EXPANDER (key_expander)     4.90e-08 1.98e-08 1.68e-05 1.69e-05   2.8
+      MIX_COL (mix_columns)           1.08e-07 8.43e-08 1.84e-05 1.86e-05   3.1
+      SHIFT_ROW (shift_rows)          5.57e-08 1.21e-08 1.31e-05 1.32e-05   2.2
+      SWAP_IN (data_swap_1)           2.03e-09 2.86e-09 3.93e-06 3.94e-06   0.7
+    AES_CORE_CONTROL_UNIT (control_unit)
+                                      1.40e-06 1.74e-08 6.61e-06 8.03e-06   1.3
+  HOST_INTERFACE (host_interface)     3.71e-06 1.95e-07 9.97e-06 1.39e-05   2.3
+1

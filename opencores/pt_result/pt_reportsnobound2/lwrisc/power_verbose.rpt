@@ -1,0 +1,64 @@
+****************************************
+Report : Averaged Power
+	-verbose
+Design : ClaiRISC_core
+Version: V-2023.12
+Date   : Mon Jun 22 17:14:55 2026
+****************************************
+
+Library(s) Used:
+
+    tcbn28hpcplusbwp12t30p140ssg0p81v125c (File: /process/course_lib/t28hpc+/tcbn28hpcplusbwp12t30p140ssg0p81v125c.db)
+
+
+Operating Conditions: ssg0p81v125c   Library: tcbn28hpcplusbwp12t30p140ssg0p81v125c
+Wire Load Model Mode: segmented
+
+Cell               Design       Wire_model  Library       Selection_type
+--------------------------------------------------------------------------------
+                   ClaiRISC_core
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+program_rom        com_prom     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+mem_man            mem_man      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+mem_man/i_reg_file sim_reg_file ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+
+Power-specific unit information :
+    Voltage Units = 1 V
+    Capacitance Units = 1 pf
+    Time Units = 1 ns
+    Dynamic Power Units = 1 W
+    Leakage Power Units = 1 W
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network              0.0000    0.0000    0.0000    0.0000 ( 0.00%)  i
+register                   0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+combinational           3.697e-05 9.689e-05 5.053e-05 1.844e-04 (18.43%)  
+sequential              7.174e-04 3.564e-06 9.379e-05 8.148e-04 (81.45%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000 1.145e-06    0.0000 1.145e-06 ( 0.11%)  
+
+  Net Switching Power  = 1.016e-04   (10.16%)
+  Cell Internal Power  = 7.544e-04   (75.42%)
+  Cell Leakage Power   = 1.443e-04   (14.43%)
+                         ---------
+Total Power            = 1.000e-03  (100.00%)
+
+1

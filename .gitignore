@@ -1,0 +1,11 @@
+# OpenCores toggle activity - too large to release (54 GB)
+/opencores/vcd_result/
+
+# Internal scratch / working files (not part of the public release)
+/datasets/
+/runs/
+/backup/
+/__pycache__/
+/.vscode/
+*.docx
+*.pdf

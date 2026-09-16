@@ -1,0 +1,606 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : PID
+Version: V-2023.12
+Date   : Mon Jun 22 17:17:24 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+PID                                   7.24e-05 2.60e-05 1.59e-04 2.57e-04 100.0
+  adder_32bit_0 (adder_32bit_1)          0.000    0.000 1.24e-05 1.24e-05   4.8
+    operator_B_stage_1_13 (operator_B_85)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_B_stage_1_14 (operator_B_84)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_B_stage_1_15 (operator_B_83)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_A_10 (operator_A_53)        0.000    0.000 1.08e-07 1.08e-07   0.0
+    operator_A_11 (operator_A_52)        0.000    0.000 1.08e-07 1.08e-07   0.0
+    operator_A_12 (operator_A_51)        0.000    0.000 1.08e-07 1.08e-07   0.0
+    operator_A_13 (operator_A_50)        0.000    0.000 1.08e-07 1.08e-07   0.0
+    operator_A_14 (operator_A_49)        0.000    0.000 1.08e-07 1.08e-07   0.0
+    operator_A_15 (operator_A_48)        0.000    0.000 1.08e-07 1.08e-07   0.0
+    operator_A_16 (operator_A_47)        0.000    0.000 1.08e-07 1.08e-07   0.0
+    operator_A_17 (operator_A_46)        0.000    0.000 1.08e-07 1.08e-07   0.0
+    operator_A_18 (operator_A_45)        0.000    0.000 1.08e-07 1.08e-07   0.0
+    operator_A_19 (operator_A_44)        0.000    0.000 1.08e-07 1.08e-07   0.0
+    operator_B_stage_4_8 (operator_B_56)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_B_stage_4_9 (operator_B_55)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_B_stage_3_4 (operator_B_68)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_B_stage_3_5 (operator_B_67)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_B_stage_3_6 (operator_B_66)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_B_stage_3_7 (operator_B_65)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_B_stage_3_8 (operator_B_64)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_B_stage_3_9 (operator_B_63)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_B_stage_4_10 (operator_B_54)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_B_stage_4_11 (operator_B_53)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_B_stage_4_12 (operator_B_52)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_A_20 (operator_A_43)        0.000    0.000 1.08e-07 1.08e-07   0.0
+    operator_B_stage_4_13 (operator_B_51)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_A_21 (operator_A_42)        0.000    0.000 1.08e-07 1.08e-07   0.0
+    operator_B_stage_4_14 (operator_B_50)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_A_22 (operator_A_41)        0.000    0.000 1.08e-07 1.08e-07   0.0
+    operator_B_stage_4_15 (operator_B_49)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_A_23 (operator_A_40)        0.000    0.000 1.08e-07 1.08e-07   0.0
+    operator_A_24 (operator_A_39)        0.000    0.000 1.08e-07 1.08e-07   0.0
+    operator_A_25 (operator_A_38)        0.000    0.000 1.08e-07 1.08e-07   0.0
+    operator_A_26 (operator_A_37)        0.000    0.000 1.08e-07 1.08e-07   0.0
+    operator_B_stage_2_2 (operator_B_82)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_A_27 (operator_A_36)        0.000    0.000 1.08e-07 1.08e-07   0.0
+    operator_C_stage_6_10 (operator_C_37)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+    operator_B_stage_2_3 (operator_B_81)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_A_28 (operator_A_35)        0.000    0.000 1.08e-07 1.08e-07   0.0
+    operator_C_stage_6_11 (operator_C_36)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+    operator_B_stage_2_4 (operator_B_80)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_A_29 (operator_A_34)        0.000    0.000 1.08e-07 1.08e-07   0.0
+    operator_C_stage_6_12 (operator_C_35)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+    operator_B_stage_2_5 (operator_B_79)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_C_stage_6_13 (operator_C_34)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+    operator_B_stage_2_6 (operator_B_78)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_C_stage_6_14 (operator_C_33)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+    operator_B_stage_2_7 (operator_B_77)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_C_stage_6_15 (operator_C_32)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+    operator_B_stage_2_8 (operator_B_76)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_B_stage_2_9 (operator_B_75)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_B_stage_1_1 (operator_B_97)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_C_stage_6_0 (operator_C_47)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+    operator_B_stage_1_2 (operator_B_96)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_C_stage_6_1 (operator_C_46)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+    operator_B_stage_1_3 (operator_B_95)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_C_stage_6_2 (operator_C_45)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+    operator_B_stage_1_4 (operator_B_94)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_C_stage_6_3 (operator_C_44)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+    operator_B_stage_1_5 (operator_B_93)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_C_stage_6_4 (operator_C_43)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+    operator_B_stage_1_6 (operator_B_92)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_C_stage_6_5 (operator_C_42)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+    operator_B_stage_1_7 (operator_B_91)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_C_stage_6_6 (operator_C_41)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+    operator_B_stage_1_8 (operator_B_90)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_A_30 (operator_A_33)        0.000    0.000 1.08e-07 1.08e-07   0.0
+    operator_C_stage_6_7 (operator_C_40)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+    operator_B_stage_1_9 (operator_B_89)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_A_0 (operator_A_63)         0.000    0.000 1.08e-07 1.08e-07   0.0
+    operator_A_31 (operator_A_32)        0.000    0.000 1.08e-07 1.08e-07   0.0
+    operator_C_stage_6_8 (operator_C_39)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+    operator_A_1 (operator_A_62)         0.000    0.000 1.08e-07 1.08e-07   0.0
+    operator_C_stage_6_9 (operator_C_38)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+    operator_A_2 (operator_A_61)         0.000    0.000 1.08e-07 1.08e-07   0.0
+    operator_A_3 (operator_A_60)         0.000    0.000 1.08e-07 1.08e-07   0.0
+    operator_A_4 (operator_A_59)         0.000    0.000 1.08e-07 1.08e-07   0.0
+    operator_B_stage_3_10 (operator_B_62)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_A_5 (operator_A_58)         0.000    0.000 1.08e-07 1.08e-07   0.0
+    operator_B_stage_3_11 (operator_B_61)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_A_6 (operator_A_57)         0.000    0.000 1.08e-07 1.08e-07   0.0
+    operator_B_stage_3_12 (operator_B_60)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_A_7 (operator_A_56)         0.000    0.000 1.08e-07 1.08e-07   0.0
+    operator_B_stage_3_13 (operator_B_59)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_A_8 (operator_A_55)         0.000    0.000 1.08e-07 1.08e-07   0.0
+    operator_B_stage_3_14 (operator_B_58)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_A_9 (operator_A_54)         0.000    0.000 1.08e-07 1.08e-07   0.0
+    operator_B_stage_3_15 (operator_B_57)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_C_stage_5_10 (operator_C_53)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+    operator_C_stage_5_11 (operator_C_52)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+    operator_C_stage_5_12 (operator_C_51)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+    operator_C_stage_5_13 (operator_C_50)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+    operator_C_stage_5_8 (operator_C_55)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+    operator_C_stage_5_14 (operator_C_49)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+    operator_C_stage_5_9 (operator_C_54)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+    operator_C_stage_5_15 (operator_C_48)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+    operator_C_stage_4_4 (operator_C_59)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+    operator_C_stage_4_5 (operator_C_58)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+    operator_C_stage_4_6 (operator_C_57)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+    operator_C_stage_4_7 (operator_C_56)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+    operator_B_stage_2_10 (operator_B_74)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_B_stage_2_11 (operator_B_73)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_B_stage_2_12 (operator_B_72)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_C_stage_3_2 (operator_C_61)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+    operator_B_stage_2_13 (operator_B_71)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_C_stage_3_3 (operator_C_60)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+    operator_B_stage_2_14 (operator_B_70)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_B_stage_2_15 (operator_B_69)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_C_stage_2_1 (operator_C_62)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+    operator_C_stage_1_0 (operator_C_63)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+    operator_B_stage_1_10 (operator_B_88)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_B_stage_1_11 (operator_B_87)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    operator_B_stage_1_12 (operator_B_86)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+  multiplier_16x16bit_pipelined (multiplier_16x16bit_pipelined)
+                                      2.00e-05 6.46e-06 7.51e-05 1.02e-04  39.5
+    partial_product_gen_0 (partial_product_gen_7)
+                                         0.000    0.000 1.98e-06 1.98e-06   0.8
+    partial_product_gen_1 (partial_product_gen_6)
+                                         0.000    0.000 1.82e-06 1.82e-06   0.7
+    partial_product_gen_2 (partial_product_gen_5)
+                                         0.000    0.000 1.82e-06 1.82e-06   0.7
+    partial_product_gen_3 (partial_product_gen_4)
+                                         0.000    0.000 1.82e-06 1.82e-06   0.7
+    partial_product_gen_4 (partial_product_gen_3)
+                                         0.000    0.000 1.98e-06 1.98e-06   0.8
+    partial_product_gen_5 (partial_product_gen_2)
+                                         0.000    0.000 1.98e-06 1.98e-06   0.8
+    partial_product_gen_6 (partial_product_gen_1)
+                                         0.000    0.000 1.98e-06 1.98e-06   0.8
+    partial_product_gen_7 (partial_product_gen_0)
+                                         0.000    0.000 1.98e-06 1.98e-06   0.8
+    layer_3_full_adder_10 (full_adder_10)
+                                         0.000    0.000 1.42e-07 1.42e-07   0.1
+    layer_3_full_adder_11 (full_adder_9)
+                                         0.000    0.000 1.42e-07 1.42e-07   0.1
+    layer_3_full_adder_12 (full_adder_8)
+                                         0.000    0.000 1.42e-07 1.42e-07   0.1
+    layer_4_full_adder_0 (full_adder_6)
+                                         0.000    0.000 1.42e-07 1.42e-07   0.1
+    layer_3_full_adder_13 (full_adder_7)
+                                         0.000    0.000 1.42e-07 1.42e-07   0.1
+    layer_4_full_adder_1 (full_adder_5)
+                                         0.000    0.000 1.42e-07 1.42e-07   0.1
+    layer_4_full_adder_2 (full_adder_4)
+                                         0.000    0.000 1.42e-07 1.42e-07   0.1
+    layer_4_full_adder_3 (full_adder_3)
+                                         0.000    0.000 1.42e-07 1.42e-07   0.1
+    layer_4_full_adder_4 (full_adder_2)
+                                         0.000    0.000 1.42e-07 1.42e-07   0.1
+    layer_4_full_adder_5 (full_adder_1)
+                                         0.000    0.000 1.42e-07 1.42e-07   0.1
+    layer_4_full_adder_6 (full_adder_0)
+                                         0.000    0.000 1.42e-07 1.42e-07   0.1
+    layer_4_half_adder_0 (half_adder_16)
+                                         0.000    0.000 1.08e-07 1.08e-07   0.0
+    layer_4_half_adder_1 (half_adder_15)
+                                         0.000    0.000 1.08e-07 1.08e-07   0.0
+    layer_4_half_adder_2 (half_adder_14)
+                                         0.000    0.000 1.08e-07 1.08e-07   0.0
+    layer_4_half_adder_3 (half_adder_13)
+                                         0.000    0.000 1.08e-07 1.08e-07   0.0
+    layer_4_half_adder_4 (half_adder_12)
+                                         0.000    0.000 1.08e-07 1.08e-07   0.0
+    layer_4_half_adder_5 (half_adder_11)
+                                         0.000    0.000 1.08e-07 1.08e-07   0.0
+    layer_4_half_adder_6 (half_adder_10)
+                                         0.000    0.000 1.08e-07 1.08e-07   0.0
+    layer_4_half_adder_7 (half_adder_9)
+                                         0.000    0.000 1.08e-07 1.08e-07   0.0
+    layer_1_compressor42_0 (compressor42_24)
+                                         0.000    0.000 3.51e-07 3.51e-07   0.1
+    layer_4_half_adder_8 (half_adder_8)
+                                         0.000    0.000 1.08e-07 1.08e-07   0.0
+    layer_1_compressor42_1 (compressor42_23)
+                                         0.000    0.000 3.51e-07 3.51e-07   0.1
+    layer_4_half_adder_9 (half_adder_7)
+                                         0.000    0.000 1.08e-07 1.08e-07   0.0
+    layer_1_compressor42_2 (compressor42_22)
+                                         0.000    0.000 3.51e-07 3.51e-07   0.1
+    layer_1_compressor42_3 (compressor42_21)
+                                         0.000    0.000 3.51e-07 3.51e-07   0.1
+    layer_1_compressor42_4 (compressor42_20)
+                                         0.000    0.000 3.51e-07 3.51e-07   0.1
+    layer_1_compressor42_5 (compressor42_19)
+                                         0.000    0.000 3.51e-07 3.51e-07   0.1
+    layer_1_compressor42_6 (compressor42_18)
+                                         0.000    0.000 3.51e-07 3.51e-07   0.1
+    layer_1_compressor42_7 (compressor42_17)
+                                         0.000    0.000 3.51e-07 3.51e-07   0.1
+    layer_1_compressor42_8 (compressor42_16)
+                                         0.000    0.000 3.51e-07 3.51e-07   0.1
+    layer_1_compressor42_9 (compressor42_15)
+                                         0.000    0.000 4.28e-07 4.28e-07   0.2
+    layer_2_compressor42_0 (compressor42_7)
+                                         0.000    0.000 3.51e-07 3.51e-07   0.1
+    layer_2_compressor42_1 (compressor42_6)
+                                         0.000    0.000 3.51e-07 3.51e-07   0.1
+    layer_2_compressor42_2 (compressor42_5)
+                                         0.000    0.000 3.51e-07 3.51e-07   0.1
+    layer_2_compressor42_3 (compressor42_4)
+                                         0.000    0.000 3.51e-07 3.51e-07   0.1
+    layer_2_compressor42_4 (compressor42_3)
+                                         0.000    0.000 4.34e-07 4.34e-07   0.2
+    layer_2_compressor42_5 (compressor42_2)
+                                         0.000    0.000 3.76e-07 3.76e-07   0.1
+    layer_2_compressor42_6 (compressor42_1)
+                                         0.000    0.000 4.34e-07 4.34e-07   0.2
+    layer_2_compressor42_7 (compressor42_0)
+                                         0.000    0.000 3.04e-07 3.04e-07   0.1
+    layer_3_full_adder_0 (full_adder_20)
+                                         0.000    0.000 1.42e-07 1.42e-07   0.1
+    layer_3_full_adder_1 (full_adder_19)
+                                         0.000    0.000 1.42e-07 1.42e-07   0.1
+    layer_3_full_adder_2 (full_adder_18)
+                                         0.000    0.000 1.42e-07 1.42e-07   0.1
+    layer_3_full_adder_3 (full_adder_17)
+                                         0.000    0.000 1.42e-07 1.42e-07   0.1
+    layer_3_full_adder_4 (full_adder_16)
+                                         0.000    0.000 1.42e-07 1.42e-07   0.1
+    layer_1_compressor42_10 (compressor42_14)
+                                         0.000    0.000 3.51e-07 3.51e-07   0.1
+    layer_3_full_adder_5 (full_adder_15)
+                                         0.000    0.000 1.42e-07 1.42e-07   0.1
+    layer_1_compressor42_11 (compressor42_13)
+                                         0.000    0.000 4.28e-07 4.28e-07   0.2
+    layer_3_full_adder_6 (full_adder_14)
+                                         0.000    0.000 1.42e-07 1.42e-07   0.1
+    layer_1_compressor42_12 (compressor42_12)
+                                         0.000    0.000 3.51e-07 3.51e-07   0.1
+    layer_3_full_adder_7 (full_adder_13)
+                                         0.000    0.000 1.42e-07 1.42e-07   0.1
+    layer_1_compressor42_13 (compressor42_11)
+                                         0.000    0.000 4.28e-07 4.28e-07   0.2
+    layer_3_full_adder_8 (full_adder_12)
+                                         0.000    0.000 1.42e-07 1.42e-07   0.1
+    layer_1_compressor42_14 (compressor42_10)
+                                         0.000    0.000 3.51e-07 3.51e-07   0.1
+    layer_3_full_adder_9 (full_adder_11)
+                                         0.000    0.000 1.42e-07 1.42e-07   0.1
+    layer_1_compressor42_15 (compressor42_9)
+                                         0.000    0.000 4.28e-07 4.28e-07   0.2
+    layer_1_compressor42_16 (compressor42_8)
+                                         0.000    0.000 3.04e-07 3.04e-07   0.1
+    layer_4_half_adder_10 (half_adder_6)
+                                         0.000    0.000 1.08e-07 1.08e-07   0.0
+    layer_4_half_adder_11 (half_adder_5)
+                                         0.000    0.000 1.08e-07 1.08e-07   0.0
+    layer_4_half_adder_12 (half_adder_4)
+                                         0.000    0.000 1.08e-07 1.08e-07   0.0
+    layer_4_half_adder_13 (half_adder_3)
+                                         0.000    0.000 1.08e-07 1.08e-07   0.0
+    layer_4_half_adder_14 (half_adder_2)
+                                         0.000    0.000 1.08e-07 1.08e-07   0.0
+    layer_4_half_adder_15 (half_adder_1)
+                                         0.000    0.000 1.08e-07 1.08e-07   0.0
+    layer_4_half_adder_16 (half_adder_0)
+                                         0.000    0.000 1.08e-07 1.08e-07   0.0
+    booth_array_0 (booth_array)          0.000    0.000 1.76e-06 1.76e-06   0.7
+      booth_radix4_6 (booth_radix4_1)    0.000    0.000 2.27e-07 2.27e-07   0.1
+      booth_radix4_7 (booth_radix4_0)    0.000    0.000 2.27e-07 2.27e-07   0.1
+      booth_radix4_0 (booth_radix4_7)    0.000    0.000 1.71e-07 1.71e-07   0.1
+      booth_radix4_1 (booth_radix4_6)    0.000    0.000 2.27e-07 2.27e-07   0.1
+      booth_radix4_2 (booth_radix4_5)    0.000    0.000 2.27e-07 2.27e-07   0.1
+      booth_radix4_3 (booth_radix4_4)    0.000    0.000 2.27e-07 2.27e-07   0.1
+      booth_radix4_4 (booth_radix4_3)    0.000    0.000 2.27e-07 2.27e-07   0.1
+      booth_radix4_5 (booth_radix4_2)    0.000    0.000 2.27e-07 2.27e-07   0.1
+    layer_2_full_adder_0 (full_adder_32)
+                                         0.000    0.000 1.42e-07 1.42e-07   0.1
+    layer_2_full_adder_1 (full_adder_31)
+                                         0.000    0.000 1.42e-07 1.42e-07   0.1
+    layer_2_full_adder_2 (full_adder_30)
+                                         0.000    0.000 1.42e-07 1.42e-07   0.1
+    layer_2_full_adder_3 (full_adder_29)
+                                         0.000    0.000 1.42e-07 1.42e-07   0.1
+    layer_2_full_adder_4 (full_adder_28)
+                                         0.000    0.000 1.42e-07 1.42e-07   0.1
+    layer_2_full_adder_5 (full_adder_27)
+                                         0.000    0.000 1.39e-07 1.39e-07   0.1
+    layer_2_full_adder_6 (full_adder_26)
+                                         0.000    0.000 1.42e-07 1.42e-07   0.1
+    layer_2_full_adder_7 (full_adder_25)
+                                         0.000    0.000 1.39e-07 1.39e-07   0.1
+    layer_2_full_adder_8 (full_adder_24)
+                                         0.000    0.000 1.39e-07 1.39e-07   0.1
+    layer_2_full_adder_9 (full_adder_23)
+                                         0.000    0.000 1.39e-07 1.39e-07   0.1
+    layer_1_full_adder_0 (full_adder_44)
+                                         0.000    0.000 1.42e-07 1.42e-07   0.1
+    layer_1_full_adder_1 (full_adder_43)
+                                         0.000    0.000 1.42e-07 1.42e-07   0.1
+    layer_1_full_adder_2 (full_adder_42)
+                                         0.000    0.000 1.42e-07 1.42e-07   0.1
+    layer_1_full_adder_3 (full_adder_41)
+                                         0.000    0.000 1.42e-07 1.42e-07   0.1
+    layer_1_full_adder_4 (full_adder_40)
+                                         0.000    0.000 1.42e-07 1.42e-07   0.1
+    layer_1_full_adder_5 (full_adder_39)
+                                         0.000    0.000 1.42e-07 1.42e-07   0.1
+    layer_1_full_adder_6 (full_adder_38)
+                                         0.000    0.000 1.42e-07 1.42e-07   0.1
+    layer_1_full_adder_7 (full_adder_37)
+                                         0.000    0.000 1.34e-07 1.34e-07   0.1
+    adder_32bit (adder_32bit_0)          0.000    0.000 1.16e-05 1.16e-05   4.5
+      operator_B_stage_1_13 (operator_B_36)
+                                         0.000    0.000 7.00e-08 7.00e-08   0.0
+      operator_B_stage_1_14 (operator_B_35)
+                                         0.000    0.000 7.00e-08 7.00e-08   0.0
+      operator_B_stage_1_15 (operator_B_34)
+                                         0.000    0.000 7.00e-08 7.00e-08   0.0
+      operator_A_10 (operator_A_21)      0.000    0.000 1.08e-07 1.08e-07   0.0
+      operator_A_11 (operator_A_20)      0.000    0.000 1.08e-07 1.08e-07   0.0
+      operator_A_12 (operator_A_19)      0.000    0.000 1.08e-07 1.08e-07   0.0
+      operator_A_13 (operator_A_18)      0.000    0.000 1.08e-07 1.08e-07   0.0
+      operator_A_14 (operator_A_17)      0.000    0.000 1.08e-07 1.08e-07   0.0
+      operator_A_15 (operator_A_16)      0.000    0.000 1.08e-07 1.08e-07   0.0
+      operator_A_16 (operator_A_15)      0.000    0.000 1.08e-07 1.08e-07   0.0
+      operator_A_17 (operator_A_14)      0.000    0.000 1.08e-07 1.08e-07   0.0
+      operator_A_18 (operator_A_13)      0.000    0.000 1.08e-07 1.08e-07   0.0
+      operator_A_19 (operator_A_12)      0.000    0.000 1.08e-07 1.08e-07   0.0
+      operator_B_stage_4_8 (operator_B_7)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_B_stage_4_9 (operator_B_6)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_B_stage_3_4 (operator_B_19)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_B_stage_3_5 (operator_B_18)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_B_stage_3_6 (operator_B_17)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_B_stage_3_7 (operator_B_16)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_B_stage_3_8 (operator_B_15)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_B_stage_3_9 (operator_B_14)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_B_stage_4_10 (operator_B_5)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_B_stage_4_11 (operator_B_4)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_B_stage_4_12 (operator_B_3)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_A_20 (operator_A_11)      0.000    0.000 1.08e-07 1.08e-07   0.0
+      operator_B_stage_4_13 (operator_B_2)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_A_21 (operator_A_10)      0.000    0.000 1.08e-07 1.08e-07   0.0
+      operator_B_stage_4_14 (operator_B_1)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_A_22 (operator_A_9)       0.000    0.000 1.08e-07 1.08e-07   0.0
+      operator_B_stage_4_15 (operator_B_0)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_A_23 (operator_A_8)       0.000    0.000 1.08e-07 1.08e-07   0.0
+      operator_A_24 (operator_A_7)       0.000    0.000 1.08e-07 1.08e-07   0.0
+      operator_A_25 (operator_A_6)       0.000    0.000 4.99e-08 4.99e-08   0.0
+      operator_A_26 (operator_A_5)       0.000    0.000 1.08e-07 1.08e-07   0.0
+      operator_B_stage_2_2 (operator_B_33)
+                                         0.000    0.000 7.00e-08 7.00e-08   0.0
+      operator_A_27 (operator_A_4)       0.000    0.000 4.99e-08 4.99e-08   0.0
+      operator_C_stage_6_10 (operator_C_5)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+      operator_B_stage_2_3 (operator_B_32)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_A_28 (operator_A_3)       0.000    0.000 1.08e-07 1.08e-07   0.0
+      operator_C_stage_6_11 (operator_C_4)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+      operator_B_stage_2_4 (operator_B_31)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_A_29 (operator_A_2)       0.000    0.000 4.99e-08 4.99e-08   0.0
+      operator_C_stage_6_12 (operator_C_3)
+                                         0.000    0.000 2.01e-08 2.01e-08   0.0
+      operator_B_stage_2_5 (operator_B_30)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_C_stage_6_13 (operator_C_2)
+                                         0.000    0.000 2.01e-08 2.01e-08   0.0
+      operator_B_stage_2_6 (operator_B_29)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_C_stage_6_14 (operator_C_1)
+                                         0.000    0.000 2.01e-08 2.01e-08   0.0
+      operator_B_stage_2_7 (operator_B_28)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_C_stage_6_15 (operator_C_0)
+                                         0.000    0.000 2.01e-08 2.01e-08   0.0
+      operator_B_stage_2_8 (operator_B_27)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_B_stage_2_9 (operator_B_26)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_B_stage_1_1 (operator_B_48)
+                                         0.000    0.000 2.01e-08 2.01e-08   0.0
+      operator_C_stage_6_0 (operator_C_15)
+                                         0.000    0.000 2.01e-08 2.01e-08   0.0
+      operator_B_stage_1_2 (operator_B_47)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_C_stage_6_1 (operator_C_14)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+      operator_B_stage_1_3 (operator_B_46)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_C_stage_6_2 (operator_C_13)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+      operator_B_stage_1_4 (operator_B_45)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_C_stage_6_3 (operator_C_12)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+      operator_B_stage_1_5 (operator_B_44)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_C_stage_6_4 (operator_C_11)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+      operator_B_stage_1_6 (operator_B_43)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_C_stage_6_5 (operator_C_10)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+      operator_B_stage_1_7 (operator_B_42)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_C_stage_6_6 (operator_C_9)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+      operator_B_stage_1_8 (operator_B_41)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_A_30 (operator_A_1)       0.000    0.000 1.08e-07 1.08e-07   0.0
+      operator_C_stage_6_7 (operator_C_8)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+      operator_B_stage_1_9 (operator_B_40)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_A_0 (operator_A_31)       0.000    0.000 1.08e-07 1.08e-07   0.0
+      operator_A_31 (operator_A_0)       0.000    0.000 4.99e-08 4.99e-08   0.0
+      operator_C_stage_6_8 (operator_C_7)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+      operator_A_1 (operator_A_30)       0.000    0.000 4.99e-08 4.99e-08   0.0
+      operator_C_stage_6_9 (operator_C_6)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+      operator_A_2 (operator_A_29)       0.000    0.000 4.99e-08 4.99e-08   0.0
+      operator_A_3 (operator_A_28)       0.000    0.000 1.08e-07 1.08e-07   0.0
+      operator_A_4 (operator_A_27)       0.000    0.000 1.08e-07 1.08e-07   0.0
+      operator_B_stage_3_10 (operator_B_13)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_A_5 (operator_A_26)       0.000    0.000 1.08e-07 1.08e-07   0.0
+      operator_B_stage_3_11 (operator_B_12)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_A_6 (operator_A_25)       0.000    0.000 1.08e-07 1.08e-07   0.0
+      operator_B_stage_3_12 (operator_B_11)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_A_7 (operator_A_24)       0.000    0.000 1.08e-07 1.08e-07   0.0
+      operator_B_stage_3_13 (operator_B_10)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_A_8 (operator_A_23)       0.000    0.000 1.08e-07 1.08e-07   0.0
+      operator_B_stage_3_14 (operator_B_9)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_A_9 (operator_A_22)       0.000    0.000 1.08e-07 1.08e-07   0.0
+      operator_B_stage_3_15 (operator_B_8)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_C_stage_5_10 (operator_C_21)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+      operator_C_stage_5_11 (operator_C_20)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+      operator_C_stage_5_12 (operator_C_19)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+      operator_C_stage_5_13 (operator_C_18)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+      operator_C_stage_5_8 (operator_C_23)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+      operator_C_stage_5_14 (operator_C_17)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+      operator_C_stage_5_9 (operator_C_22)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+      operator_C_stage_5_15 (operator_C_16)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+      operator_C_stage_4_4 (operator_C_27)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+      operator_C_stage_4_5 (operator_C_26)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+      operator_C_stage_4_6 (operator_C_25)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+      operator_C_stage_4_7 (operator_C_24)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+      operator_B_stage_2_10 (operator_B_25)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_B_stage_2_11 (operator_B_24)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_B_stage_2_12 (operator_B_23)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_C_stage_3_2 (operator_C_29)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+      operator_B_stage_2_13 (operator_B_22)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_C_stage_3_3 (operator_C_28)
+                                         0.000    0.000 6.30e-08 6.30e-08   0.0
+      operator_B_stage_2_14 (operator_B_21)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_B_stage_2_15 (operator_B_20)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_C_stage_2_1 (operator_C_30)
+                                         0.000    0.000 2.01e-08 2.01e-08   0.0
+      operator_C_stage_1_0 (operator_C_31)
+                                         0.000    0.000 4.99e-08 4.99e-08   0.0
+      operator_B_stage_1_10 (operator_B_39)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_B_stage_1_11 (operator_B_38)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+      operator_B_stage_1_12 (operator_B_37)
+                                         0.000    0.000 8.31e-08 8.31e-08   0.0
+    layer_1_full_adder_8 (full_adder_36)
+                                         0.000    0.000 1.38e-07 1.38e-07   0.1
+    layer_1_full_adder_9 (full_adder_35)
+                                         0.000    0.000 1.42e-07 1.42e-07   0.1
+    layer_2_full_adder_10 (full_adder_22)
+                                         0.000    0.000 1.34e-07 1.34e-07   0.1
+    layer_2_full_adder_11 (full_adder_21)
+                                         0.000    0.000 1.39e-07 1.39e-07   0.1
+    layer_1_full_adder_10 (full_adder_34)
+                                         0.000    0.000 1.38e-07 1.38e-07   0.1
+    layer_1_full_adder_11 (full_adder_33)
+                                         0.000    0.000 1.34e-07 1.34e-07   0.1
+1

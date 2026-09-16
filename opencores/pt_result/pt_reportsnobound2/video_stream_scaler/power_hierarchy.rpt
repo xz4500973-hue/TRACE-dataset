@@ -1,0 +1,15 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : streamScaler
+Version: V-2023.12
+Date   : Mon Jun 22 17:17:30 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+streamScaler                          7.48e-06 3.02e-07 6.80e-06 1.46e-05 100.0
+1

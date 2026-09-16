@@ -1,0 +1,139 @@
+$date
+	Sun Jun 21 21:26:43 2026
+$end
+
+$version
+	Synopsys VCS version V-2023.12_Full64
+$end
+
+$timescale
+	1ps
+$end
+
+$comment Csum: 1 2d7d489a2d99361b $end
+
+
+$scope module width_8to16_tb $end
+$var reg 1 ! clk $end
+$var reg 1 " rst_n $end
+$var reg 1 # vi $end
+$var reg 8 $ di [7:0] $end
+$var wire 1 % vo $end
+$var wire 16 & dout [15:0] $end
+$var integer 32 ' s $end
+
+$scope module dut $end
+$var wire 1 ! clk $end
+$var wire 1 " rst_n $end
+$var wire 1 # valid_in $end
+$var wire 8 $ data_in [7:0] $end
+$var reg 1 % valid_out $end
+$var reg 16 & data_out [15:0] $end
+$var reg 8 ( data_lock [7:0] $end
+$var reg 1 ) toggle $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+
+#0
+$dumpvars
+0!
+0"
+0)
+0%
+0#
+b00000000 (
+b0000000000000000 &
+b00000000 $
+bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx '
+$end
+#5000
+1!
+#6000
+1"
+#10000
+0!
+#15000
+1!
+b10101010 $
+1#
+0"
+#20000
+0!
+#25000
+1!
+1"
+b10101010 (
+1)
+#30000
+0!
+#35000
+1!
+b10111011 $
+b1010101010111011 &
+1%
+0)
+#40000
+0!
+#45000
+1!
+b11001100 $
+b11001100 (
+0%
+1)
+#50000
+0!
+#55000
+1!
+b11011101 $
+b1100110011011101 &
+1%
+0)
+#60000
+0!
+#65000
+1!
+0#
+0%
+#70000
+0!
+#75000
+1!
+#80000
+0!
+#85000
+1!
+#90000
+0!
+#95000
+1!
+#100000
+0!
+#105000
+1!
+#110000
+0!
+#115000
+1!
+#120000
+0!
+#125000
+1!
+#130000
+0!
+#135000
+1!
+#140000
+0!
+#145000
+1!
+#150000
+0!
+#155000
+1!
+#160000
+0!
+#165000
+1!

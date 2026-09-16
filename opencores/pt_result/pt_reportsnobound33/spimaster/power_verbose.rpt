@@ -1,0 +1,119 @@
+****************************************
+Report : Averaged Power
+	-verbose
+Design : spiMaster
+Version: V-2023.12
+Date   : Mon Jun 22 17:50:26 2026
+****************************************
+
+Library(s) Used:
+
+    tcbn28hpcplusbwp12t30p140ssg0p81v125c (File: /process/course_lib/t28hpc+/tcbn28hpcplusbwp12t30p140ssg0p81v125c.db)
+
+
+Operating Conditions: ssg0p81v125c   Library: tcbn28hpcplusbwp12t30p140ssg0p81v125c
+Wire Load Model Mode: segmented
+
+Cell               Design       Wire_model  Library       Selection_type
+--------------------------------------------------------------------------------
+                   spiMaster    ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_ctrlStsRegBI     ctrlStsRegBI ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_spiMasterWishBoneBI
+                   spiMasterWishBoneBI
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_initSD           initSD       ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_sm_rxFifo        sm_RxFifo_FIFO_DEPTH512_ADDR_WIDTH9
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_sm_rxFifo/u_sm_RxfifoBI
+                   sm_RxfifoBI  ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_sm_rxFifo/u_sm_fifo
+                   sm_fifoRTL_FIFO_WIDTH8_FIFO_DEPTH512_ADDR_WIDTH9_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_sm_rxFifo/u_sm_fifo/u_sm_dpMem_dc
+                   sm_dpMem_dc_FIFO_WIDTH8_FIFO_DEPTH512_ADDR_WIDTH9_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_readWriteSDBlock readWriteSDBlock
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_spiTxRxData      spiTxRxData  ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_sendCmd          sendCmd      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_spiCtrl          spiCtrl      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_readWriteSPIWireData
+                   readWriteSPIWireData
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_sm_txFifo        sm_TxFifo_FIFO_DEPTH512_ADDR_WIDTH9
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_sm_txFifo/u_sm_TxfifoBI
+                   sm_TxfifoBI  ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_sm_txFifo/u_sm_fifo
+                   sm_fifoRTL_FIFO_WIDTH8_FIFO_DEPTH512_ADDR_WIDTH9_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_sm_txFifo/u_sm_fifo/u_sm_dpMem_dc
+                   sm_dpMem_dc_FIFO_WIDTH8_FIFO_DEPTH512_ADDR_WIDTH9_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+
+Power-specific unit information :
+    Voltage Units = 1 V
+    Capacitance Units = 1 pf
+    Time Units = 1 ns
+    Dynamic Power Units = 1 W
+    Leakage Power Units = 1 W
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network              0.0000    0.0000    0.0000    0.0000 ( 0.00%)  i
+register                   0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+combinational           5.821e-05 2.202e-04 1.012e-03 1.290e-03 (27.35%)  
+sequential              1.505e-03 3.091e-08 1.922e-03 3.426e-03 (72.65%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power  = 2.202e-04   ( 4.67%)
+  Cell Internal Power  = 1.563e-03   (33.14%)
+  Cell Leakage Power   = 2.933e-03   (62.20%)
+                         ---------
+Total Power            = 4.716e-03  (100.00%)
+
+1

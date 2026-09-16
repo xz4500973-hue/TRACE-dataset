@@ -1,0 +1,70 @@
+****************************************
+Report : Averaged Power
+	-verbose
+Design : ps2_top
+Version: V-2023.12
+Date   : Mon Jun 22 17:49:35 2026
+****************************************
+
+Library(s) Used:
+
+    tcbn28hpcplusbwp12t30p140ssg0p81v125c (File: /process/course_lib/t28hpc+/tcbn28hpcplusbwp12t30p140ssg0p81v125c.db)
+
+
+Operating Conditions: ssg0p81v125c   Library: tcbn28hpcplusbwp12t30p140ssg0p81v125c
+Wire Load Model Mode: segmented
+
+Cell               Design       Wire_model  Library       Selection_type
+--------------------------------------------------------------------------------
+                   ps2_top      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+i_ps2_translation_table
+                   ps2_translation_table
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+i_ps2_wb_if        ps2_wb_if    ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+i_ps2_io_ctrl_keyboard
+                   ps2_io_ctrl  ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+i_ps2_keyboard     ps2_keyboard_TIMER_60USEC_VALUE_PP12_TIMER_60USEC_BITS_PP4_TIMER_5USEC_VALUE_PP500_TIMER_5USEC_BITS_PP16
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+
+Power-specific unit information :
+    Voltage Units = 1 V
+    Capacitance Units = 1 pf
+    Time Units = 1 ns
+    Dynamic Power Units = 1 W
+    Leakage Power Units = 1 W
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network              0.0000    0.0000    0.0000    0.0000 ( 0.00%)  i
+register                   0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+combinational           4.179e-06 1.100e-05 3.000e-05 4.518e-05 (41.97%)  
+sequential              3.303e-05 1.880e-07 2.926e-05 6.248e-05 (58.03%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power  = 1.119e-05   (10.39%)
+  Cell Internal Power  = 3.721e-05   (34.56%)
+  Cell Leakage Power   = 5.926e-05   (55.05%)
+                         ---------
+Total Power            = 1.077e-04  (100.00%)
+
+1

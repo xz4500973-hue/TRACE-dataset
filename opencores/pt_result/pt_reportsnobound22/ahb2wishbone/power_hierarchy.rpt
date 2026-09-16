@@ -1,0 +1,15 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : ahb2wb
+Version: V-2023.12
+Date   : Mon Jun 22 17:20:05 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+ahb2wb                                8.30e-06 6.27e-07 1.71e-05 2.60e-05 100.0
+1

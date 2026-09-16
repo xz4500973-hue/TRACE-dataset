@@ -1,0 +1,198 @@
+****************************************
+Report : Averaged Power
+	-verbose
+Design : sip_rxaui_top
+Version: V-2023.12
+Date   : Mon Jun 22 17:50:04 2026
+****************************************
+
+Library(s) Used:
+
+    tcbn28hpcplusbwp12t30p140ssg0p81v125c (File: /process/course_lib/t28hpc+/tcbn28hpcplusbwp12t30p140ssg0p81v125c.db)
+
+
+Operating Conditions: ssg0p81v125c   Library: tcbn28hpcplusbwp12t30p140ssg0p81v125c
+Wire Load Model Mode: segmented
+
+Cell               Design       Wire_model  Library       Selection_type
+--------------------------------------------------------------------------------
+                   sip_rxaui_top
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sip_rxaui_clk_reset
+                   sip_rxaui_clk_reset
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sip_rxaui_clk_reset/txclk_in1_reset
+                   sip_reset_sync_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sip_rxaui_clk_reset/xpcs_tx_clk_mux0
+                   sip_clk_mux_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sip_rxaui_clk_reset/rx_clk_div2
+                   sip_clock_divider_by_2_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sip_rxaui_clk_reset/rx_clk_div2/sip_clock_divider_by_2_glue
+                   sip_clock_divider_by_2_glue_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sip_rxaui_clk_reset/rx_clk_div2/clock_divider
+                   sip_clock_divider_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sip_rxaui_clk_reset/rx_clk_reset
+                   sip_reset_sync_4
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sip_rxaui_clk_reset/rx_clk_mux0
+                   sip_clk_mux_2
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sip_rxaui_clk_reset/tx_clk_reset
+                   sip_reset_sync_2
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sip_rxaui_clk_reset/txclk_in0_reset
+                   sip_reset_sync_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sip_rxaui_clk_reset/rx_clk_mux1
+                   sip_clk_mux_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sip_rxaui_clk_reset/rx_clk_div2_reset
+                   sip_reset_sync_3
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sip_rxaui_clk_reset/tx_clk_div2
+                   sip_clock_divider_by_2_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sip_rxaui_clk_reset/tx_clk_div2/sip_clock_divider_by_2_glue
+                   sip_clock_divider_by_2_glue_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sip_rxaui_clk_reset/tx_clk_div2/clock_divider
+                   sip_clock_divider_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sip_rxaui_rx_top   sip_rxaui_rx_top
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sip_rxaui_rx_top/sip_rxaui_rx_glue
+                   sip_rxaui_rx_glue
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sip_rxaui_rx_top/xpcs_comma_detect
+                   sip_xpcs_comma_detect
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sip_rxaui_rx_top/xpcs_comma_detect/cd_sync
+                   sip_xpcs_cd_sync
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sip_rxaui_rx_top/xpcs_comma_detect/cd_ssm
+                   sip_xpcs_cd_ssm
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sip_rxaui_rx_top/xpcs_comma_detect/cd_mux
+                   sip_xpcs_cd_mux
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sip_rxaui_rx_top/xpcs_comma_detect/cd_7bit
+                   sip_xpcs_cd_7bit
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sip_rxaui_rx_top/xpcs_comma_detect/cd_10bit
+                   sip_xpcs_cd_10bit
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sip_rxaui_rx_top/sip_phase_sync_fifo_fast_2_slow
+                   sip_phase_sync_fifo_fast_2_slow
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sip_rxaui_rx_top/sip_rxaui_aa_detection
+                   sip_rxaui_aa_detection
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sip_rxaui_tx_top   sip_rxaui_tx_top
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sip_rxaui_tx_top/sip_phase_sync_fifo_slow_2_fast_1
+                   sip_phase_sync_fifo_slow_2_fast_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sip_rxaui_tx_top/sip_rxaui_tx_glue
+                   sip_rxaui_tx_glue
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+sip_rxaui_tx_top/sip_phase_sync_fifo_slow_2_fast_0
+                   sip_phase_sync_fifo_slow_2_fast_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+
+Power-specific unit information :
+    Voltage Units = 1 V
+    Capacitance Units = 1 pf
+    Time Units = 1 ns
+    Dynamic Power Units = 1 W
+    Leakage Power Units = 1 W
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network              0.0000    0.0000    0.0000    0.0000 ( 0.00%)  i
+register                   0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+combinational           7.527e-09 7.906e-09 9.747e-05 9.749e-05 (32.48%)  
+sequential              3.353e-09 1.182e-09 2.027e-04 2.027e-04 (67.52%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power  = 9.089e-09   ( 0.00%)
+  Cell Internal Power  = 1.088e-08   ( 0.00%)
+  Cell Leakage Power   = 3.001e-04   (99.99%)
+                         ---------
+Total Power            = 3.002e-04  (100.00%)
+
+1

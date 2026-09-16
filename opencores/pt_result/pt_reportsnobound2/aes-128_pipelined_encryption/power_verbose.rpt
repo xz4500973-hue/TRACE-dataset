@@ -1,0 +1,1138 @@
+****************************************
+Report : Averaged Power
+	-verbose
+Design : Top_PipelinedCipher
+Version: V-2023.12
+Date   : Mon Jun 22 17:18:31 2026
+****************************************
+
+Library(s) Used:
+
+    tcbn28hpcplusbwp12t30p140ssg0p81v125c (File: /process/course_lib/t28hpc+/tcbn28hpcplusbwp12t30p140ssg0p81v125c.db)
+
+
+Operating Conditions: ssg0p81v125c   Library: tcbn28hpcplusbwp12t30p140ssg0p81v125c
+Wire Load Model Mode: segmented
+
+Cell               Design       Wire_model  Library       Selection_type
+--------------------------------------------------------------------------------
+                   Top_PipelinedCipher
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEY              AddRoundKey_DATA_W128_9
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_0          Round_DATA_W128_8
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_0/U_SH     ShiftRows_DATA_W128_8
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_0/U_SUB    SubBytes_DATA_W128_8
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_0/U_SUB/ROM_9__ROM
+                   SBox_174     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_0/U_SUB/ROM_2__ROM
+                   SBox_181     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_0/U_SUB/ROM_12__ROM
+                   SBox_171     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_0/U_SUB/ROM_5__ROM
+                   SBox_178     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_0/U_SUB/ROM_15__ROM
+                   SBox_168     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_0/U_SUB/ROM_8__ROM
+                   SBox_175     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_0/U_SUB/ROM_11__ROM
+                   SBox_172     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_0/U_SUB/ROM_1__ROM
+                   SBox_182     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_0/U_SUB/ROM_4__ROM
+                   SBox_179     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_0/U_SUB/ROM_14__ROM
+                   SBox_169     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_0/U_SUB/ROM_7__ROM
+                   SBox_176     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_0/U_SUB/ROM_0__ROM
+                   SBox_183     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_0/U_SUB/ROM_10__ROM
+                   SBox_173     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_0/U_SUB/ROM_3__ROM
+                   SBox_180     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_0/U_SUB/ROM_13__ROM
+                   SBox_170     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_0/U_SUB/ROM_6__ROM
+                   SBox_177     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_0/U_MIX    MixColumns_DATA_W128_8
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_0/U_KEY    AddRoundKey_DATA_W128_8
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_1          Round_DATA_W128_7
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_1/U_SH     ShiftRows_DATA_W128_7
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_1/U_SUB    SubBytes_DATA_W128_7
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_1/U_SUB/ROM_9__ROM
+                   SBox_158     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_1/U_SUB/ROM_2__ROM
+                   SBox_165     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_1/U_SUB/ROM_12__ROM
+                   SBox_155     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_1/U_SUB/ROM_5__ROM
+                   SBox_162     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_1/U_SUB/ROM_15__ROM
+                   SBox_152     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_1/U_SUB/ROM_8__ROM
+                   SBox_159     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_1/U_SUB/ROM_11__ROM
+                   SBox_156     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_1/U_SUB/ROM_1__ROM
+                   SBox_166     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_1/U_SUB/ROM_4__ROM
+                   SBox_163     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_1/U_SUB/ROM_14__ROM
+                   SBox_153     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_1/U_SUB/ROM_7__ROM
+                   SBox_160     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_1/U_SUB/ROM_0__ROM
+                   SBox_167     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_1/U_SUB/ROM_10__ROM
+                   SBox_157     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_1/U_SUB/ROM_3__ROM
+                   SBox_164     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_1/U_SUB/ROM_13__ROM
+                   SBox_154     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_1/U_SUB/ROM_6__ROM
+                   SBox_161     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_1/U_MIX    MixColumns_DATA_W128_7
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_1/U_KEY    AddRoundKey_DATA_W128_7
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_2          Round_DATA_W128_6
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_2/U_SH     ShiftRows_DATA_W128_6
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_2/U_SUB    SubBytes_DATA_W128_6
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_2/U_SUB/ROM_9__ROM
+                   SBox_142     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_2/U_SUB/ROM_2__ROM
+                   SBox_149     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_2/U_SUB/ROM_12__ROM
+                   SBox_139     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_2/U_SUB/ROM_5__ROM
+                   SBox_146     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_2/U_SUB/ROM_15__ROM
+                   SBox_136     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_2/U_SUB/ROM_8__ROM
+                   SBox_143     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_2/U_SUB/ROM_11__ROM
+                   SBox_140     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_2/U_SUB/ROM_1__ROM
+                   SBox_150     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_2/U_SUB/ROM_4__ROM
+                   SBox_147     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_2/U_SUB/ROM_14__ROM
+                   SBox_137     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_2/U_SUB/ROM_7__ROM
+                   SBox_144     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_2/U_SUB/ROM_0__ROM
+                   SBox_151     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_2/U_SUB/ROM_10__ROM
+                   SBox_141     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_2/U_SUB/ROM_3__ROM
+                   SBox_148     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_2/U_SUB/ROM_13__ROM
+                   SBox_138     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_2/U_SUB/ROM_6__ROM
+                   SBox_145     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_2/U_MIX    MixColumns_DATA_W128_6
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_2/U_KEY    AddRoundKey_DATA_W128_6
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_3          Round_DATA_W128_5
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_3/U_SH     ShiftRows_DATA_W128_5
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_3/U_SUB    SubBytes_DATA_W128_5
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_3/U_SUB/ROM_9__ROM
+                   SBox_126     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_3/U_SUB/ROM_2__ROM
+                   SBox_133     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_3/U_SUB/ROM_12__ROM
+                   SBox_123     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_3/U_SUB/ROM_5__ROM
+                   SBox_130     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_3/U_SUB/ROM_15__ROM
+                   SBox_120     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_3/U_SUB/ROM_8__ROM
+                   SBox_127     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_3/U_SUB/ROM_11__ROM
+                   SBox_124     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_3/U_SUB/ROM_1__ROM
+                   SBox_134     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_3/U_SUB/ROM_4__ROM
+                   SBox_131     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_3/U_SUB/ROM_14__ROM
+                   SBox_121     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_3/U_SUB/ROM_7__ROM
+                   SBox_128     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_3/U_SUB/ROM_0__ROM
+                   SBox_135     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_3/U_SUB/ROM_10__ROM
+                   SBox_125     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_3/U_SUB/ROM_3__ROM
+                   SBox_132     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_3/U_SUB/ROM_13__ROM
+                   SBox_122     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_3/U_SUB/ROM_6__ROM
+                   SBox_129     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_3/U_MIX    MixColumns_DATA_W128_5
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_3/U_KEY    AddRoundKey_DATA_W128_5
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_4          Round_DATA_W128_4
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_4/U_SH     ShiftRows_DATA_W128_4
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_4/U_SUB    SubBytes_DATA_W128_4
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_4/U_SUB/ROM_9__ROM
+                   SBox_110     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_4/U_SUB/ROM_2__ROM
+                   SBox_117     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_4/U_SUB/ROM_12__ROM
+                   SBox_107     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_4/U_SUB/ROM_5__ROM
+                   SBox_114     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_4/U_SUB/ROM_15__ROM
+                   SBox_104     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_4/U_SUB/ROM_8__ROM
+                   SBox_111     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_4/U_SUB/ROM_11__ROM
+                   SBox_108     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_4/U_SUB/ROM_1__ROM
+                   SBox_118     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_4/U_SUB/ROM_4__ROM
+                   SBox_115     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_4/U_SUB/ROM_14__ROM
+                   SBox_105     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_4/U_SUB/ROM_7__ROM
+                   SBox_112     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_4/U_SUB/ROM_0__ROM
+                   SBox_119     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_4/U_SUB/ROM_10__ROM
+                   SBox_109     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_4/U_SUB/ROM_3__ROM
+                   SBox_116     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_4/U_SUB/ROM_13__ROM
+                   SBox_106     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_4/U_SUB/ROM_6__ROM
+                   SBox_113     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_4/U_MIX    MixColumns_DATA_W128_4
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_4/U_KEY    AddRoundKey_DATA_W128_4
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_5          Round_DATA_W128_3
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_5/U_SH     ShiftRows_DATA_W128_3
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_5/U_SUB    SubBytes_DATA_W128_3
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_5/U_SUB/ROM_9__ROM
+                   SBox_94      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_5/U_SUB/ROM_2__ROM
+                   SBox_101     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_5/U_SUB/ROM_12__ROM
+                   SBox_91      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_5/U_SUB/ROM_5__ROM
+                   SBox_98      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_5/U_SUB/ROM_15__ROM
+                   SBox_88      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_5/U_SUB/ROM_8__ROM
+                   SBox_95      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_5/U_SUB/ROM_11__ROM
+                   SBox_92      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_5/U_SUB/ROM_1__ROM
+                   SBox_102     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_5/U_SUB/ROM_4__ROM
+                   SBox_99      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_5/U_SUB/ROM_14__ROM
+                   SBox_89      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_5/U_SUB/ROM_7__ROM
+                   SBox_96      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_5/U_SUB/ROM_0__ROM
+                   SBox_103     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_5/U_SUB/ROM_10__ROM
+                   SBox_93      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_5/U_SUB/ROM_3__ROM
+                   SBox_100     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_5/U_SUB/ROM_13__ROM
+                   SBox_90      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_5/U_SUB/ROM_6__ROM
+                   SBox_97      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_5/U_MIX    MixColumns_DATA_W128_3
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_5/U_KEY    AddRoundKey_DATA_W128_3
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_6          Round_DATA_W128_2
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_6/U_SH     ShiftRows_DATA_W128_2
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_6/U_SUB    SubBytes_DATA_W128_2
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_6/U_SUB/ROM_9__ROM
+                   SBox_78      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_6/U_SUB/ROM_2__ROM
+                   SBox_85      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_6/U_SUB/ROM_12__ROM
+                   SBox_75      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_6/U_SUB/ROM_5__ROM
+                   SBox_82      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_6/U_SUB/ROM_15__ROM
+                   SBox_72      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_6/U_SUB/ROM_8__ROM
+                   SBox_79      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_6/U_SUB/ROM_11__ROM
+                   SBox_76      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_6/U_SUB/ROM_1__ROM
+                   SBox_86      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_6/U_SUB/ROM_4__ROM
+                   SBox_83      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_6/U_SUB/ROM_14__ROM
+                   SBox_73      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_6/U_SUB/ROM_7__ROM
+                   SBox_80      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_6/U_SUB/ROM_0__ROM
+                   SBox_87      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_6/U_SUB/ROM_10__ROM
+                   SBox_77      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_6/U_SUB/ROM_3__ROM
+                   SBox_84      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_6/U_SUB/ROM_13__ROM
+                   SBox_74      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_6/U_SUB/ROM_6__ROM
+                   SBox_81      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_6/U_MIX    MixColumns_DATA_W128_2
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_6/U_KEY    AddRoundKey_DATA_W128_2
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_7          Round_DATA_W128_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_7/U_SH     ShiftRows_DATA_W128_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_7/U_SUB    SubBytes_DATA_W128_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_7/U_SUB/ROM_9__ROM
+                   SBox_62      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_7/U_SUB/ROM_2__ROM
+                   SBox_69      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_7/U_SUB/ROM_12__ROM
+                   SBox_59      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_7/U_SUB/ROM_5__ROM
+                   SBox_66      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_7/U_SUB/ROM_15__ROM
+                   SBox_56      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_7/U_SUB/ROM_8__ROM
+                   SBox_63      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_7/U_SUB/ROM_11__ROM
+                   SBox_60      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_7/U_SUB/ROM_1__ROM
+                   SBox_70      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_7/U_SUB/ROM_4__ROM
+                   SBox_67      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_7/U_SUB/ROM_14__ROM
+                   SBox_57      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_7/U_SUB/ROM_7__ROM
+                   SBox_64      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_7/U_SUB/ROM_0__ROM
+                   SBox_71      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_7/U_SUB/ROM_10__ROM
+                   SBox_61      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_7/U_SUB/ROM_3__ROM
+                   SBox_68      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_7/U_SUB/ROM_13__ROM
+                   SBox_58      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_7/U_SUB/ROM_6__ROM
+                   SBox_65      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_7/U_MIX    MixColumns_DATA_W128_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_7/U_KEY    AddRoundKey_DATA_W128_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_8          Round_DATA_W128_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_8/U_SH     ShiftRows_DATA_W128_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_8/U_SUB    SubBytes_DATA_W128_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_8/U_SUB/ROM_9__ROM
+                   SBox_46      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_8/U_SUB/ROM_2__ROM
+                   SBox_53      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_8/U_SUB/ROM_12__ROM
+                   SBox_43      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_8/U_SUB/ROM_5__ROM
+                   SBox_50      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_8/U_SUB/ROM_15__ROM
+                   SBox_40      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_8/U_SUB/ROM_8__ROM
+                   SBox_47      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_8/U_SUB/ROM_11__ROM
+                   SBox_44      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_8/U_SUB/ROM_1__ROM
+                   SBox_54      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_8/U_SUB/ROM_4__ROM
+                   SBox_51      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_8/U_SUB/ROM_14__ROM
+                   SBox_41      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_8/U_SUB/ROM_7__ROM
+                   SBox_48      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_8/U_SUB/ROM_0__ROM
+                   SBox_55      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_8/U_SUB/ROM_10__ROM
+                   SBox_45      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_8/U_SUB/ROM_3__ROM
+                   SBox_52      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_8/U_SUB/ROM_13__ROM
+                   SBox_42      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_8/U_SUB/ROM_6__ROM
+                   SBox_49      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_8/U_MIX    MixColumns_DATA_W128_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_ROUND_8/U_KEY    AddRoundKey_DATA_W128_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_SH               ShiftRows_DATA_W128_9
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP           KeyExpantion_DATA_W128_KEY_L128_NO_ROUNDS10
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_9__RKGEN_U
+                   RoundKeyGen_KEY_L128_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_9__RKGEN_U/SUB_U
+                   SubBytes_DATA_W32_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_9__RKGEN_U/SUB_U/ROM_0__ROM
+                   SBox_3       ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_9__RKGEN_U/SUB_U/ROM_1__ROM
+                   SBox_2       ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_9__RKGEN_U/SUB_U/ROM_2__ROM
+                   SBox_1       ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_9__RKGEN_U/SUB_U/ROM_3__ROM
+                   SBox_0       ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/RKGEN_U0  RoundKeyGen_KEY_L128_9
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/RKGEN_U0/SUB_U
+                   SubBytes_DATA_W32_9
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/RKGEN_U0/SUB_U/ROM_0__ROM
+                   SBox_39      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/RKGEN_U0/SUB_U/ROM_1__ROM
+                   SBox_38      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/RKGEN_U0/SUB_U/ROM_2__ROM
+                   SBox_37      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/RKGEN_U0/SUB_U/ROM_3__ROM
+                   SBox_36      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_8__RKGEN_U
+                   RoundKeyGen_KEY_L128_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_8__RKGEN_U/SUB_U
+                   SubBytes_DATA_W32_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_8__RKGEN_U/SUB_U/ROM_0__ROM
+                   SBox_7       ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_8__RKGEN_U/SUB_U/ROM_1__ROM
+                   SBox_6       ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_8__RKGEN_U/SUB_U/ROM_2__ROM
+                   SBox_5       ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_8__RKGEN_U/SUB_U/ROM_3__ROM
+                   SBox_4       ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_7__RKGEN_U
+                   RoundKeyGen_KEY_L128_2
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_7__RKGEN_U/SUB_U
+                   SubBytes_DATA_W32_2
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_7__RKGEN_U/SUB_U/ROM_0__ROM
+                   SBox_11      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_7__RKGEN_U/SUB_U/ROM_1__ROM
+                   SBox_10      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_7__RKGEN_U/SUB_U/ROM_2__ROM
+                   SBox_9       ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_7__RKGEN_U/SUB_U/ROM_3__ROM
+                   SBox_8       ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_6__RKGEN_U
+                   RoundKeyGen_KEY_L128_3
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_6__RKGEN_U/SUB_U
+                   SubBytes_DATA_W32_3
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_6__RKGEN_U/SUB_U/ROM_0__ROM
+                   SBox_15      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_6__RKGEN_U/SUB_U/ROM_1__ROM
+                   SBox_14      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_6__RKGEN_U/SUB_U/ROM_2__ROM
+                   SBox_13      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_6__RKGEN_U/SUB_U/ROM_3__ROM
+                   SBox_12      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_5__RKGEN_U
+                   RoundKeyGen_KEY_L128_4
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_5__RKGEN_U/SUB_U
+                   SubBytes_DATA_W32_4
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_5__RKGEN_U/SUB_U/ROM_0__ROM
+                   SBox_19      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_5__RKGEN_U/SUB_U/ROM_1__ROM
+                   SBox_18      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_5__RKGEN_U/SUB_U/ROM_2__ROM
+                   SBox_17      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_5__RKGEN_U/SUB_U/ROM_3__ROM
+                   SBox_16      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_4__RKGEN_U
+                   RoundKeyGen_KEY_L128_5
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_4__RKGEN_U/SUB_U
+                   SubBytes_DATA_W32_5
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_4__RKGEN_U/SUB_U/ROM_0__ROM
+                   SBox_23      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_4__RKGEN_U/SUB_U/ROM_1__ROM
+                   SBox_22      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_4__RKGEN_U/SUB_U/ROM_2__ROM
+                   SBox_21      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_4__RKGEN_U/SUB_U/ROM_3__ROM
+                   SBox_20      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_3__RKGEN_U
+                   RoundKeyGen_KEY_L128_6
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_3__RKGEN_U/SUB_U
+                   SubBytes_DATA_W32_6
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_3__RKGEN_U/SUB_U/ROM_0__ROM
+                   SBox_27      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_3__RKGEN_U/SUB_U/ROM_1__ROM
+                   SBox_26      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_3__RKGEN_U/SUB_U/ROM_2__ROM
+                   SBox_25      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_3__RKGEN_U/SUB_U/ROM_3__ROM
+                   SBox_24      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_2__RKGEN_U
+                   RoundKeyGen_KEY_L128_7
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_2__RKGEN_U/SUB_U
+                   SubBytes_DATA_W32_7
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_2__RKGEN_U/SUB_U/ROM_0__ROM
+                   SBox_31      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_2__RKGEN_U/SUB_U/ROM_1__ROM
+                   SBox_30      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_2__RKGEN_U/SUB_U/ROM_2__ROM
+                   SBox_29      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_2__RKGEN_U/SUB_U/ROM_3__ROM
+                   SBox_28      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_1__RKGEN_U
+                   RoundKeyGen_KEY_L128_8
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_1__RKGEN_U/SUB_U
+                   SubBytes_DATA_W32_8
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_1__RKGEN_U/SUB_U/ROM_0__ROM
+                   SBox_35      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_1__RKGEN_U/SUB_U/ROM_1__ROM
+                   SBox_34      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_1__RKGEN_U/SUB_U/ROM_2__ROM
+                   SBox_33      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_KEYEXP/ROUND_KEY_GEN_1__RKGEN_U/SUB_U/ROM_3__ROM
+                   SBox_32      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U0_ARK             AddRoundKey_DATA_W128_10
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_SUB              SubBytes_DATA_W128_9
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_SUB/ROM_9__ROM   SBox_190     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_SUB/ROM_2__ROM   SBox_197     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_SUB/ROM_12__ROM  SBox_187     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_SUB/ROM_5__ROM   SBox_194     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_SUB/ROM_15__ROM  SBox_184     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_SUB/ROM_8__ROM   SBox_191     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_SUB/ROM_11__ROM  SBox_188     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_SUB/ROM_1__ROM   SBox_198     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_SUB/ROM_4__ROM   SBox_195     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_SUB/ROM_14__ROM  SBox_185     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_SUB/ROM_7__ROM   SBox_192     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_SUB/ROM_0__ROM   SBox_199     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_SUB/ROM_10__ROM  SBox_189     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_SUB/ROM_3__ROM   SBox_196     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_SUB/ROM_13__ROM  SBox_186     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+U_SUB/ROM_6__ROM   SBox_193     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+
+Power-specific unit information :
+    Voltage Units = 1 V
+    Capacitance Units = 1 pf
+    Time Units = 1 ns
+    Dynamic Power Units = 1 W
+    Leakage Power Units = 1 W
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network              0.0000    0.0000    0.0000    0.0000 ( 0.00%)  i
+register                   0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+combinational           4.412e-04 5.659e-04 5.052e-03 6.059e-03 (48.84%)  
+sequential              4.108e-03 4.125e-05 2.198e-03 6.347e-03 (51.16%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power  = 6.072e-04   ( 4.89%)
+  Cell Internal Power  = 4.549e-03   (36.67%)
+  Cell Leakage Power   = 7.250e-03   (58.44%)
+                         ---------
+Total Power            =    0.0124  (100.00%)
+
+1

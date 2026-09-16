@@ -1,0 +1,119 @@
+$date
+	Sun Jun 21 21:28:51 2026
+$end
+
+$version
+	Synopsys VCS version V-2023.12_Full64
+$end
+
+$timescale
+	1ps
+$end
+
+$comment Csum: 1 87c201985889e9a8 $end
+
+
+$scope module multi_pipe_4bit_tb $end
+$var reg 1 ! clk $end
+$var reg 1 " rst_n $end
+$var reg 4 # ma [3:0] $end
+$var reg 1 $ mb [3] $end
+$var reg 1 % mb [2] $end
+$var reg 1 & mb [1] $end
+$var reg 1 ' mb [0] $end
+$var wire 8 ( mo [7:0] $end
+$var integer 32 ) t $end
+
+$scope module dut $end
+$var wire 1 ! clk $end
+$var wire 1 " rst_n $end
+$var wire 4 # mul_a [3:0] $end
+$var wire 1 $ mul_b [3] $end
+$var wire 1 % mul_b [2] $end
+$var wire 1 & mul_b [1] $end
+$var wire 1 ' mul_b [0] $end
+$var wire 8 ( mul_out [7:0] $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+
+#0
+$dumpvars
+0!
+1'
+1&
+1%
+1$
+0"
+b1111 #
+b00000000 (
+bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx )
+$end
+#5000
+1!
+#10000
+0!
+#13000
+1"
+b00000000000000000000000000000000 )
+#15000
+1!
+b00000000000000000000000000000001 )
+#20000
+0!
+#25000
+1!
+b00000000000000000000000000000010 )
+b11100001 (
+#30000
+0!
+#35000
+1!
+b00000000000000000000000000000011 )
+#40000
+0!
+#45000
+1!
+b00000000000000000000000000000100 )
+#50000
+0!
+#55000
+1!
+b00000000000000000000000000000101 )
+#60000
+0!
+#65000
+1!
+b00000000000000000000000000000110 )
+#70000
+0!
+#75000
+1!
+b00000000000000000000000000000111 )
+#80000
+0!
+#85000
+1!
+b00000000000000000000000000001000 )
+#90000
+0!
+#95000
+1!
+#100000
+0!
+#105000
+1!
+#110000
+0!
+#115000
+1!
+#120000
+0!
+#125000
+1!
+#130000
+0!
+#135000
+1!

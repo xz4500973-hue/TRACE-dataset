@@ -1,0 +1,51 @@
+$date
+	Sun Jun 21 21:26:07 2026
+$end
+
+$version
+	Synopsys VCS version V-2023.12_Full64
+$end
+
+$timescale
+	1ps
+$end
+
+$comment Csum: 1 93e8246b25d79eca $end
+
+
+$scope module ROM_tb $end
+$var reg 8 ! addr [7:0] $end
+$var wire 16 " dout [15:0] $end
+$var integer 32 # s $end
+
+$scope module dut $end
+$var wire 8 ! addr [7:0] $end
+$var reg 16 " dout [15:0] $end
+$var wire 16 $ rd_data [15:0] $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+
+#0
+$dumpvars
+b00000000 !
+bxxxxxxxxxxxxxxxx "
+bxxxxxxxxxxxxxxxx $
+bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx #
+$end
+#12000
+b00000001 !
+#27000
+b00000010 !
+#35000
+b00000011 !
+#55000
+b00000100 !
+#61000
+b00000101 !
+#73000
+b00000110 !
+#79000
+b00000111 !

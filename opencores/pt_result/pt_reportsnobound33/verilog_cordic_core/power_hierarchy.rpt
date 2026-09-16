@@ -1,0 +1,63 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : cordic
+Version: V-2023.12
+Date   : Mon Jun 22 17:50:42 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+cordic                                2.65e-04 6.58e-05 4.45e-04 7.75e-04 100.0
+  stg_0__U (rotator_0_s06487)         1.62e-05 3.17e-06 2.88e-05 4.82e-05   6.2
+    xs (signed_shifter_31)            7.85e-08 2.07e-08 8.71e-07 9.70e-07   0.1
+    ys (signed_shifter_30)               0.000    0.000 8.49e-07 8.49e-07   0.1
+  stg_4__U (rotator_4_s007fd)         2.02e-05 4.91e-06 2.88e-05 5.40e-05   7.0
+    xs (signed_shifter_23)            1.10e-07 4.30e-08 7.01e-07 8.54e-07   0.1
+    ys (signed_shifter_22)            1.14e-07 4.38e-08 7.00e-07 8.58e-07   0.1
+  stg_8__U (rotator_8_s00080)         1.61e-05 3.94e-06 2.72e-05 4.72e-05   6.1
+    xs (signed_shifter_15)            5.73e-08 3.32e-08 5.47e-07 6.37e-07   0.1
+    ys (signed_shifter_14)            5.04e-08 2.91e-08 5.45e-07 6.25e-07   0.1
+  stg_10__U (rotator_10_s00020)       1.47e-05 3.56e-06 2.71e-05 4.53e-05   5.8
+    xs (signed_shifter_11)            2.76e-08 1.86e-08 4.63e-07 5.09e-07   0.1
+    ys (signed_shifter_10)            2.77e-08 2.03e-08 4.65e-07 5.13e-07   0.1
+  stg_14__U (rotator_14_s00002)       1.35e-05 3.26e-06 2.72e-05 4.39e-05   5.7
+    xs (signed_shifter_3)             3.57e-09 3.57e-09 3.00e-07 3.07e-07   0.0
+    ys (signed_shifter_2)             3.98e-09 4.28e-09 3.01e-07 3.10e-07   0.0
+  stg_1__U (rotator_1_s03b58)         1.85e-05 4.23e-06 2.89e-05 5.16e-05   6.7
+    xs (signed_shifter_29)            1.32e-07 3.64e-08 8.59e-07 1.03e-06   0.1
+    ys (signed_shifter_28)            1.30e-07 3.57e-08 8.60e-07 1.03e-06   0.1
+  stg_5__U (rotator_5_s00400)         1.83e-05 4.39e-06 2.72e-05 4.99e-05   6.4
+    xs (signed_shifter_21)            9.49e-08 4.18e-08 6.63e-07 8.00e-07   0.1
+    ys (signed_shifter_20)            9.72e-08 4.11e-08 6.61e-07 8.00e-07   0.1
+  stg_11__U (rotator_11_s00010)       1.42e-05 3.53e-06 2.71e-05 4.48e-05   5.8
+    xs (signed_shifter_9)             1.62e-08 1.21e-08 4.21e-07 4.49e-07   0.1
+    ys (signed_shifter_8)             1.86e-08 1.44e-08 4.23e-07 4.56e-07   0.1
+  stg_9__U (rotator_9_s00040)         1.51e-05 3.70e-06 2.71e-05 4.59e-05   5.9
+    xs (signed_shifter_13)            4.08e-08 2.67e-08 5.05e-07 5.72e-07   0.1
+    ys (signed_shifter_12)            4.00e-08 2.61e-08 5.06e-07 5.72e-07   0.1
+  stg_15__U (rotator_15_s00001)       1.26e-05 3.00e-06 2.81e-05 4.37e-05   5.6
+    xs (signed_shifter_1)             1.29e-09 1.27e-09 2.61e-07 2.64e-07   0.0
+    ys (signed_shifter_0)             1.61e-09 1.91e-09 2.61e-07 2.65e-07   0.0
+  stg_2__U (rotator_2_s01f5b)         2.16e-05 5.22e-06 2.93e-05 5.61e-05   7.2
+    xs (signed_shifter_27)            1.66e-07 5.54e-08 7.79e-07 1.00e-06   0.1
+    ys (signed_shifter_26)            1.28e-07 3.62e-08 7.71e-07 9.35e-07   0.1
+  stg_6__U (rotator_6_s00200)         1.75e-05 4.27e-06 2.72e-05 4.90e-05   6.3
+    xs (signed_shifter_19)            8.16e-08 3.91e-08 6.25e-07 7.46e-07   0.1
+    ys (signed_shifter_18)            8.00e-08 3.76e-08 6.24e-07 7.42e-07   0.1
+  stg_12__U (rotator_12_s00008)       1.39e-05 3.43e-06 2.71e-05 4.44e-05   5.7
+    xs (signed_shifter_7)             9.99e-09 8.24e-09 3.80e-07 3.98e-07   0.1
+    ys (signed_shifter_6)             1.10e-08 9.34e-09 3.81e-07 4.01e-07   0.1
+  stg_3__U (rotator_3_s00feb)         2.13e-05 5.25e-06 2.91e-05 5.57e-05   7.2
+    xs (signed_shifter_25)            1.29e-07 4.77e-08 7.39e-07 9.16e-07   0.1
+    ys (signed_shifter_24)            1.31e-07 4.38e-08 7.36e-07 9.11e-07   0.1
+  stg_7__U (rotator_7_s00100)         1.68e-05 4.10e-06 2.72e-05 4.81e-05   6.2
+    xs (signed_shifter_17)            7.40e-08 3.86e-08 5.88e-07 7.01e-07   0.1
+    ys (signed_shifter_16)            6.64e-08 3.50e-08 5.85e-07 6.86e-07   0.1
+  stg_13__U (rotator_13_s00004)       1.38e-05 3.37e-06 2.72e-05 4.43e-05   5.7
+    xs (signed_shifter_5)             6.06e-09 5.71e-09 3.40e-07 3.52e-07   0.0
+    ys (signed_shifter_4)             7.31e-09 6.94e-09 3.41e-07 3.55e-07   0.0
+1

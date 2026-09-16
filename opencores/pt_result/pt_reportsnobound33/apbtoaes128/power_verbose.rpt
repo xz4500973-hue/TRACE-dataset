@@ -1,0 +1,109 @@
+****************************************
+Report : Averaged Power
+	-verbose
+Design : aes_ip
+Version: V-2023.12
+Date   : Mon Jun 22 17:46:55 2026
+****************************************
+
+Library(s) Used:
+
+    tcbn28hpcplusbwp12t30p140ssg0p81v125c (File: /process/course_lib/t28hpc+/tcbn28hpcplusbwp12t30p140ssg0p81v125c.db)
+
+
+Operating Conditions: ssg0p81v125c   Library: tcbn28hpcplusbwp12t30p140ssg0p81v125c
+Wire Load Model Mode: segmented
+
+Cell               Design       Wire_model  Library       Selection_type
+--------------------------------------------------------------------------------
+                   aes_ip       ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+AES_CORE           aes_core     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+AES_CORE/AES_CORE_DATAPATH
+                   datapath     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+AES_CORE/AES_CORE_DATAPATH/SBOX
+                   sBox         ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+AES_CORE/AES_CORE_DATAPATH/SBOX/SBOX_3_
+                   sBox_8_3     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+AES_CORE/AES_CORE_DATAPATH/SBOX/SBOX_0_
+                   sBox_8_0     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+AES_CORE/AES_CORE_DATAPATH/SBOX/SBOX_1_
+                   sBox_8_1     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+AES_CORE/AES_CORE_DATAPATH/SBOX/SBOX_2_
+                   sBox_8_2     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+AES_CORE/AES_CORE_DATAPATH/SWAP_OUT
+                   data_swap_0  ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+AES_CORE/AES_CORE_DATAPATH/KEY_EXPANDER
+                   key_expander ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+AES_CORE/AES_CORE_DATAPATH/MIX_COL
+                   mix_columns  ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+AES_CORE/AES_CORE_DATAPATH/SHIFT_ROW
+                   shift_rows   ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+AES_CORE/AES_CORE_DATAPATH/SWAP_IN
+                   data_swap_1  ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+AES_CORE/AES_CORE_CONTROL_UNIT
+                   control_unit ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+HOST_INTERFACE     host_interface
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+
+Power-specific unit information :
+    Voltage Units = 1 V
+    Capacitance Units = 1 pf
+    Time Units = 1 ns
+    Dynamic Power Units = 1 W
+    Leakage Power Units = 1 W
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network              0.0000    0.0000    0.0000    0.0000 ( 0.00%)  i
+register                   0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+combinational           2.797e-05 3.327e-05 2.366e-04 2.979e-04 (44.20%)  
+sequential              1.714e-04 2.094e-06 2.025e-04 3.760e-04 (55.80%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power  = 3.537e-05   ( 5.25%)
+  Cell Internal Power  = 1.994e-04   (29.59%)
+  Cell Leakage Power   = 4.392e-04   (65.17%)
+                         ---------
+Total Power            = 6.739e-04  (100.00%)
+
+1

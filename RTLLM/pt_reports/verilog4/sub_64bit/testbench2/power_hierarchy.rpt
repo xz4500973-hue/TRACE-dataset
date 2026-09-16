@@ -1,0 +1,15 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : sub_64bit
+Version: V-2023.12
+Date   : Tue Sep  1 21:43:58 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+sub_64bit                             8.05e-06 3.32e-06 1.09e-05 2.23e-05 100.0
+1

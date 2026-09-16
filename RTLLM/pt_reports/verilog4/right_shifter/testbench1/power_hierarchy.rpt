@@ -1,0 +1,15 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : right_shifter
+Version: V-2023.12
+Date   : Tue Sep  1 21:43:54 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+right_shifter                         2.84e-06 1.91e-08 1.58e-06 4.44e-06 100.0
+1

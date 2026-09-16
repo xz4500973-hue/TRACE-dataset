@@ -1,0 +1,119 @@
+$date
+	Sun Jun 21 21:25:45 2026
+$end
+
+$version
+	Synopsys VCS version V-2023.12_Full64
+$end
+
+$timescale
+	1ps
+$end
+
+$comment Csum: 1 de97631ac8cd1308 $end
+
+
+$scope module pulse_detect_tb $end
+$var reg 1 ! clk $end
+$var reg 1 " rst_n $end
+$var reg 1 # data_in $end
+$var wire 1 $ data_out $end
+$var integer 32 % r $end
+
+$scope module dut $end
+$var wire 1 ! clk $end
+$var wire 1 " rst_n $end
+$var wire 1 # data_in $end
+$var reg 1 $ data_out $end
+$var reg 3 & sr [2:0] $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+
+#0
+$dumpvars
+0!
+0#
+0$
+0"
+b111 &
+bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx %
+$end
+#5000
+1!
+#10000
+0!
+#11000
+1"
+#15000
+1!
+b110 &
+#20000
+0!
+#25000
+1!
+1#
+b101 &
+#30000
+0!
+#35000
+1!
+0#
+b010 &
+#40000
+0!
+#45000
+1!
+1#
+b101 &
+#50000
+0!
+#55000
+1!
+0#
+b010 &
+#60000
+0!
+#65000
+1!
+b100 &
+1$
+#70000
+0!
+#75000
+1!
+1#
+b001 &
+0$
+#80000
+0!
+#85000
+1!
+0#
+b010 &
+#90000
+0!
+#95000
+1!
+b100 &
+1$
+#100000
+0!
+#105000
+1!
+b000 &
+0$
+#110000
+0!
+#115000
+1!
+#120000
+0!
+#125000
+1!
+#130000
+0!
+#135000
+1!

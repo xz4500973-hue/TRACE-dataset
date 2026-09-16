@@ -1,0 +1,41 @@
+`timescale 1ns/1ps
+
+module cmp8_tb;
+
+    reg  [7:0] a, b;
+    wire eq, gt, lt;
+
+    cmp8 dut (.a(a), .b(b), .eq(eq), .gt(gt), .lt(lt));
+
+    reg clk;
+    always #5 clk = ~clk;
+
+    reg [7:0] lfsr_a, lfsr_b;
+    wire fa, fb;
+    integer i;
+    assign fa = lfsr_a[7] ^ lfsr_a[5] ^ lfsr_a[4] ^ lfsr_a[3];
+    assign fb = lfsr_b[7] ^ lfsr_b[6] ^ lfsr_b[5] ^ lfsr_b[1];
+    always @(posedge clk) begin
+        lfsr_a <= {lfsr_a[6:0], fa};
+        lfsr_b <= {lfsr_b[6:0], fb};
+    end
+
+    initial begin
+        $dumpfile("cmp8_tb.vcd");
+        $dumpvars(0, cmp8_tb);
+        clk = 1'b0;
+        a = 8'd0; b = 8'd0;
+        lfsr_a = 8'hA5; lfsr_b = 8'h5A;
+        #15;
+
+        for (i = 0; i < 256; i = i + 1) begin
+            @(posedge clk);
+            a = lfsr_a;
+            b = lfsr_b;
+        end
+
+        repeat(5) @(posedge clk);
+        $finish;
+    end
+
+endmodule

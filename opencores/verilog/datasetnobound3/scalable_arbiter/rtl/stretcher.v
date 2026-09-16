@@ -1,0 +1,189 @@
+/*
+ * Copyright (c) 2008-2009, Kendall Correll
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+
+`timescale 1ns / 1ps
+
+(* keep_hierarchy = "yes" *) module stretcher #(
+	parameter count = 1,
+	parameter high_count = count,
+	parameter low_count = count,
+	parameter width = 1,
+	parameter reset_value = {width{1'b0}}
+)(
+	input enable,
+	input [width-1:0] in,
+	output reg [width-1:0] out,
+	output reg valid,
+	
+	input clock,
+	input reset
+);
+
+/*
+ * Copyright (c) 2008, Kendall Correll
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+
+function integer min (
+	input integer a, b
+);
+begin
+	min = a < b ? a : b;
+end
+endfunction
+
+function integer max (
+	input integer a, b
+);
+begin
+	max = a > b ? a : b;
+end
+endfunction
+
+// compute the log base 2 of a number, rounded down to the
+// nearest whole number
+function integer flog2 (
+	input integer number
+);
+integer i;
+integer count;
+begin
+	flog2 = 0;
+	for(i = 0; i < 32; i = i + 1)
+	begin
+		if(number&(1<<i))
+			flog2 = i;
+	end
+end
+endfunction
+
+// compute the log base 2 of a number, rounded up to the
+// nearest whole number
+function integer clog2 (
+	input integer number
+);
+integer i;
+integer count;
+begin
+	clog2 = 0;
+	count = 0;
+	for(i = 0; i < 32; i = i + 1)
+	begin
+		if(number&(1<<i))
+		begin
+			clog2 = i;
+			count = count + 1;
+		end
+	end
+	// clog2 holds the largest set bit position and count
+	// holds the number of bits set. More than one bit set
+	// indicates that the input was not an even power of 2,
+	// so round the result up.
+	if(count > 1)
+		clog2 = clog2 + 1;
+end
+endfunction
+
+// compute the size of the interconnect for the arbiter's
+// 'select' muxes
+function integer mux_sum (
+	input integer width, select_width
+);
+integer i, number;
+begin
+	mux_sum = 0;
+	number = 1;
+	for(i = select_width; i > 0 && number <= width; i = i - 1)
+	begin
+		mux_sum = mux_sum + i*(number);
+		number = number * 2;
+	end
+end
+endfunction
+
+// edge detector
+wire rising;
+wire falling;
+
+assign rising = |(~out & in);
+assign falling = |(out & ~in);
+
+/// counter width is the maximum size of the loaded value
+parameter counter_width = max(flog2(count - 1) + 1,
+	max(flog2(high_count - 1) + 1, flog2(low_count - 1) + 1));
+
+reg [counter_width:0] counter;
+reg [counter_width-1:0] counter_load;
+wire counter_overflow;
+
+assign counter_overflow = counter[counter_width];
+
+// select counter value for rising or falling edge
+// dataset3: ternary-based equivalent
+always @(rising, falling) begin
+    counter_load = rising
+        ? (falling ? (-count) : (-high_count))
+        : (falling ? (-low_count) : {counter_width{1'bx}});
+end
+
+// the counter is reset on a rising or falling edge
+// overflow has priority over reset, so input changes
+// will be ignored until the full count is reached
+always @(posedge clock, posedge reset)
+begin
+	if(reset)
+		counter <= {counter_width{1'b0}};
+	else
+	begin
+		if(enable & ~counter_overflow)
+			counter <= counter + 1;
+		else if((rising | falling) & counter_overflow)
+			counter <= { 1'b0, counter_load };
+	end
+end
+
+// output is gated by the counter overflow
+always @(posedge clock, posedge reset)
+begin
+	if(reset)
+		out <= reset_value;
+	else
+	begin
+		if(counter_overflow)
+			out <= in;
+	end
+end
+
+always @(posedge clock, posedge reset)
+begin
+	if(reset)
+		valid <= 0;
+	else
+		valid <= counter_overflow;
+end
+
+endmodule

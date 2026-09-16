@@ -1,0 +1,22 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : ps2_top
+Version: V-2023.12
+Date   : Mon Jun 22 17:49:35 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+ps2_top                               3.72e-05 1.12e-05 5.93e-05 1.08e-04 100.0
+  i_ps2_translation_table (ps2_translation_table)
+                                      1.55e-06 4.01e-07 8.82e-06 1.08e-05  10.0
+  i_ps2_wb_if (ps2_wb_if)             2.00e-05 6.53e-06 2.44e-05 5.10e-05  47.3
+  i_ps2_io_ctrl_keyboard (ps2_io_ctrl)
+                                      8.35e-07 1.45e-07 7.02e-07 1.68e-06   1.6
+  i_ps2_keyboard (ps2_keyboard_TIMER_60USEC_VALUE_PP12_TIMER_60USEC_BITS_PP4_TIMER_5USEC_VALUE_PP500_TIMER_5USEC_BITS_PP16)
+                                      1.47e-05 3.91e-06 2.52e-05 4.39e-05  40.8
+1

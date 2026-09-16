@@ -1,0 +1,222 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : ReedSolomon_Top
+Version: V-2023.12
+Date   : Mon Jun 22 17:51:04 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+ReedSolomon_Top                       1.35e-03 1.67e-04 3.02e-03 4.53e-03 100.0
+  u_decoder (RsDecodeTop)             1.24e-03 1.20e-04 2.94e-03 4.30e-03  94.8
+    RsDecodeDelay (RsDecodeDelay)     5.55e-04 5.42e-05 1.06e-03 1.67e-03  36.8
+      RsDecodeDpRam (RsDecodeDpRam)   5.51e-04 5.37e-05 1.05e-03 1.66e-03  36.6
+    RsDecodePolymul (RsDecodePolymul) 9.37e-05 8.90e-06 2.66e-04 3.69e-04   8.1
+      RsDecodeMult_10 (RsDecodeMult_59)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_11 (RsDecodeMult_58)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_12 (RsDecodeMult_57)
+                                         0.000    0.000 5.64e-06 5.64e-06   0.1
+      RsDecodeMult_13 (RsDecodeMult_56)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_14 (RsDecodeMult_55)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_15 (RsDecodeMult_54)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_16 (RsDecodeMult_53)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_17 (RsDecodeMult_52)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_18 (RsDecodeMult_51)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_19 (RsDecodeMult_50)
+                                         0.000    0.000 5.66e-06 5.66e-06   0.1
+      RsDecodeMult_20 (RsDecodeMult_49)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_21 (RsDecodeMult_48)
+                                         0.000    0.000 5.66e-06 5.66e-06   0.1
+      RsDecodeMult_0 (RsDecodeMult_69)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_1 (RsDecodeMult_68)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_2 (RsDecodeMult_67)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_3 (RsDecodeMult_66)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_4 (RsDecodeMult_65)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_5 (RsDecodeMult_64)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_6 (RsDecodeMult_63)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_7 (RsDecodeMult_62)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_8 (RsDecodeMult_61)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_9 (RsDecodeMult_60)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+    RsDecodeShiftOmega (RsDecodeShiftOmega)
+                                         0.000    0.000 2.78e-05 2.78e-05   0.6
+    RsDecodeEuclide (RsDecodeEuclide) 1.62e-04 1.53e-05 5.55e-04 7.32e-04  16.1
+      RsDecodeMult_PDIV0 (RsDecodeMult_46)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_PDIV1 (RsDecodeMult_45)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_PDIV2 (RsDecodeMult_44)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_PDIV3 (RsDecodeMult_43)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_PDIV4 (RsDecodeMult_42)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_PDIV5 (RsDecodeMult_41)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_PDIV6 (RsDecodeMult_40)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_PDIV7 (RsDecodeMult_39)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_PDIV8 (RsDecodeMult_38)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_PDIV9 (RsDecodeMult_37)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeInv_Q (RsDecodeInv_2)      0.000    0.000 1.80e-05 1.80e-05   0.4
+      RsDecodeMult_PDIV10 (RsDecodeMult_36)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_PDIV11 (RsDecodeMult_35)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_PDIV12 (RsDecodeMult_34)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_PDIV13 (RsDecodeMult_33)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_PDIV14 (RsDecodeMult_32)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_PDIV15 (RsDecodeMult_31)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_PDIV16 (RsDecodeMult_30)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_PDIV17 (RsDecodeMult_29)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_PDIV18 (RsDecodeMult_28)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_PDIV19 (RsDecodeMult_27)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_PDIV20 (RsDecodeMult_26)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_Q (RsDecodeMult_47)
+                                         0.000    0.000 5.64e-06 5.64e-06   0.1
+      RsDecodeMult_PMUL0 (RsDecodeMult_25)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_PMUL1 (RsDecodeMult_24)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_PMUL2 (RsDecodeMult_23)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_PMUL3 (RsDecodeMult_22)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_PMUL4 (RsDecodeMult_21)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_PMUL5 (RsDecodeMult_20)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_PMUL6 (RsDecodeMult_19)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_PMUL7 (RsDecodeMult_18)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_PMUL8 (RsDecodeMult_17)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_PMUL9 (RsDecodeMult_16)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_PMUL10 (RsDecodeMult_15)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_PMUL11 (RsDecodeMult_14)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_PMUL12 (RsDecodeMult_13)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_PMUL13 (RsDecodeMult_12)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_PMUL14 (RsDecodeMult_11)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_PMUL15 (RsDecodeMult_10)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_PMUL16 (RsDecodeMult_9)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_PMUL17 (RsDecodeMult_8)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_PMUL18 (RsDecodeMult_7)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_PMUL19 (RsDecodeMult_6)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_PMUL20 (RsDecodeMult_5)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+      RsDecodeMult_PMUL21 (RsDecodeMult_4)
+                                         0.000    0.000 5.67e-06 5.67e-06   0.1
+    RsDecodeChien (RsDecodeChien)     1.20e-04 1.14e-05 3.83e-04 5.15e-04  11.4
+      RsDecodeMult_MulE0 (RsDecodeMult_1)
+                                      1.50e-09 5.77e-09 6.26e-06 6.27e-06   0.1
+      RsDecodeMult_MulE1 (RsDecodeMult_0)
+                                      1.50e-09 5.77e-09 6.26e-06 6.27e-06   0.1
+      RsDecodeInv_InvE0 (RsDecodeInv_1)
+                                         0.000    0.000 1.80e-05 1.80e-05   0.4
+      RsDecodeInv_InvE1 (RsDecodeInv_0)
+                                         0.000    0.000 1.80e-05 1.80e-05   0.4
+      RsDecodeMult_MuldE0 (RsDecodeMult_3)
+                                         0.000    0.000 5.64e-06 5.64e-06   0.1
+      RsDecodeMult_MuldE1 (RsDecodeMult_2)
+                                      1.76e-10 4.68e-10 5.72e-06 5.72e-06   0.1
+    RsDecodeErasure (RsDecodeErasure) 3.73e-05 3.67e-06 2.03e-04 2.44e-04   5.4
+      RsDecodeMult_10 (RsDecodeMult_82)
+                                      4.67e-10 2.85e-09 5.76e-06 5.76e-06   0.1
+      RsDecodeMult_11 (RsDecodeMult_81)
+                                      4.67e-10 2.85e-09 5.75e-06 5.75e-06   0.1
+      RsDecodeMult_12 (RsDecodeMult_80)
+                                      4.67e-10 2.85e-09 5.76e-06 5.76e-06   0.1
+      RsDecodeMult_13 (RsDecodeMult_79)
+                                      4.67e-10 2.85e-09 5.76e-06 5.76e-06   0.1
+      RsDecodeMult_14 (RsDecodeMult_78)
+                                      4.67e-10 2.85e-09 5.76e-06 5.76e-06   0.1
+      RsDecodeMult_15 (RsDecodeMult_77)
+                                      4.67e-10 2.85e-09 5.75e-06 5.76e-06   0.1
+      RsDecodeMult_16 (RsDecodeMult_76)
+                                      4.67e-10 2.85e-09 5.75e-06 5.76e-06   0.1
+      RsDecodeMult_17 (RsDecodeMult_75)
+                                      4.67e-10 2.85e-09 5.75e-06 5.76e-06   0.1
+      RsDecodeMult_18 (RsDecodeMult_74)
+                                      4.67e-10 2.85e-09 5.75e-06 5.75e-06   0.1
+      RsDecodeMult_19 (RsDecodeMult_73)
+                                      4.67e-10 2.85e-09 5.75e-06 5.75e-06   0.1
+      RsDecodeMult_20 (RsDecodeMult_72)
+                                      4.67e-10 2.85e-09 5.75e-06 5.75e-06   0.1
+      RsDecodeMult_21 (RsDecodeMult_71)
+                                      4.67e-10 2.85e-09 5.75e-06 5.75e-06   0.1
+      RsDecodeMult_22 (RsDecodeMult_70)
+                                      4.67e-10 2.85e-09 5.75e-06 5.75e-06   0.1
+      RsDecodeMult_0 (RsDecodeMult_92)
+                                      2.37e-10 1.56e-09 5.68e-06 5.68e-06   0.1
+      RsDecodeMult_1 (RsDecodeMult_91)
+                                      4.67e-10 2.85e-09 5.77e-06 5.77e-06   0.1
+      RsDecodeMult_2 (RsDecodeMult_90)
+                                      4.67e-10 2.85e-09 5.77e-06 5.77e-06   0.1
+      RsDecodeMult_3 (RsDecodeMult_89)
+                                      4.67e-10 2.85e-09 5.77e-06 5.77e-06   0.1
+      RsDecodeMult_4 (RsDecodeMult_88)
+                                      4.67e-10 2.85e-09 5.77e-06 5.77e-06   0.1
+      RsDecodeMult_5 (RsDecodeMult_87)
+                                      4.67e-10 2.85e-09 5.76e-06 5.77e-06   0.1
+      RsDecodeMult_6 (RsDecodeMult_86)
+                                      4.67e-10 2.85e-09 5.76e-06 5.77e-06   0.1
+      RsDecodeMult_7 (RsDecodeMult_85)
+                                      4.67e-10 2.85e-09 5.76e-06 5.77e-06   0.1
+      RsDecodeMult_8 (RsDecodeMult_84)
+                                      4.67e-10 2.85e-09 5.76e-06 5.76e-06   0.1
+      RsDecodeMult_9 (RsDecodeMult_83)
+                                      4.67e-10 2.85e-09 5.76e-06 5.76e-06   0.1
+    RsDecodeSyndrome (RsDecodeSyndrome)
+                                      3.23e-05 2.99e-06 7.18e-05 1.07e-04   2.4
+    RsDecodeDegree_1 (RsDecodeDegree_1)
+                                         0.000    0.000 8.44e-06 8.44e-06   0.2
+    RsDecodeDegree_2 (RsDecodeDegree_0)
+                                      3.46e-08 1.32e-08 8.08e-07 8.56e-07   0.0
+  u_encoder (RsEncodeTop)             1.09e-04 4.66e-05 7.87e-05 2.34e-04   5.2
+1

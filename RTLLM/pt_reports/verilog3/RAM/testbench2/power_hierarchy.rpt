@@ -1,0 +1,15 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : RAM
+Version: V-2023.12
+Date   : Tue Sep  1 21:43:06 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+RAM                                   2.92e-05 5.21e-06 2.28e-05 5.72e-05 100.0
+1

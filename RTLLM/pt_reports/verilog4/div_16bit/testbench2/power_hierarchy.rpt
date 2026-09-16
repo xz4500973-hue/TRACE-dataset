@@ -1,0 +1,15 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : div_16bit
+Version: V-2023.12
+Date   : Tue Sep  1 21:43:28 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+div_16bit                             1.69e-05 8.89e-06 6.36e-05 8.94e-05 100.0
+1

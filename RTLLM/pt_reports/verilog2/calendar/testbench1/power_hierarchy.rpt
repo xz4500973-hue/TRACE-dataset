@@ -1,0 +1,15 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : calendar
+Version: V-2023.12
+Date   : Tue Sep  1 21:41:46 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+calendar                              7.64e-06 2.88e-07 5.29e-06 1.32e-05 100.0
+1

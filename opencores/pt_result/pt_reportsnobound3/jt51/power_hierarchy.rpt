@@ -1,0 +1,138 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : jt51
+Version: V-2023.12
+Date   : Mon Jun 22 17:49:06 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+jt51                                  4.49e-04 4.48e-05 1.44e-03 1.94e-03 100.0
+  u_mmr (jt51_mmr)                    1.53e-04 1.57e-05 5.70e-04 7.40e-04  38.2
+    u_reg (jt51_reg)                  1.46e-04 1.50e-05 5.44e-04 7.05e-04  36.4
+  u_lfo (jt51_lfo)                    6.35e-05 6.06e-06 1.27e-04 1.96e-04  10.1
+    amnoise_0__u_noise_am (jt51_lfo_lfsr_init0)
+                                      3.38e-06    0.000 5.65e-06 9.03e-06   0.5
+    amnoise_1__u_noise_am (jt51_lfo_lfsr_init2)
+                                      3.38e-06    0.000 5.84e-06 9.21e-06   0.5
+    amnoise_2__u_noise_am (jt51_lfo_lfsr_init6)
+                                      3.38e-06    0.000 5.83e-06 9.21e-06   0.5
+    amnoise_3__u_noise_am (jt51_lfo_lfsr_init12)
+                                      3.38e-06    0.000 5.74e-06 9.12e-06   0.5
+    amnoise_4__u_noise_am (jt51_lfo_lfsr_init20)
+                                      3.38e-06    0.000 5.78e-06 9.16e-06   0.5
+    amnoise_5__u_noise_am (jt51_lfo_lfsr_init30)
+                                      3.38e-06    0.000 5.86e-06 9.24e-06   0.5
+    amnoise_6__u_noise_am (jt51_lfo_lfsr_init42)
+                                      3.38e-06    0.000 5.80e-06 9.18e-06   0.5
+    pmnoise_0__u_noise_pm (jt51_lfo_lfsr_init40)
+                                      3.38e-06    0.000 5.73e-06 9.11e-06   0.5
+    pmnoise_1__u_noise_pm (jt51_lfo_lfsr_init41)
+                                      3.38e-06    0.000 6.01e-06 9.39e-06   0.5
+    pmnoise_2__u_noise_pm (jt51_lfo_lfsr_init50)
+                                      3.38e-06    0.000 5.80e-06 9.18e-06   0.5
+    pmnoise_3__u_noise_pm (jt51_lfo_lfsr_init67)
+                                      3.38e-06    0.000 6.09e-06 9.46e-06   0.5
+    pmnoise_4__u_noise_pm (jt51_lfo_lfsr_init92)
+                                      3.38e-06    0.000 5.84e-06 9.21e-06   0.5
+    pmnoise_5__u_noise_pm (jt51_lfo_lfsr_init125)
+                                      3.38e-06    0.000 6.07e-06 9.44e-06   0.5
+    pmnoise_6__u_noise_pm (jt51_lfo_lfsr_init166)
+                                      3.38e-06    0.000 5.86e-06 9.24e-06   0.5
+    pmnoise_7__u_noise_pm (jt51_lfo_lfsr_init215)
+                                      3.38e-06    0.000 6.17e-06 9.55e-06   0.5
+  timers (jt51_timers)                6.56e-06 6.06e-07 1.25e-05 1.97e-05   1.0
+    timer_A (jt51_timer_counter_width10_mult_width6)
+                                      3.03e-06    0.000 5.98e-06 9.01e-06   0.5
+    timer_B (jt51_timer_counter_width8_mult_width10)
+                                      3.38e-06    0.000 6.44e-06 9.82e-06   0.5
+  u_eg (jt51_envelope)                5.06e-05 4.88e-06 1.46e-04 2.02e-04  10.4
+    u_kssh (jt51_sh_width2_stages2)   3.43e-07    0.000 8.70e-07 1.21e-06   0.1
+    u_statesh (jt51_sh_width2_stages31)
+                                      5.52e-06 4.44e-07 1.45e-05 2.05e-05   1.1
+    u_tlsh (jt51_sh_width10_stages6)  5.27e-06 4.70e-07 1.31e-05 1.88e-05   1.0
+    u_aroffsh (jt51_sh_width1_stages3)
+                                      2.57e-07    0.000 6.53e-07 9.10e-07   0.0
+    u_egsh (jt51_sh_width10_stages27) 2.37e-05 2.24e-06 5.89e-05 8.48e-05   4.4
+    u_cntsh (jt51_sh_width1_stages32) 2.81e-06 2.59e-07 7.00e-06 1.01e-05   0.5
+  u_op (jt51_op)                      7.05e-05 6.96e-06 2.30e-04 3.08e-04  15.9
+    u_mod7sh (jt51_sh2_width14_stages8)
+                                      9.92e-06 9.50e-07 3.48e-05 4.57e-05   2.4
+      shifter_5__u_sh1 (jt51_sh1_stages8_8)
+                                      6.87e-07    0.000 2.45e-06 3.14e-06   0.2
+      shifter_9__u_sh1 (jt51_sh1_stages8_4)
+                                      6.87e-07    0.000 2.45e-06 3.14e-06   0.2
+      shifter_0__u_sh1 (jt51_sh1_stages8_13)
+                                      6.87e-07    0.000 2.42e-06 3.11e-06   0.2
+      shifter_11__u_sh1 (jt51_sh1_stages8_2)
+                                      6.87e-07    0.000 2.45e-06 3.14e-06   0.2
+      shifter_4__u_sh1 (jt51_sh1_stages8_9)
+                                      6.93e-07 6.79e-10 2.43e-06 3.13e-06   0.2
+      shifter_7__u_sh1 (jt51_sh1_stages8_6)
+                                      6.87e-07    0.000 2.45e-06 3.14e-06   0.2
+      shifter_10__u_sh1 (jt51_sh1_stages8_3)
+                                      6.87e-07    0.000 2.42e-06 3.11e-06   0.2
+      shifter_2__u_sh1 (jt51_sh1_stages8_11)
+                                      6.87e-07    0.000 2.45e-06 3.14e-06   0.2
+      shifter_13__u_sh1 (jt51_sh1_stages8_0)
+                                      6.87e-07    0.000 2.45e-06 3.14e-06   0.2
+      shifter_6__u_sh1 (jt51_sh1_stages8_7)
+                                      6.87e-07    0.000 2.42e-06 3.11e-06   0.2
+      shifter_1__u_sh1 (jt51_sh1_stages8_12)
+                                      6.87e-07    0.000 2.42e-06 3.11e-06   0.2
+      shifter_12__u_sh1 (jt51_sh1_stages8_1)
+                                      6.87e-07    0.000 2.42e-06 3.11e-06   0.2
+      shifter_8__u_sh1 (jt51_sh1_stages8_5)
+                                      6.87e-07    0.000 2.42e-06 3.11e-06   0.2
+      shifter_3__u_sh1 (jt51_sh1_stages8_10)
+                                      6.93e-07 6.79e-10 2.44e-06 3.13e-06   0.2
+    u_sintable (jt51_sintable)        8.81e-08 7.20e-08 1.13e-05 1.14e-05   0.6
+    u_con1sh (jt51_sh_width8_stages7) 5.02e-06 4.45e-07 1.26e-05 1.81e-05   0.9
+    u_con7sh (jt51_sh_width5_stages6) 2.70e-06 2.39e-07 6.89e-06 9.82e-06   0.5
+    u_exptable (jt51_exptable)        9.71e-08 7.57e-08 1.23e-05 1.24e-05   0.6
+  u_pg (jt51_phasegen)                7.10e-05 6.84e-06 2.36e-04 3.14e-04  16.2
+    u_mulsh (jt51_sh_width4_stages5)  1.72e-06    0.000 4.28e-06 6.00e-06   0.3
+    u_pm (jt51_pm)                       0.000    0.000 7.28e-06 7.28e-06   0.4
+    u_kosh (jt51_sh_width1_stages7_1) 6.01e-07    0.000 1.49e-06 2.09e-06   0.1
+    u_phinctable (jt51_phinc_rom)        0.000    0.000 2.53e-05 2.53e-05   1.3
+    u_phsh (jt51_sh_width20_stages32) 5.65e-05 5.34e-06 1.42e-04 2.04e-04  10.5
+  u_noise (jt51_noise)                1.83e-05 1.62e-06 6.32e-05 8.31e-05   4.3
+    noise_lfsr_7__u_lfsr (jt51_noise_lfsr_init33474)
+                                      1.54e-06    0.000 5.39e-06 6.93e-06   0.4
+    noise_lfsr_0__u_lfsr (jt51_noise_lfsr_init0)
+                                      1.54e-06    0.000 5.27e-06 6.81e-06   0.4
+    noise_lfsr_5__u_lfsr (jt51_noise_lfsr_init12270)
+                                      1.54e-06    0.000 5.56e-06 7.10e-06   0.4
+    noise_lfsr_1__u_lfsr (jt51_noise_lfsr_init126)
+                                      1.54e-06    0.000 5.39e-06 6.93e-06   0.4
+    noise_lfsr_3__u_lfsr (jt51_noise_lfsr_init2706)
+                                      1.54e-06    0.000 5.39e-06 6.93e-06   0.4
+    noise_lfsr_6__u_lfsr (jt51_noise_lfsr_init21126)
+                                      1.54e-06    0.000 5.39e-06 6.93e-06   0.4
+    u_zerosh (jt51_sh_width1_stages5) 4.50e-07 1.81e-09 1.11e-06 1.56e-06   0.1
+    noise_lfsr_8__u_lfsr (jt51_noise_lfsr_init49896)
+                                      1.54e-06    0.000 5.45e-06 6.99e-06   0.4
+    noise_lfsr_4__u_lfsr (jt51_noise_lfsr_init6324)
+                                      1.54e-06    0.000 5.42e-06 6.96e-06   0.4
+    noise_lfsr_9__u_lfsr (jt51_noise_lfsr_init70974)
+                                      1.54e-06    0.000 5.51e-06 7.05e-06   0.4
+    noise_lfsr_2__u_lfsr (jt51_noise_lfsr_init834)
+                                      1.54e-06    0.000 5.36e-06 6.90e-06   0.4
+    u_op31sh (jt51_sh_width1_stages7_0)
+                                      6.36e-07 1.15e-09 1.51e-06 2.15e-06   0.1
+  u_acc (jt51_acc)                    1.06e-05 9.04e-07 4.81e-05 5.96e-05   3.1
+    left2exp (jt51_lin2exp_1)         1.38e-09 2.55e-09 2.79e-06 2.80e-06   0.1
+    u_zerosh (jt51_sh_width1_stages22)
+                                      2.01e-06 1.66e-07 4.86e-06 7.04e-06   0.4
+    u_left (jt51_sum_op_1)            3.06e-06 2.77e-07 1.35e-05 1.68e-05   0.9
+    u_rlsh (jt51_sh_width2_stages14)  2.46e-06 2.27e-07 6.13e-06 8.81e-06   0.5
+    right_reconstruct (jt51_exp2lin_0)
+                                      8.16e-10 1.69e-09 1.79e-06 1.79e-06   0.1
+    right2exp (jt51_lin2exp_0)        1.38e-09 2.55e-09 2.79e-06 2.80e-06   0.1
+    left_reconstruct (jt51_exp2lin_1) 8.16e-10 1.69e-09 1.79e-06 1.79e-06   0.1
+    u_right (jt51_sum_op_0)           3.06e-06 2.20e-07 1.35e-05 1.68e-05   0.9
+1

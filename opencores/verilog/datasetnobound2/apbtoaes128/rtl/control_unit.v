@@ -1,0 +1,135 @@
+// VARIANT: One-hot FSM encoding (16 states → 16 bits)
+(* keep_hierarchy = "yes" *) module control_unit
+(
+	output reg [ 2:0] sbox_sel,
+	output reg [ 1:0] rk_sel,
+	output reg [ 1:0] key_out_sel,
+	output reg [ 1:0] col_sel,
+	output reg [ 3:0] key_en,
+	output reg [ 3:0] col_en,
+	output     [ 3:0] round,
+	output reg bypass_rk,
+	output reg bypass_key_en,
+	output reg key_sel,
+	output reg iv_cnt_en,
+	output reg iv_cnt_sel,
+	output reg key_derivation_en,
+	output end_comp,
+	output key_init,
+	output key_gen,
+	output mode_ctr,
+	output mode_cbc,
+	output last_round,
+  output encrypt_decrypt,	
+	input [1:0] operation_mode,
+	input [1:0] aes_mode,
+	input start,
+	input disable_core,
+	input clk,
+	input rst_n
+);
+
+localparam AES_CR=4'd00, AES_SR=4'd01, AES_DINR=4'd02, AES_DOUTR=4'd03, AES_KEYR0=4'd04, AES_KEYR1=4'd05, AES_KEYR2=4'd06, AES_KEYR3=4'd07, AES_IVR0=4'd08, AES_IVR1=4'd09, AES_IVR2=4'd10, AES_IVR3=4'd11;
+localparam ENCRYPTION=2'b00, KEY_DERIVATION=2'b01, DECRYPTION=2'b10, DECRYP_W_DERIV=2'b11;
+localparam ECB=2'b00, CBC=2'b01, CTR=2'b10;
+localparam COL_0=3'b000, COL_1=3'b001, COL_2=3'b010, COL_3=3'b011, G_FUNCTION=3'b100;
+localparam COL=2'b00, MIXCOL_IN=2'b01, MIXCOL_OUT=2'b10;
+localparam KEY_0=2'b00, KEY_1=2'b01, KEY_2=2'b10, KEY_3=2'b11;
+localparam SHIFT_ROWS=2'b00, ADD_RK_OUT=2'b01, INPUT=2'b10;
+localparam KEY_HOST=1'b0, KEY_OUT=1'b1;
+localparam KEY_DIS=4'b0000, EN_KEY_0=4'b0001, EN_KEY_1=4'b0010, EN_KEY_2=4'b0100, EN_KEY_3=4'b1000, KEY_ALL=4'b1111;
+localparam COL_DIS=4'b0000, EN_COL_0=4'b0001, EN_COL_1=4'b0010, EN_COL_2=4'b0100, EN_COL_3=4'b1000, COL_ALL=4'b1111;
+localparam IV_CNT=1'b1, IV_BUS=1'b0;
+localparam ENABLE=1'b1, DISABLE=1'b0;
+localparam NUMBER_ROUND=4'd10, NUMBER_ROUND_INC=4'd11, INITIAL_ROUND=4'd00;
+
+// One-hot FSM: 16 states
+localparam IDLE        = 15'b000000000000001;
+localparam ROUND0_COL0 = 15'b000000000000010;
+localparam ROUND0_COL1 = 15'b000000000000100;
+localparam ROUND0_COL2 = 15'b000000000001000;
+localparam ROUND0_COL3 = 15'b000000000010000;
+localparam ROUND_KEY0  = 15'b000000000100000;
+localparam ROUND_COL0  = 15'b000000001000000;
+localparam ROUND_COL1  = 15'b000000010000000;
+localparam ROUND_COL2  = 15'b000000100000000;
+localparam ROUND_COL3  = 15'b000001000000000;
+localparam READY       = 15'b000010000000000;
+localparam GEN_KEY0    = 15'b000100000000000;
+localparam GEN_KEY1    = 15'b001000000000000;
+localparam GEN_KEY2    = 15'b010000000000000;
+localparam GEN_KEY3    = 15'b100000000000000;
+
+reg [14:0] state, next_state;
+reg [3:0] rd_count;
+reg rd_count_en;
+wire op_key_derivation;
+wire first_round;
+wire [1:0] op_mode;
+wire enc_dec;
+
+always @(posedge clk, negedge rst_n)
+	if(!rst_n) state <= IDLE;
+	else if(disable_core) state <= IDLE;
+	else state <= next_state;
+
+assign encrypt_decrypt = (op_mode == ENCRYPTION || op_mode == KEY_DERIVATION || state[11] || state[12] || state[13] || state[14]);
+assign enc_dec = encrypt_decrypt | mode_ctr;
+assign key_gen = (state[5]);
+assign op_key_derivation = (op_mode == KEY_DERIVATION);
+assign mode_ctr = (aes_mode == CTR);
+assign mode_cbc = (aes_mode == CBC);
+assign key_init = start;
+assign op_mode = (mode_ctr) ? ENCRYPTION : operation_mode;
+
+// One-hot next-state logic
+always @(*) begin
+	next_state = state;
+	if(state[0]) begin // IDLE
+		if(start) case(op_mode) ENCRYPTION: next_state=ROUND0_COL0; DECRYPTION: next_state=ROUND0_COL3; KEY_DERIVATION: next_state=GEN_KEY0; DECRYP_W_DERIV: next_state=GEN_KEY0; endcase
+	end else if(state[1]) next_state = (enc_dec) ? ROUND0_COL1 : ROUND_KEY0;
+	else if(state[2]) next_state = (enc_dec) ? ROUND0_COL2 : ROUND0_COL0;
+	else if(state[3]) next_state = (enc_dec) ? ROUND0_COL3 : ROUND0_COL1;
+	else if(state[4]) next_state = (enc_dec) ? ROUND_KEY0 : ROUND0_COL2;
+	else if(state[5]) next_state = (!first_round) ? ((last_round) ? READY : ROUND0_COL0/*NOP*/) : ((enc_dec) ? ROUND_COL0 : ROUND_COL3);
+	else if(state[6]) next_state = (enc_dec) ? ROUND_COL1 : ROUND_KEY0;
+	else if(state[7]) next_state = (enc_dec) ? ROUND_COL2 : ROUND_COL0;
+	else if(state[8]) next_state = (enc_dec) ? ROUND_COL3 : ROUND_COL1;
+	else if(state[9]) next_state = (last_round && enc_dec) ? READY : ((enc_dec) ? ROUND_KEY0 : ROUND_COL2);
+	else if(state[10]) next_state = IDLE;
+	else if(state[11]) next_state = GEN_KEY1;
+	else if(state[12]) next_state = GEN_KEY2;
+	else if(state[13]) next_state = GEN_KEY3;
+	else if(state[14]) next_state = (last_round) ? ((op_key_derivation) ? READY : ROUND0_COL3) : GEN_KEY0;
+end
+
+assign end_comp = (state[10])?ENABLE:DISABLE;
+
+always @(*) begin
+	sbox_sel=COL_0; rk_sel=COL; bypass_rk=DISABLE; key_out_sel=KEY_0; col_sel=INPUT; key_sel=KEY_HOST; key_en=KEY_DIS; col_en=COL_DIS; rd_count_en=DISABLE; iv_cnt_en=DISABLE; iv_cnt_sel=IV_BUS; bypass_key_en=DISABLE; key_derivation_en=DISABLE;
+	if(state[1]) begin sbox_sel=COL_0; rk_sel=COL; bypass_rk=ENABLE; bypass_key_en=ENABLE; key_out_sel=KEY_0; col_sel=(enc_dec)?ADD_RK_OUT:SHIFT_ROWS; col_en=(enc_dec)?EN_COL_0:COL_ALL; end
+	else if(state[2]) begin sbox_sel=COL_1; rk_sel=COL; bypass_rk=ENABLE; bypass_key_en=ENABLE; key_out_sel=KEY_1; col_sel=ADD_RK_OUT; col_en=EN_COL_1; if(!enc_dec) begin key_sel=KEY_OUT; key_en=EN_KEY_1; end end
+	else if(state[3]) begin sbox_sel=COL_2; rk_sel=COL; bypass_rk=ENABLE; bypass_key_en=ENABLE; key_out_sel=KEY_2; col_sel=ADD_RK_OUT; col_en=EN_COL_2; if(!enc_dec) begin key_sel=KEY_OUT; key_en=EN_KEY_2; end end
+	else if(state[4]) begin sbox_sel=COL_3; rk_sel=COL; bypass_key_en=ENABLE; key_out_sel=KEY_3; col_sel=(enc_dec)?SHIFT_ROWS:ADD_RK_OUT; col_en=(enc_dec)?COL_ALL:EN_COL_3; bypass_rk=ENABLE; if(!enc_dec) begin key_sel=KEY_OUT; key_en=EN_KEY_3; end end
+	else if(state[5]) begin sbox_sel=G_FUNCTION; key_sel=KEY_OUT; key_en=EN_KEY_0; rd_count_en=ENABLE; end
+	else if(state[6]) begin sbox_sel=COL_0; rk_sel=(last_round)?MIXCOL_IN:MIXCOL_OUT; key_out_sel=KEY_0; key_sel=KEY_OUT; if(enc_dec) key_en=EN_KEY_1; if((mode_cbc&&last_round&&!enc_dec)||(mode_ctr&&last_round)) col_sel=INPUT; else begin if(!enc_dec) col_sel=(last_round)?ADD_RK_OUT:SHIFT_ROWS; else col_sel=ADD_RK_OUT; end if(enc_dec) col_en=EN_COL_0; else col_en=(last_round)?EN_COL_0:COL_ALL; end
+	else if(state[7]) begin sbox_sel=COL_1; rk_sel=(last_round)?MIXCOL_IN:MIXCOL_OUT; key_out_sel=KEY_1; key_sel=KEY_OUT; if(enc_dec) key_en=EN_KEY_2; else key_en=EN_KEY_1; if((mode_cbc&&last_round&&!enc_dec)||(mode_ctr&&last_round)) col_sel=INPUT; else col_sel=ADD_RK_OUT; col_en=EN_COL_1; end
+	else if(state[8]) begin sbox_sel=COL_2; rk_sel=(last_round)?MIXCOL_IN:MIXCOL_OUT; key_out_sel=KEY_2; key_sel=KEY_OUT; if(enc_dec) key_en=EN_KEY_3; else key_en=EN_KEY_2; if((mode_cbc&&last_round&&!enc_dec)||(mode_ctr&&last_round)) col_sel=INPUT; else col_sel=ADD_RK_OUT; col_en=EN_COL_2; end
+	else if(state[9]) begin sbox_sel=COL_3; rk_sel=(last_round)?MIXCOL_IN:MIXCOL_OUT; key_out_sel=KEY_3; key_sel=KEY_OUT; if(!enc_dec) key_en=EN_KEY_3; if((mode_cbc&&last_round&&!enc_dec)||(mode_ctr&&last_round)) col_sel=INPUT; else begin if(enc_dec) col_sel=(last_round)?ADD_RK_OUT:SHIFT_ROWS; else col_sel=ADD_RK_OUT; end if(enc_dec) col_en=(last_round)?EN_COL_3:COL_ALL; else col_en=EN_COL_3; if(mode_ctr&&last_round) begin iv_cnt_en=ENABLE; iv_cnt_sel=IV_CNT; end end
+	else if(state[11]) begin sbox_sel=G_FUNCTION; rd_count_en=ENABLE; end
+	else if(state[12]) begin key_en=EN_KEY_1|EN_KEY_0; key_sel=KEY_OUT; bypass_key_en=ENABLE; end
+	else if(state[13]) begin key_en=EN_KEY_2; key_sel=KEY_OUT; bypass_key_en=ENABLE; end
+	else if(state[14]) begin key_en=EN_KEY_3; key_sel=KEY_OUT; bypass_key_en=ENABLE; end
+	else if(state[10]) begin if(op_mode==KEY_DERIVATION) key_derivation_en=ENABLE; end
+end
+
+always @(posedge clk, negedge rst_n)
+	if(!rst_n) rd_count <= INITIAL_ROUND;
+	else if(state[0] || (state[14] && last_round)) rd_count <= INITIAL_ROUND;
+	else if(rd_count_en) rd_count <= rd_count + 1'b1;
+
+assign round = rd_count;
+assign first_round = (rd_count == INITIAL_ROUND);
+assign last_round  = (rd_count == NUMBER_ROUND || rd_count == NUMBER_ROUND_INC);
+
+endmodule

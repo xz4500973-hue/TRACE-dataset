@@ -1,0 +1,15 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : float_multi
+Version: V-2023.12
+Date   : Tue Sep  1 21:44:24 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+float_multi                           2.39e-05 2.29e-06 8.20e-05 1.08e-04 100.0
+1

@@ -1,0 +1,15 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : pulse_detect
+Version: V-2023.12
+Date   : Tue Sep  1 21:42:16 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+pulse_detect                          1.27e-06 2.06e-08 7.44e-07 2.04e-06 100.0
+1

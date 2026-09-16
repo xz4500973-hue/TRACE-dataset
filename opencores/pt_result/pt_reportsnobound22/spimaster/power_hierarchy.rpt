@@ -1,0 +1,40 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : spiMaster
+Version: V-2023.12
+Date   : Mon Jun 22 17:18:22 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+spiMaster                             1.54e-03 2.18e-04 2.90e-03 4.66e-03 100.0
+  u_ctrlStsRegBI (ctrlStsRegBI)       1.84e-05 2.94e-06 2.84e-05 4.97e-05   1.1
+  u_spiMasterWishBoneBI (spiMasterWishBoneBI)
+                                      6.80e-07 1.64e-07 6.64e-07 1.51e-06   0.0
+  u_initSD (initSD)                   1.11e-05 9.86e-07 2.26e-05 3.47e-05   0.7
+  u_sm_rxFifo (sm_RxFifo_FIFO_DEPTH512_ADDR_WIDTH9)
+                                      7.22e-04 7.07e-05 1.38e-03 2.17e-03  46.5
+    u_sm_RxfifoBI (sm_RxfifoBI)       1.35e-06 3.74e-07 2.10e-06 3.82e-06   0.1
+    u_sm_fifo (sm_fifoRTL_FIFO_WIDTH8_FIFO_DEPTH512_ADDR_WIDTH9_0)
+                                      7.21e-04 7.03e-05 1.38e-03 2.17e-03  46.5
+      u_sm_dpMem_dc (sm_dpMem_dc_FIFO_WIDTH8_FIFO_DEPTH512_ADDR_WIDTH9_0)
+                                      7.10e-04 6.90e-05 1.36e-03 2.14e-03  45.8
+  u_readWriteSDBlock (readWriteSDBlock)
+                                      2.18e-05 1.95e-06 4.61e-05 6.99e-05   1.5
+  u_spiTxRxData (spiTxRxData)         3.03e-06 5.25e-09 5.48e-06 8.52e-06   0.2
+  u_sendCmd (sendCmd)                 1.44e-05 1.33e-06 2.84e-05 4.41e-05   0.9
+  u_spiCtrl (spiCtrl)                 1.69e-06 5.98e-09 3.36e-06 5.06e-06   0.1
+  u_readWriteSPIWireData (readWriteSPIWireData)
+                                      7.45e-06 7.06e-07 1.31e-05 2.12e-05   0.5
+  u_sm_txFifo (sm_TxFifo_FIFO_DEPTH512_ADDR_WIDTH9)
+                                      7.41e-04 1.38e-04 1.38e-03 2.26e-03  48.4
+    u_sm_TxfifoBI (sm_TxfifoBI)       1.09e-06 6.19e-09 1.62e-06 2.71e-06   0.1
+    u_sm_fifo (sm_fifoRTL_FIFO_WIDTH8_FIFO_DEPTH512_ADDR_WIDTH9_1)
+                                      7.39e-04 1.38e-04 1.38e-03 2.25e-03  48.3
+      u_sm_dpMem_dc (sm_dpMem_dc_FIFO_WIDTH8_FIFO_DEPTH512_ADDR_WIDTH9_1)
+                                      7.29e-04 1.37e-04 1.36e-03 2.22e-03  47.6
+1

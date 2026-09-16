@@ -1,0 +1,15 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : seqdet
+Version: V-2023.12
+Date   : Wed Sep  2 15:35:58 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+seqdet                                1.96e-06 1.71e-07 9.50e-07 3.08e-06 100.0
+1

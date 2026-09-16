@@ -1,0 +1,51 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : gfx_top
+Version: V-2023.12
+Date   : Mon Jun 22 16:54:04 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+gfx_top                               8.75e-02 8.55e-03 1.89e-02    0.115 100.0
+  wbm_writer (gfx_wbm_write)          3.44e-06 8.18e-11 3.82e-06 7.26e-06   0.0
+  renderer (gfx_renderer_point_width16)
+                                      1.22e-04 9.57e-06 8.76e-05 2.19e-04   0.2
+    color_proc (color_to_memory_1)    2.14e-09 2.58e-09 1.88e-06 1.89e-06   0.0
+    depth_proc (color_to_memory_0)       0.000    0.000 1.28e-06 1.28e-06   0.0
+  blender0 (gfx_blender_point_width16)
+                                      1.63e-04 1.41e-05 1.61e-04 3.38e-04   0.3
+    memory_proc (memory_to_color_0)   8.60e-09 4.56e-09 2.89e-06 2.90e-06   0.0
+  transform (gfx_transform_point_width16_subpixel_width16)
+                                      1.19e-03 1.12e-04 1.06e-03 2.36e-03   2.0
+  wb_databus (gfx_wbs_REG_ADR_HIBIT9_point_width16_subpixel_width16_fifo_depth10)
+                                      7.53e-02 7.36e-03 1.45e-02 9.71e-02  84.5
+    instruction_fifo (basic_fifo_fifo_width42_fifo_bit_depth10)
+                                      7.28e-02 7.12e-03 1.41e-02 9.40e-02  81.7
+  wbm_reader (gfx_wbm_read)           1.12e-05 6.60e-10 4.73e-06 1.60e-05   0.0
+  fp0 (gfx_fragment_processor_point_width16)
+                                      1.63e-04 1.37e-05 1.12e-04 2.88e-04   0.3
+    color_proc (memory_to_color_1)    8.72e-09 5.43e-09 2.89e-06 2.90e-06   0.0
+  wbm_arbiter (gfx_wbm_read_arbiter)  2.74e-09 4.23e-09 5.79e-06 5.80e-06   0.0
+  interp (gfx_interp_point_width16_delay_width5_result_width4)
+                                      8.33e-03 8.20e-04 1.77e-03 1.09e-02   9.5
+    queue_fifo (basic_fifo_fifo_width37_fifo_bit_depth5)
+                                      2.16e-03 2.15e-04 4.13e-04 2.79e-03   2.4
+    dut0 (div_uu_z_width32_1)         2.12e-03 2.05e-04 5.08e-04 2.83e-03   2.5
+    dut1 (div_uu_z_width32_0)         2.12e-03 2.07e-04 5.08e-04 2.83e-03   2.5
+    result_fifo (basic_fifo_fifo_width64_fifo_bit_depth4)
+                                      1.92e-03 1.85e-04 3.40e-04 2.44e-03   2.1
+  rasterizer0 (gfx_rasterizer_point_width16_subpixel_width16_delay_width5)
+                                      1.62e-03 1.54e-04 6.62e-04 2.43e-03   2.1
+    bresenham (bresenham_line_point_width16_subpixel_width16)
+                                      5.18e-04 4.77e-05 1.33e-04 6.98e-04   0.6
+    triangle (gfx_triangle_point_width16_subpixel_width16)
+                                      8.53e-04 8.10e-05 4.48e-04 1.38e-03   1.2
+  clip (gfx_clip_point_width16)       2.75e-04 2.31e-05 1.02e-04 4.00e-04   0.3
+    memory_proc (memory_to_color_2)   1.55e-09 4.01e-10 1.35e-06 1.35e-06   0.0
+  cuvz (gfx_cuvz_point_width16)       3.48e-04 3.19e-05 4.94e-04 8.75e-04   0.8
+1

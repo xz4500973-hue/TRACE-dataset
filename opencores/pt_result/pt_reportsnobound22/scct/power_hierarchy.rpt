@@ -1,0 +1,24 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : scct
+Version: V-2023.12
+Date   : Mon Jun 22 17:18:00 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+scct                                  1.49e-03 1.54e-04 2.88e-04 1.93e-03 100.0
+  channel0 (scct_channel_7)           7.29e-05 6.58e-06 1.45e-05 9.39e-05   4.9
+  channel1 (scct_channel_6)           7.26e-05 6.63e-06 1.38e-05 9.30e-05   4.8
+  channel2 (scct_channel_5)           7.23e-05 6.49e-06 1.42e-05 9.30e-05   4.8
+  channel3 (scct_channel_4)           7.23e-05 6.48e-06 1.42e-05 9.29e-05   4.8
+  channel4 (scct_channel_3)           7.23e-05 6.48e-06 1.42e-05 9.29e-05   4.8
+  channel5 (scct_channel_2)           7.23e-05 6.48e-06 1.42e-05 9.29e-05   4.8
+  channel6 (scct_channel_1)           7.23e-05 6.48e-06 1.42e-05 9.29e-05   4.8
+  channel7 (scct_channel_0)           7.23e-05 6.48e-06 1.42e-05 9.29e-05   4.8
+  my_counter (scct_counter)           2.41e-04 2.95e-05 3.75e-05 3.08e-04  16.0
+1

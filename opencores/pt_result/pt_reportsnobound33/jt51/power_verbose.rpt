@@ -1,0 +1,391 @@
+****************************************
+Report : Averaged Power
+	-verbose
+Design : jt51
+Version: V-2023.12
+Date   : Mon Jun 22 17:47:50 2026
+****************************************
+
+Library(s) Used:
+
+    tcbn28hpcplusbwp12t30p140ssg0p81v125c (File: /process/course_lib/t28hpc+/tcbn28hpcplusbwp12t30p140ssg0p81v125c.db)
+
+
+Operating Conditions: ssg0p81v125c   Library: tcbn28hpcplusbwp12t30p140ssg0p81v125c
+Wire Load Model Mode: segmented
+
+Cell               Design       Wire_model  Library       Selection_type
+--------------------------------------------------------------------------------
+                   jt51         ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_mmr              jt51_mmr     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_mmr/u_reg        jt51_reg     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_lfo              jt51_lfo     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_lfo/amnoise_0__u_noise_am
+                   jt51_lfo_lfsr_init0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_lfo/amnoise_1__u_noise_am
+                   jt51_lfo_lfsr_init2
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_lfo/amnoise_2__u_noise_am
+                   jt51_lfo_lfsr_init6
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_lfo/amnoise_3__u_noise_am
+                   jt51_lfo_lfsr_init12
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_lfo/amnoise_4__u_noise_am
+                   jt51_lfo_lfsr_init20
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_lfo/amnoise_5__u_noise_am
+                   jt51_lfo_lfsr_init30
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_lfo/amnoise_6__u_noise_am
+                   jt51_lfo_lfsr_init42
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_lfo/pmnoise_0__u_noise_pm
+                   jt51_lfo_lfsr_init40
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_lfo/pmnoise_1__u_noise_pm
+                   jt51_lfo_lfsr_init41
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_lfo/pmnoise_2__u_noise_pm
+                   jt51_lfo_lfsr_init50
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_lfo/pmnoise_3__u_noise_pm
+                   jt51_lfo_lfsr_init67
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_lfo/pmnoise_4__u_noise_pm
+                   jt51_lfo_lfsr_init92
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_lfo/pmnoise_5__u_noise_pm
+                   jt51_lfo_lfsr_init125
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_lfo/pmnoise_6__u_noise_pm
+                   jt51_lfo_lfsr_init166
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_lfo/pmnoise_7__u_noise_pm
+                   jt51_lfo_lfsr_init215
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+timers             jt51_timers  ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+timers/timer_A     jt51_timer_counter_width10_mult_width6
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+timers/timer_B     jt51_timer_counter_width8_mult_width10
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_eg               jt51_envelope
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_eg/u_kssh        jt51_sh_width2_stages2
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_eg/u_statesh     jt51_sh_width2_stages31
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_eg/u_tlsh        jt51_sh_width10_stages6
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_eg/u_aroffsh     jt51_sh_width1_stages3
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_eg/u_egsh        jt51_sh_width10_stages27
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_eg/u_cntsh       jt51_sh_width1_stages32
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_op               jt51_op      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_op/u_mod7sh      jt51_sh2_width14_stages8
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_op/u_mod7sh/shifter_5__u_sh1
+                   jt51_sh1_stages8_8
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_op/u_mod7sh/shifter_9__u_sh1
+                   jt51_sh1_stages8_4
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_op/u_mod7sh/shifter_0__u_sh1
+                   jt51_sh1_stages8_13
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_op/u_mod7sh/shifter_11__u_sh1
+                   jt51_sh1_stages8_2
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_op/u_mod7sh/shifter_4__u_sh1
+                   jt51_sh1_stages8_9
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_op/u_mod7sh/shifter_7__u_sh1
+                   jt51_sh1_stages8_6
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_op/u_mod7sh/shifter_10__u_sh1
+                   jt51_sh1_stages8_3
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_op/u_mod7sh/shifter_2__u_sh1
+                   jt51_sh1_stages8_11
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_op/u_mod7sh/shifter_13__u_sh1
+                   jt51_sh1_stages8_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_op/u_mod7sh/shifter_6__u_sh1
+                   jt51_sh1_stages8_7
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_op/u_mod7sh/shifter_1__u_sh1
+                   jt51_sh1_stages8_12
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_op/u_mod7sh/shifter_12__u_sh1
+                   jt51_sh1_stages8_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_op/u_mod7sh/shifter_8__u_sh1
+                   jt51_sh1_stages8_5
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_op/u_mod7sh/shifter_3__u_sh1
+                   jt51_sh1_stages8_10
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_op/u_sintable    jt51_sintable
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_op/u_con1sh      jt51_sh_width8_stages7
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_op/u_con7sh      jt51_sh_width5_stages6
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_op/u_exptable    jt51_exptable
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_pg               jt51_phasegen
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_pg/u_mulsh       jt51_sh_width4_stages5
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_pg/u_pm          jt51_pm      ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_pg/u_kosh        jt51_sh_width1_stages7_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_pg/u_phinctable  jt51_phinc_rom
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_pg/u_phsh        jt51_sh_width20_stages32
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_noise            jt51_noise   ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_noise/noise_lfsr_7__u_lfsr
+                   jt51_noise_lfsr_init33474
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_noise/noise_lfsr_0__u_lfsr
+                   jt51_noise_lfsr_init0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_noise/noise_lfsr_5__u_lfsr
+                   jt51_noise_lfsr_init12270
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_noise/noise_lfsr_1__u_lfsr
+                   jt51_noise_lfsr_init126
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_noise/noise_lfsr_3__u_lfsr
+                   jt51_noise_lfsr_init2706
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_noise/noise_lfsr_6__u_lfsr
+                   jt51_noise_lfsr_init21126
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_noise/u_zerosh   jt51_sh_width1_stages5
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_noise/noise_lfsr_8__u_lfsr
+                   jt51_noise_lfsr_init49896
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_noise/noise_lfsr_4__u_lfsr
+                   jt51_noise_lfsr_init6324
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_noise/noise_lfsr_9__u_lfsr
+                   jt51_noise_lfsr_init70974
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_noise/noise_lfsr_2__u_lfsr
+                   jt51_noise_lfsr_init834
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_noise/u_op31sh   jt51_sh_width1_stages7_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_acc              jt51_acc     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_acc/left2exp     jt51_lin2exp_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_acc/u_zerosh     jt51_sh_width1_stages22
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_acc/u_left       jt51_sum_op_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_acc/u_rlsh       jt51_sh_width2_stages14
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_acc/right_reconstruct
+                   jt51_exp2lin_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_acc/right2exp    jt51_lin2exp_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_acc/left_reconstruct
+                   jt51_exp2lin_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+u_acc/u_right      jt51_sum_op_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+
+Power-specific unit information :
+    Voltage Units = 1 V
+    Capacitance Units = 1 pf
+    Time Units = 1 ns
+    Dynamic Power Units = 1 W
+    Leakage Power Units = 1 W
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network              0.0000    0.0000    0.0000    0.0000 ( 0.00%)  i
+register                   0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+combinational           1.202e-05 4.422e-05 4.316e-04 4.878e-04 (25.22%)  
+sequential              4.365e-04 5.257e-07 1.010e-03 1.447e-03 (74.78%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power  = 4.474e-05   ( 2.31%)
+  Cell Internal Power  = 4.485e-04   (23.19%)
+  Cell Leakage Power   = 1.441e-03   (74.50%)
+                         ---------
+Total Power            = 1.935e-03  (100.00%)
+
+1

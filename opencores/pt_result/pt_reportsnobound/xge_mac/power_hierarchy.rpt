@@ -1,0 +1,99 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : xge_mac
+Version: V-2023.12
+Date   : Mon Jun 22 16:56:34 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+xge_mac                               7.48e-06 7.83e-07 4.52e-03 4.53e-03 100.0
+  rx_data_fifo0 (rx_data_fifo)        2.53e-06 2.49e-07 1.56e-03 1.56e-03  34.5
+    fifo0 (generic_fifo_DWIDTH72_AWIDTH6_REGISTER_READ0_EARLY_READ1_CLOCK_CROSSING1_ALMOST_EMPTY_THRESH4_MEM_TYPE2)
+                                      2.53e-06 2.49e-07 1.56e-03 1.56e-03  34.5
+      genblk2_mem0 (generic_mem_medium_DWIDTH72_AWIDTH6_RAM_DEPTH64_REGISTER_READ0)
+                                      2.50e-06 2.46e-07 1.54e-03 1.54e-03  34.1
+      ctrl0 (generic_fifo_ctrl_AWIDTH6_RAM_DEPTH64_EARLY_READ1_CLOCK_CROSSING1_ALMOST_EMPTY_THRESH4_ALMOST_FULL_THRESH62)
+                                      3.10e-08 2.92e-09 1.62e-05 1.62e-05   0.4
+  tx_data_fifo0 (tx_data_fifo)        2.50e-06 2.42e-07 1.53e-03 1.54e-03  33.9
+    fifo0 (generic_fifo_DWIDTH72_AWIDTH6_REGISTER_READ1_EARLY_READ1_CLOCK_CROSSING1_ALMOST_EMPTY_THRESH7_ALMOST_FULL_THRESH12_MEM_TYPE2)
+                                      2.50e-06 2.42e-07 1.53e-03 1.54e-03  33.9
+      genblk2_mem0 (generic_mem_medium_DWIDTH72_AWIDTH6_RAM_DEPTH64_REGISTER_READ1)
+                                      2.46e-06 2.39e-07 1.52e-03 1.52e-03  33.6
+      ctrl0 (generic_fifo_ctrl_AWIDTH6_RAM_DEPTH64_EARLY_READ1_CLOCK_CROSSING1_ALMOST_EMPTY_THRESH7_ALMOST_FULL_THRESH12)
+                                      3.06e-08 2.76e-09 1.60e-05 1.60e-05   0.4
+  rx_dq0 (rx_dequeue)                 4.05e-08 3.52e-09 2.05e-05 2.05e-05   0.5
+  stats0 (stats)                      2.82e-07 2.76e-08 2.20e-04 2.21e-04   4.9
+    stats_sm0 (stats_sm)              1.15e-08 1.28e-09 4.08e-05 4.08e-05   0.9
+    rx_stats_fifo0 (rx_stats_fifo)    1.35e-07 1.31e-08 8.98e-05 8.99e-05   2.0
+      fifo0 (generic_fifo_DWIDTH14_AWIDTH4_REGISTER_READ1_EARLY_READ1_CLOCK_CROSSING1_ALMOST_EMPTY_THRESH7_ALMOST_FULL_THRESH12_MEM_TYPE1_0)
+                                      1.35e-07 1.31e-08 8.98e-05 8.99e-05   2.0
+        ctrl0 (generic_fifo_ctrl_AWIDTH4_RAM_DEPTH16_EARLY_READ1_CLOCK_CROSSING1_ALMOST_EMPTY_THRESH7_ALMOST_FULL_THRESH12_0)
+                                      1.24e-08    0.000 1.10e-05 1.10e-05   0.2
+        genblk1_mem0 (generic_mem_small_DWIDTH14_AWIDTH4_RAM_DEPTH16_REGISTER_READ1_0)
+                                      1.22e-07 1.07e-08 7.85e-05 7.87e-05   1.7
+    tx_stats_fifo0 (tx_stats_fifo)    1.35e-07 1.31e-08 8.98e-05 8.99e-05   2.0
+      fifo0 (generic_fifo_DWIDTH14_AWIDTH4_REGISTER_READ1_EARLY_READ1_CLOCK_CROSSING1_ALMOST_EMPTY_THRESH7_ALMOST_FULL_THRESH12_MEM_TYPE1_1)
+                                      1.35e-07 1.31e-08 8.98e-05 8.99e-05   2.0
+        ctrl0 (generic_fifo_ctrl_AWIDTH4_RAM_DEPTH16_EARLY_READ1_CLOCK_CROSSING1_ALMOST_EMPTY_THRESH7_ALMOST_FULL_THRESH12_1)
+                                      1.24e-08    0.000 1.10e-05 1.10e-05   0.2
+        genblk1_mem0 (generic_mem_small_DWIDTH14_AWIDTH4_RAM_DEPTH16_REGISTER_READ1_1)
+                                      1.22e-07 1.07e-08 7.85e-05 7.87e-05   1.7
+  tx_eq0 (tx_enqueue)                 1.07e-09    0.000 3.86e-06 3.86e-06   0.1
+  rx_hold_fifo0 (rx_hold_fifo)        6.62e-07 6.59e-08 4.02e-04 4.02e-04   8.9
+    fifo0 (generic_fifo_DWIDTH72_AWIDTH4_REGISTER_READ1_EARLY_READ1_CLOCK_CROSSING0_ALMOST_EMPTY_THRESH7_MEM_TYPE1)
+                                      6.61e-07 6.40e-08 4.01e-04 4.02e-04   8.9
+      genblk1_mem0 (generic_mem_small_DWIDTH72_AWIDTH4_RAM_DEPTH16_REGISTER_READ1_1)
+                                      6.56e-07 6.40e-08 3.98e-04 3.98e-04   8.8
+      ctrl0 (generic_fifo_ctrl_AWIDTH4_RAM_DEPTH16_EARLY_READ1_CLOCK_CROSSING0_ALMOST_EMPTY_THRESH7_ALMOST_FULL_THRESH14)
+                                      5.35e-09    0.000 3.93e-06 3.94e-06   0.1
+  tx_hold_fifo0 (tx_hold_fifo)        6.70e-07 6.53e-08 4.03e-04 4.04e-04   8.9
+    fifo0 (generic_fifo_DWIDTH72_AWIDTH4_REGISTER_READ1_EARLY_READ1_CLOCK_CROSSING0_ALMOST_EMPTY_THRESH7_ALMOST_FULL_THRESH4_MEM_TYPE1)
+                                      6.70e-07 6.33e-08 4.03e-04 4.04e-04   8.9
+      genblk1_mem0 (generic_mem_small_DWIDTH72_AWIDTH4_RAM_DEPTH16_REGISTER_READ1_0)
+                                      6.64e-07 6.33e-08 3.99e-04 4.00e-04   8.8
+      ctrl0 (generic_fifo_ctrl_AWIDTH4_RAM_DEPTH16_EARLY_READ1_CLOCK_CROSSING0_ALMOST_EMPTY_THRESH7_ALMOST_FULL_THRESH4)
+                                      5.35e-09    0.000 3.93e-06 3.93e-06   0.1
+  sync_clk_xgmii_tx0 (sync_clk_xgmii_tx)
+                                      3.20e-09    0.000 1.07e-06 1.07e-06   0.0
+    meta_sync0 (meta_sync_DWIDTH3)    3.20e-09    0.000 1.07e-06 1.07e-06   0.0
+      meta_0__meta_sync_single0 (meta_sync_single_EDGE_DETECT0_2)
+                                      1.07e-09    0.000 3.55e-07 3.56e-07   0.0
+      meta_1__meta_sync_single0 (meta_sync_single_EDGE_DETECT0_1)
+                                      1.07e-09    0.000 3.55e-07 3.56e-07   0.0
+      meta_2__meta_sync_single0 (meta_sync_single_EDGE_DETECT0_0)
+                                      1.07e-09    0.000 3.55e-07 3.56e-07   0.0
+  tx_dq0 (tx_dequeue)                 3.30e-07 3.29e-08 1.95e-04 1.95e-04   4.3
+  fault_sm0 (fault_sm)                1.02e-08    0.000 5.60e-06 5.61e-06   0.1
+  wishbone_if0 (wishbone_if)          4.89e-09 4.01e-10 1.72e-05 1.72e-05   0.4
+  sync_clk_wb0 (sync_clk_wb)          3.09e-09 2.66e-10 7.29e-06 7.30e-06   0.2
+    meta_sync1 (meta_sync_DWIDTH2_EDGE_DETECT0)
+                                      3.35e-10    0.000 7.11e-07 7.11e-07   0.0
+      meta_0__meta_sync_single0 (meta_sync_single_EDGE_DETECT0_4)
+                                      1.68e-10    0.000 3.55e-07 3.56e-07   0.0
+      meta_1__meta_sync_single0 (meta_sync_single_EDGE_DETECT0_3)
+                                      1.68e-10    0.000 3.55e-07 3.56e-07   0.0
+    meta_sync0 (meta_sync_DWIDTH8_EDGE_DETECT1)
+                                      2.75e-09 2.59e-10 6.55e-06 6.55e-06   0.1
+      meta_0__meta_sync_single0 (meta_sync_single_EDGE_DETECT1_7)
+                                      3.31e-10    0.000 7.99e-07 8.00e-07   0.0
+      meta_3__meta_sync_single0 (meta_sync_single_EDGE_DETECT1_4)
+                                      3.36e-10    0.000 7.99e-07 8.00e-07   0.0
+      meta_6__meta_sync_single0 (meta_sync_single_EDGE_DETECT1_1)
+                                      3.31e-10    0.000 7.99e-07 8.00e-07   0.0
+      meta_1__meta_sync_single0 (meta_sync_single_EDGE_DETECT1_6)
+                                      3.36e-10    0.000 7.99e-07 8.00e-07   0.0
+      meta_4__meta_sync_single0 (meta_sync_single_EDGE_DETECT1_3)
+                                      3.36e-10    0.000 7.99e-07 8.00e-07   0.0
+      meta_7__meta_sync_single0 (meta_sync_single_EDGE_DETECT1_0)
+                                      3.31e-10    0.000 7.99e-07 8.00e-07   0.0
+      meta_2__meta_sync_single0 (meta_sync_single_EDGE_DETECT1_5)
+                                      3.36e-10    0.000 7.99e-07 8.00e-07   0.0
+      meta_5__meta_sync_single0 (meta_sync_single_EDGE_DETECT1_2)
+                                      3.36e-10    0.000 7.99e-07 8.00e-07   0.0
+  rx_eq0 (rx_enqueue)                 4.49e-07 9.18e-08 1.53e-04 1.53e-04   3.4
+1

@@ -1,0 +1,40 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : usbf_device
+Version: V-2023.12
+Date   : Mon Jun 22 17:17:09 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+usbf_device                           6.68e-04 1.01e-04 1.23e-03 2.00e-03 100.0
+  u_fifo_rx_ep0 (usbf_fifo_WIDTH8_DEPTH8_ADDR_W3_1)
+                                      1.28e-05 1.61e-06 2.44e-05 3.88e-05   1.9
+  u_fifo_rx_ep1 (usbf_fifo_WIDTH8_DEPTH64_ADDR_W6_5)
+                                      9.19e-05 9.66e-06 1.75e-04 2.77e-04  13.9
+  u_fifo_rx_ep2 (usbf_fifo_WIDTH8_DEPTH64_ADDR_W6_3)
+                                      9.19e-05 9.61e-06 1.75e-04 2.77e-04  13.9
+  u_fifo_rx_ep3 (usbf_fifo_WIDTH8_DEPTH64_ADDR_W6_1)
+                                      9.19e-05 9.61e-06 1.75e-04 2.77e-04  13.9
+  u_core (usbf_device_core)           4.17e-05 1.38e-05 5.63e-05 1.12e-04   5.6
+    u_sie_rx (usbf_sie_rx)            2.61e-05 8.10e-06 2.90e-05 6.33e-05   3.2
+      u_crc16 (usbf_crc16_0)          2.68e-08 9.38e-09 2.99e-06 3.03e-06   0.2
+    u_sie_tx (usbf_sie_tx)            6.14e-06 1.95e-06 1.16e-05 1.97e-05   1.0
+      u_crc16 (usbf_crc16_1)          7.28e-09 2.45e-09 2.99e-06 3.00e-06   0.2
+  u_fifo_tx_ep0 (usbf_fifo_WIDTH8_DEPTH8_ADDR_W3_0)
+                                      1.28e-05 1.73e-06 2.44e-05 3.89e-05   2.0
+  u_fifo_tx_ep1 (usbf_fifo_WIDTH8_DEPTH64_ADDR_W6_4)
+                                      9.24e-05 1.15e-05 1.75e-04 2.79e-04  14.0
+  u_fifo_tx_ep2 (usbf_fifo_WIDTH8_DEPTH64_ADDR_W6_2)
+                                      9.24e-05 1.15e-05 1.75e-04 2.79e-04  14.0
+  u_fifo_tx_ep3 (usbf_fifo_WIDTH8_DEPTH64_ADDR_W6_0)
+                                      9.24e-05 1.15e-05 1.75e-04 2.79e-04  14.0
+  u_ep0 (usbf_sie_ep_3)               5.05e-06 1.70e-06 9.46e-06 1.62e-05   0.8
+  u_ep1 (usbf_sie_ep_2)               5.05e-06 1.70e-06 9.46e-06 1.62e-05   0.8
+  u_ep2 (usbf_sie_ep_1)               5.05e-06 1.70e-06 9.46e-06 1.62e-05   0.8
+  u_ep3 (usbf_sie_ep_0)               5.06e-06 1.70e-06 9.46e-06 1.62e-05   0.8
+1

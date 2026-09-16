@@ -1,0 +1,16 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : uart
+Version: V-2023.12
+Date   : Mon Jun 22 16:54:08 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+uart                                  3.53e-05 3.57e-06 3.34e-05 7.23e-05 100.0
+  transceiver (uart_transceiver)      2.36e-05 2.28e-06 2.32e-05 4.91e-05  67.9
+1

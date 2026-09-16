@@ -1,0 +1,15 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : edge_detect
+Version: V-2023.12
+Date   : Tue Sep  1 21:44:17 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+edge_detect                           1.98e-06 4.04e-08 7.30e-07 2.75e-06 100.0
+1

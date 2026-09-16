@@ -1,0 +1,15 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : wbfmtxhack
+Version: V-2023.12
+Date   : Mon Jun 22 16:56:41 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+wbfmtxhack                            4.66e-05 7.66e-06 5.87e-05 1.13e-04 100.0
+1

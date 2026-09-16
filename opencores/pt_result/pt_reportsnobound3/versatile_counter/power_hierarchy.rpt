@@ -1,0 +1,16 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : vcnt
+Version: V-2023.12
+Date   : Mon Jun 22 17:51:51 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+vcnt                                  4.03e-06 2.26e-07 3.06e-06 7.31e-06 100.0
+  ufb (lfsr_feedback_LENGTH8)         2.73e-07 1.07e-09 7.05e-07 9.79e-07  13.4
+1

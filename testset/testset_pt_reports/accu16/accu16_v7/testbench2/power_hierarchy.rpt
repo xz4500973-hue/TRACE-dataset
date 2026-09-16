@@ -1,0 +1,15 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : accu16
+Version: V-2023.12
+Date   : Wed Sep  2 15:35:16 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+accu16                                7.56e-06 6.11e-07 7.36e-06 1.55e-05 100.0
+1

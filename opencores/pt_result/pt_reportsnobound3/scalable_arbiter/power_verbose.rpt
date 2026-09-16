@@ -1,0 +1,157 @@
+****************************************
+Report : Averaged Power
+	-verbose
+Design : demo_top
+Version: V-2023.12
+Date   : Mon Jun 22 17:51:17 2026
+****************************************
+
+Library(s) Used:
+
+    tcbn28hpcplusbwp12t30p140ssg0p81v125c (File: /process/course_lib/t28hpc+/tcbn28hpcplusbwp12t30p140ssg0p81v125c.db)
+
+
+Operating Conditions: ssg0p81v125c   Library: tcbn28hpcplusbwp12t30p140ssg0p81v125c
+Wire Load Model Mode: segmented
+
+Cell               Design       Wire_model  Library       Selection_type
+--------------------------------------------------------------------------------
+                   demo_top     ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+valid_stretcher    stretcher_count250
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+next_test_debouncer
+                   debouncer_low_count250_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+usec_pulser        pulser_count99
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+next_step_debouncer
+                   debouncer_low_count250_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+select_stretcher   stretcher_count250_width3
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+demo               demo_width8_select_width3
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+demo/arbiter       arbiter_width8_select_width3
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+demo/arbiter/gen_arb_4__nodes_0_
+                   arbiter_node_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+demo/arbiter/gen_arb_8__nodes_0_
+                   arbiter_node_3
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+demo/arbiter/gen_arb_8__nodes_3_
+                   arbiter_node_6
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+demo/arbiter/gen_arb_4__nodes_1_
+                   arbiter_node_2
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+demo/arbiter/gen_arb_2__nodes_0_
+                   arbiter_node_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+demo/arbiter/gen_arb_8__nodes_1_
+                   arbiter_node_4
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+demo/arbiter/gen_mux_2__mux_array_0_
+                   mux_array_width1_0
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+demo/arbiter/gen_mux_2__mux_array_0_/nodes_0_
+                   mux_node_3   ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+demo/arbiter/gen_mux_4__mux_array_0_
+                   mux_array_width2
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+demo/arbiter/gen_mux_4__mux_array_0_/nodes_1_
+                   mux_node_2   ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+demo/arbiter/gen_mux_4__mux_array_0_/nodes_0_
+                   mux_node_1   ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+demo/arbiter/gen_arb_8__nodes_2_
+                   arbiter_node_5
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+demo/arbiter/gen_mux_2__mux_array_1_
+                   mux_array_width1_1
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+demo/arbiter/gen_mux_2__mux_array_1_/nodes_0_
+                   mux_node_0   ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+demo/lfsr          lfsr_width8  ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+msec_pulser        pulser_count1000
+                                ZeroWireload
+                                            tcbn28hpcplusbwp12t30p140ssg0p81v125c
+                                                          automatic-by-area
+
+Power-specific unit information :
+    Voltage Units = 1 V
+    Capacitance Units = 1 pf
+    Time Units = 1 ns
+    Dynamic Power Units = 1 W
+    Leakage Power Units = 1 W
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network              0.0000    0.0000    0.0000    0.0000 ( 0.00%)  i
+register                   0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+combinational           1.678e-06 4.421e-06 1.006e-05 1.616e-05 (25.74%)  
+sequential              2.232e-05 2.124e-07 2.407e-05 4.660e-05 (74.21%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000 3.181e-08    0.0000 3.181e-08 ( 0.05%)  
+
+  Net Switching Power  = 4.665e-06   ( 7.43%)
+  Cell Internal Power  = 2.400e-05   (38.22%)
+  Cell Leakage Power   = 3.413e-05   (54.35%)
+                         ---------
+Total Power            = 6.279e-05  (100.00%)
+
+1

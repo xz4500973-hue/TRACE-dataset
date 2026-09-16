@@ -1,0 +1,15 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : traffic
+Version: V-2023.12
+Date   : Wed Sep  2 15:36:06 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+traffic                               2.01e-06 1.64e-07 1.38e-06 3.55e-06 100.0
+1

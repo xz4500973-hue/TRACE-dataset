@@ -1,0 +1,20 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : lpc_top
+Version: V-2023.12
+Date   : Mon Jun 22 17:51:20 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+lpc_top                               1.53e-05 1.56e-06 1.37e-04 1.54e-04 100.0
+  UUT_DREQ_Periph (wb_dreq_periph)    3.56e-07 3.69e-08 2.53e-06 2.92e-06   1.9
+  UUT_DREQ_Host (wb_dreq_host)        4.77e-07 4.01e-08 3.24e-06 3.76e-06   2.4
+  UUT_Host (wb_lpc_host)              2.21e-06 1.92e-07 2.35e-05 2.59e-05  16.8
+  UUT_Periph (wb_lpc_periph)          7.10e-06 6.75e-07 6.91e-05 7.69e-05  50.0
+  regfile (wb_regfile)                5.14e-06 4.82e-07 3.73e-05 4.29e-05  27.9
+1
